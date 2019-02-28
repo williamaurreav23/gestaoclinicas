@@ -25,7 +25,7 @@ SECRET_KEY = 'ca*an(wv#cx^*c5x#=^8v2_!v-n!jpo32%)d$=1oqy*49l$(yq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['35.199.93.243']
 
 
 # Application definition
