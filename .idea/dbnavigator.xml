@@ -23,12 +23,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="ee3e5a10-6766-49fa-ac56-3c7c78135874">
-        <schema name="pg_catalog" object-types="function" />
-        <schema name="public" object-types="sequence, view, dataset trigger, column, table, constraint, function, index" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="ee3e5a10-6766-49fa-ac56-3c7c78135874">
@@ -96,9 +91,9 @@
           <port value="5432" />
           <database value="clinicas" />
           <os-authentication value="false" />
-          <empty-password value="false" />
+          <empty-authentication value="false" />
           <user value="clinicas" />
-          <password value="amVkYWkyMDAz" />
+          <deprecated-pwd value="amVkYWkyMDAz" />
         </database>
         <properties>
           <auto-commit value="true" />
@@ -108,7 +103,7 @@
           <proxy-host value="" />
           <proxy-port value="22" />
           <proxy-user value="" />
-          <proxy-password value="" />
+          <deprecated-proxy-pwd value="" />
           <auth-type value="PASSWORD" />
           <key-file value="" />
           <key-passphrase value="" />
@@ -130,7 +125,7 @@
           <environment-type value="default" />
           <idle-time-to-disconnect value="30" />
           <idle-time-to-disconnect-pool value="5" />
-          <password-expiry-time value="10" />
+          <credential-expiry-time value="10" />
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
