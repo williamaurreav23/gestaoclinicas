@@ -1,24 +1,228 @@
 {% extends "base.html" %}
+
 {% block content %}
-<div class="col">
-    <ul class="nav flex-column">
-        <li class="nav-item-header nav-item">Activity</li>
-        <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i class="nav-link-icon pe-7s-chat"> </i><span>Chat</span>
-            <div class="ml-auto badge badge-pill badge-info">8</div>
-        </a></li>
-        <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i class="nav-link-icon pe-7s-wallet"> </i><span>Recover Password</span></a></li>
-        <li class="nav-item-header nav-item">My Account</li>
-        <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i class="nav-link-icon pe-7s-config"> </i><span>Settings</span>
-            <div class="ml-auto badge badge-success">New</div>
-        </a></li>
-        <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i class="nav-link-icon pe-7s-coffee"> </i><span>Messages</span>
-            <div class="ml-auto badge badge-warning">512</div>
-        </a></li>
-        <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i class="nav-link-icon pe-7s-box2"> </i><span>Logs</span></a></li>
-        <li class="nav-item-divider nav-item"></li>
-        <li class="nav-item-btn nav-item">
-            <button class="btn-pill btn btn-success btn-sm">Save</button>
-        </li>
-    </ul>
+<div class="ui four column doubling stackable grid container ">
+  <div class="column ">
+    <div class="ui four statistics container segment ">
+        <div class="statistic">
+          <div class="value">
+            22
+          </div>
+          <div class="label">
+            Saves
+          </div>
+        </div>
+        <div class="statistic">
+          <div class="text value">
+            Three<br>
+            Thousand
+          </div>
+          <div class="label">
+            Signups
+          </div>
+        </div>
+        <div class="statistic">
+          <div class="value">
+            <i class="plane icon"></i> 5
+          </div>
+          <div class="label">
+            Flights
+          </div>
+        </div>
+        <div class="statistic">
+          <div class="value">
+            <img src="/static/joe.jpg" class="ui circular inline image">
+            42
+          </div>
+          <div class="label">
+            Team Members
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="column">
+     <div class="ui card">
+  <div class="content">
+    <div class="right floated meta">14h</div>
+    <img class="ui avatar image" src="/static/elliot.jpg"> Elliot
+  </div>
+  <div class="image">
+    <img>
+  </div>
+  <div class="content">
+    <span class="right floated">
+      <i class="heart outline like icon"></i>
+      17 likes
+    </span>
+    <i class="comment icon"></i>
+    3 comments
+  </div>
+  <div class="extra content">
+    <div class="ui large transparent left icon input">
+      <i class="heart outline icon"></i>
+      <input type="text" placeholder="Add Comment...">
+    </div>
+  </div>
+</div>
+    <p></p>
+  </div>
+  <div class="column">
+    <div class="ui feed  container segment">
+  <div class="event">
+    <div class="label">
+      <img src="/static/elliot.jpg">
+    </div>
+    <div class="content">
+      <div class="summary">
+        <a class="user">
+          Elliot Fu
+        </a> added you as a friend
+        <div class="date">
+          1 Hour Ago
+        </div>
+      </div>
+      <div class="meta">
+        <a class="like">
+          <i class="like icon"></i> 4 Likes
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="event">
+    <div class="label">
+      <img src="/static/helen.jpg">
+    </div>
+    <div class="content">
+      <div class="summary">
+        <a>Helen Troy</a> added <a>2 new illustrations</a>
+        <div class="date">
+          4 days ago
+        </div>
+      </div>
+      <div class="extra images">
+        <a><img src="/static/image.png"></a>
+        <a><img src="/static/image.png"></a>
+      </div>
+      <div class="meta">
+        <a class="like">
+          <i class="like icon"></i> 1 Like
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="event">
+    <div class="label">
+      <img src="/static/jenny.jpg">
+    </div>
+    <div class="content">
+      <div class="summary">
+        <a class="user">
+          Jenny Hess
+        </a> added you as a friend
+        <div class="date">
+          2 Days Ago
+        </div>
+      </div>
+      <div class="meta">
+        <a class="like">
+          <i class="like icon"></i> 8 Likes
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="event">
+    <div class="label">
+      <img src="/static/joe.jpg">
+    </div>
+    <div class="content">
+      <div class="summary">
+        <a>Joe Henderson</a> posted on his page
+        <div class="date">
+          3 days ago
+        </div>
+      </div>
+      <div class="extra text">
+        Ours is a life of constant reruns. We're always circling back to where we'd we started, then starting all over again. Even if we don't run extra laps that day, we surely will come back for more of the same another day soon.
+      </div>
+      <div class="meta">
+        <a class="like">
+          <i class="like icon"></i> 5 Likes
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="event">
+    <div class="label">
+      <img src="/static/justen.jpg">
+    </div>
+    <div class="content">
+      <div class="summary">
+        <a>Justen Kitsune</a> added <a>2 new photos</a> of you
+        <div class="date">
+          4 days ago
+        </div>
+      </div>
+      <div class="extra images">
+        <a><img src="/static/image.png"></a>
+        <a><img src="/static/image.png"></a>
+      </div>
+      <div class="meta">
+        <a class="like">
+          <i class="like icon"></i> 41 Likes
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+    <p></p>
+  </div>
+  <div class="column">
+    <div class="ui vertical menu container segment">
+  <a class="active teal item">
+    Inbox
+    <div class="ui teal left pointing label">1</div>
+  </a>
+  <a class="item">
+    Spam
+    <div class="ui label">51</div>
+  </a>
+  <a class="item">
+    Updates
+    <div class="ui label">1</div>
+  </a>
+  <div class="item">
+    <div class="ui transparent icon input">
+      <input type="text" placeholder="Search mail...">
+      <i class="search icon"></i>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<!--Segunda Coluna-->
+<div class="ui four column doubling stackable grid container">
+  <div class="column">
+    <div class="ui statistic  container segment">
+  <div class="value">
+    5,550
+  </div>
+  <div class="label">
+    Downloads
+  </div>
+</div>
+    <p></p>
+  </div>
+  <div class="column">
+    <p></p>
+    <p></p>
+  </div>
+  <div class="column">
+    <p></p>
+    <p></p>
+  </div>
+  <div class="column">
+    <p></p>
+    <p></p>
+  </div>
 </div>
 {% endblock %}
