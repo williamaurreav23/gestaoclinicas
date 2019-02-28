@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d58eddd6-4c48-41ad-9e45-1d2f0b179ab8" name="Default Changelist" comment="versao 1.1">
-      <change afterPath="$PROJECT_DIR$/requeriments.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projclinicas/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/projclinicas/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projclinicas/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projclinicas/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/projclinicas/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="264">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
             </state>
           </provider>
         </entry>
@@ -34,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -59,7 +55,6 @@
         <option value="$PROJECT_DIR$/index/models.py" />
         <option value="$PROJECT_DIR$/index/urls.py" />
         <option value="$PROJECT_DIR$/index/admin.py" />
-        <option value="$PROJECT_DIR$/projclinicas/settings.py" />
         <option value="$PROJECT_DIR$/dashboard/views.py" />
         <option value="$PROJECT_DIR$/index/views.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
@@ -68,6 +63,7 @@
         <option value="$PROJECT_DIR$/projclinicas/urls.py" />
         <option value="$PROJECT_DIR$/templates/dashboard.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/projclinicas/settings.py" />
       </list>
     </option>
   </component>
@@ -228,7 +224,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24851191" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24851191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" weight="0.32934132" />
@@ -241,9 +237,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49479166" visible="true" weight="0.32569557" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5052083" side_tool="true" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5052083" side_tool="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.5052083" side_tool="true" weight="0.39934534" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="11" sideWeight="0.5052083" side_tool="true" visible="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -429,13 +425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projclinicas/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="128" column="46" selection-start-line="128" selection-start-column="46" selection-end-line="128" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -495,6 +484,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projclinicas/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>
