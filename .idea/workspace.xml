@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d58eddd6-4c48-41ad-9e45-1d2f0b179ab8" name="Default Changelist" comment="versao 1.1">
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,37 +18,23 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/urls.py">
+        <entry file="file://$PROJECT_DIR$/templates/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projclinicas/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#636#668#0" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#div#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="91" column="6" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -83,13 +71,13 @@
         <option value="$PROJECT_DIR$/index/admin.py" />
         <option value="$PROJECT_DIR$/dashboard/views.py" />
         <option value="$PROJECT_DIR$/index/views.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/dashboard/urls.py" />
         <option value="$PROJECT_DIR$/projclinicas/urls.py" />
-        <option value="$PROJECT_DIR$/templates/dashboard.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/projclinicas/settings.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/dashboard.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -112,21 +100,6 @@
             <path>
               <item name="gestaoclinicas" type="b2602c69:ProjectViewProjectNode" />
               <item name="gestaoclinicas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gestaoclinicas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gestaoclinicas" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gestaoclinicas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gestaoclinicas" type="462c0819:PsiDirectoryNode" />
-              <item name="projclinicas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gestaoclinicas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gestaoclinicas" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gestaoclinicas" type="b2602c69:ProjectViewProjectNode" />
@@ -261,16 +234,16 @@
       <window_info id="DB Browser" order="3" weight="0.32934132" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.56994045" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.56845236" visible="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49479166" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4940476" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49330357" weight="0.4222586" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5052083" side_tool="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.50595236" side_tool="true" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.4315476" side_tool="true" visible="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -463,24 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="178" column="2" selection-start-line="178" selection-start-column="2" selection-end-line="199" selection-end-column="8" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -508,7 +463,7 @@
     <entry file="file://$PROJECT_DIR$/projclinicas/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#636#668#0" expanded="true" />
           </folding>
@@ -517,11 +472,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="91" column="6" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
+        <state relative-caret-position="259">
+          <caret line="97" column="7" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
