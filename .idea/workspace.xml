@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d58eddd6-4c48-41ad-9e45-1d2f0b179ab8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d58eddd6-4c48-41ad-9e45-1d2f0b179ab8" name="Default Changelist" comment="" />
     <ignored path="venv/" />
     <ignored path="projclinicas/settings.py" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,11 +65,6 @@
           <expand>
             <path>
               <item name="projclinicas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projclinicas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projclinicas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projclinicas" type="462c0819:PsiDirectoryNode" />
               <item name="projclinicas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -175,9 +165,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2492515" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2492515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" weight="0.32934132" />
@@ -190,7 +179,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49625748" weight="0.32894737" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49550897" visible="true" weight="0.32894737" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49550897" visible="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5037425" side_tool="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
