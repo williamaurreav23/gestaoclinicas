@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cac32906-69d2-49f2-a251-a4cb1fef8f95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sgp/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sgp" beforeDir="false" afterPath="$PROJECT_DIR$/sgp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sgp/sgp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sgp/sgp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pessoas/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="60">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
@@ -26,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pessoas/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+            <state relative-caret-position="120">
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -98,7 +97,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/manage.py" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -149,9 +148,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24107143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24065298" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -237,6 +236,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/sgp" />
+    </ignored-roots>
     <MESSAGE value="versao 1.0" />
     <MESSAGE value="versao 1.1" />
     <option name="LAST_COMMIT_MESSAGE" value="versao 1.1" />
@@ -267,68 +269,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/logentry/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/locale/pt_BR/LC_MESSAGES/django.po">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/ocorrencia/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/ocorrencia/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/ocorrencia/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/report/templates/report/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-900" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/report/templates/report/report_index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/report/templates/report/treinamento_list.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/report/context_processors.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/report/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/report/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/report/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/report/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-746" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/report/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/business_unit/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/report/templates/report/treinamento_detail.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sgp/logentry/admin.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/locale/pt_BR/LC_MESSAGES/django.po" />
+    <entry file="file://$PROJECT_DIR$/sgp/ocorrencia/views.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/ocorrencia/tests.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/ocorrencia/models.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/report/templates/report/base.html" />
+    <entry file="file://$PROJECT_DIR$/sgp/report/templates/report/report_index.html" />
+    <entry file="file://$PROJECT_DIR$/sgp/report/templates/report/treinamento_list.html" />
+    <entry file="file://$PROJECT_DIR$/sgp/report/context_processors.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/report/admin.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/report/models.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/report/urls.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/report/views.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/report/tests.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/business_unit/tests.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/report/templates/report/treinamento_detail.html" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -336,26 +292,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/visitante/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/visitante/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/visitante/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sgp/visitante/models.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/visitante/tests.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/visitante/views.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/requirements.txt" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -392,91 +332,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/funcionario/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/funcionario/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="297" lean-forward="true" selection-start-line="297" selection-end-line="297" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/funcionario/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/business_unit/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/business_unit/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="33" />
-          <folding>
-            <element signature="e#24#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/business_unit/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="e#25#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/funcionario/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/treinamento/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-791" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/treinamento/storage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/sgp/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/sgp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/sgp/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sgp/funcionario/tests.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/funcionario/admin.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/funcionario/views.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/business_unit/views.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/business_unit/models.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/business_unit/admin.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/funcionario/models.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/treinamento/models.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/treinamento/storage.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/sgp/urls.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/sgp/views.py" />
+    <entry file="file://$PROJECT_DIR$/sgp/sgp/wsgi.py" />
     <entry file="file://$PROJECT_DIR$/pessoas/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sgp/sgp/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sgp/sgp/settings.py" />
     <entry file="file://$PROJECT_DIR$/pessoas/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -486,15 +358,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pessoas/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pessoas/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        <state relative-caret-position="120">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
         </state>
       </provider>
     </entry>
