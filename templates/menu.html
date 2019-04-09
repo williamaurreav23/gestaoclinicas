@@ -2,9 +2,6 @@
 {% load static %}
 <nav class="navbar is-transparent">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="{% static 'logo.png' %}" width="50" height="30">
-    </a>
     <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
       <span><a class="navbar-item" href="{% url 'index' %}">Home</a></span>
       <span></span>
@@ -12,13 +9,15 @@
     </div>
   </div>
 
-  <div id="navbarExampleTransparentExample" class="navbar-menu">
+  <div id="navbar is-transparent" class="navbar-menu">
     <div class="navbar-start">
-      {% now "d F Y" %}
+     <a class="navbar-item" href="{% url 'index' %}">
+        <img src="{% static 'logo.png' %}" width="50px" height="100px">
+    </a>
       <a class="navbar-item" href="{% url 'index' %}">
         Home
       </a>
-      <a class="navbar-item" href="{% url 'dashboard' %}">
+      <a class="navbar-item" href="#">
         Institucional
       </a>
       <div class="navbar-item has-dropdown is-hoverable">
@@ -26,30 +25,15 @@
           Docs
         </a>
         <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+          <a class="navbar-item" href="{% url 'dashboard' %}">
             Overview
-          </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-            Modifiers
-          </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
-            Columns
-          </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
-            Layout
-          </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
-            Form
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
-            Elements
-          </a>
-          <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
-            Components
           </a>
         </div>
       </div>
+       <a class="navbar-item" href="{% url 'dashboard' %}">
+        Dashboard
+      </a>
+
     </div>
     <div class="navbar-end">
       <div class="navbar-item">
@@ -77,6 +61,8 @@
     </div>
   </div>
 </nav>
+
+
 
 
 {% endblock %}

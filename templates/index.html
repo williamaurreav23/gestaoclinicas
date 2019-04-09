@@ -1,18 +1,131 @@
 {% extends "base.html" %}
 {% block content %}
 {% include "menu.html" %}
+{% load static %}
 
-<section class="hero is-link is-fullheight-with-navbar">
-  <div class="hero-body">
-    <div class="container">
-      <p class="title">
-        Fullheight hero with navbar
-      </p>
+<section class="hero has-background-white-ter">
+	<div class="hero-body">
+    <div class="container is-widescreen">
+	    <p class="level-item has-text-centered">
+  		<img src="{% static 'logo.svg' %}" width="300px">
+	    </p>
     </div>
-  </div>
-</section>
+	</div>
+
+  </section>
 
 
+		<!-- .section -->
+		<section class="section">
+			<div class="container">
+				<div class="columns is-multiline">
+					<div class="column is-one-third">
+						<article class="media notification has-background-white">
+							<figure class="media-left">
+								<span class="icon">
+									<i class="fas fa-lg fa-chart-line has-text-warning"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Columns</h1>
+									<p class="subtitle is-size-5">
+										The power of <strong>Flexbox</strong> in a simple interface
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="column is-one-third">
+						<article class="media notification has-background-white">
+							<figure class="media-left">
+								<span class="icon has-text-info">
+									<i class="fab fa-lg fa-wpforms"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Form</h1>
+									<p class="subtitle is-size-5">
+										The indispensable <strong>form controls</strong>, designed for maximum clarity
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="column is-one-third">
+						<article class="media notification has-background-white">
+							<figure class="media-left">
+								<span class="icon has-text-danger">
+									<i class="fas fa-lg fa-cubes"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Components</h1>
+									<p class="subtitle is-size-5">
+										Advanced multi-part components with lots of possibilities
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="column is-one-third">
+						<article class="media notification has-background-white">
+							<figure class="media-left">
+								<span class="icon has-text-link">
+									<i class="fas fa-lg fa-cogs"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Modifiers</h1>
+									<p class="subtitle is-size-5">
+										An <strong>easy-to-read</strong> naming system designed for humans
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="column is-one-third">
+						<article class="media notification has-background-white">
+							<figure class="media-left">
+								<span class="icon has-text-primary">
+									<i class="fas fa-lg fa-warehouse"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Layout</h1>
+									<p class="subtitle is-size-5">
+										Design the <strong>structure</strong> of your webpage with these CSS classes
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="column is-one-third">
+						<article class="media notification has-background-white">
+							<figure class="media-left">
+								<span class="icon has-text-danger">
+									<i class="fas fa-lg fa-sitemap"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Elements</h1>
+									<p class="subtitle is-size-5">
+										Essential interface elements that only require a <strong>single CSS class</strong>
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /.section -->
+<div id="home-get-started-section"><div class="container"><section class="hero is-medium"><div class="hero-body"><div><div class="columns"><div class="column is-8-fullhd is-8-desktop is-8-tablet is-offset-2-fullhd is-offset-2-desktop is-offset-2-tablet"><h1 class="title has-text-centered has-text-white m-b-50">Join the most secure peer-to-peer exchange now!</h1></div></div><div class="columns"><div class="column is-6-fullhd is-6-desktop is-6-tablet is-offset-3-fullhd is-offset-3-desktop is-offset-3-tablet"><div class="get-started-transparent"><div><div class="get-started-section"><div class="field is-grouped"><p class="control is-expanded"><input placeholder="Your email address" class="input"></p> <p class="control"><a class="button is-primary"> Register now  </a></p></div></div></div></div></div></div></div></div></section></div></div>
 
 
 {% endblock %}
