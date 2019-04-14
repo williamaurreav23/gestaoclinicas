@@ -9,5 +9,8 @@ def rotatividade(admissoes, demissoes, colaboadores):
     print("o valor de rotatividade foi de :", taxa, "%")
 
 
-def pessoas(request):
-    return render(request, 'pessoas/pessoas.html')
+def grh(request):
+    return render(request, 'funcionarios.html')
+
+def desempenho(request):
+    return render(request, 'desempenho.html')

@@ -1,50 +1,23 @@
-from django.test import TestCase
-
-# Create your tests here.
-# Carlos Pedro Gonçalves
-# Instituto Superior de Ciências Sociais e Políticas (ISCSP) - Universidade de Lisboa
-# E-mail: cgoncalves@iscsp.ulisboa.pt
-#
-# Aulas de programação aplicada à tomada de decisão em Gestão de Recursos Humanos:
-# Unidade Curricular de Estatística para a Gestão II
-#
-# Exercício de aplicação do Python à Gestão de Recursos Humanos: caso de atribuição de prémios a vendedores
-# 13-05-2015
+import numpy as np
+import matplotlib.pyplot as plt
 
 
-class Vendedor:
-    def __init__(self, codigo, nome, vendas):
-        self.codigo = codigo
-        self.nome = nome
-        self.vendas = vendas
+N = 5
+menMeans = (20, 35, 30, 35, 27)
+womenMeans = (25, 32, 34, 20, 25)
+menStd = (2, 3, 4, 1, 2)
+womenStd = (3, 5, 2, 3, 3)
+ind = np.arange(N)    # the x locations for the groups
+width = 0.35       # the width of the bars: can also be len(x) sequence
 
-    def avaliaVendedor(self, mediaVendas, proporcao):
-        if self.vendas > mediaVendas:
-            premio = proporcao * self.vendas
-            print
-            self.codigo, self.nome, 'recebe prémio de', premio, 'euros'
+p1 = plt.bar(ind, menMeans, width, yerr=menStd)
+p2 = plt.bar(ind, womenMeans, width,
+             bottom=menMeans, yerr=womenStd)
 
+plt.ylabel('Scores')
+plt.title('Scores by group and gender')
+plt.xticks(ind, ('G1', 'G2', 'G3', 'G4', 'G5'))
+plt.yticks(np.arange(0, 81, 10))
+plt.legend((p1[0], p2[0]), ('Men', 'Women'))
 
-listaVendedores = []
-
-listaVendedores.append(Vendedor('V01', 'Ambrósio Severino Pais', 500000))
-listaVendedores.append(Vendedor('V02', 'Ana Leopolda Leopardo', 650000))
-listaVendedores.append(Vendedor('V03', 'Ana Reis Corrais', 320000))
-listaVendedores.append(Vendedor('V04', 'Blimunda Refrescada Sais', 450000))
-listaVendedores.append(Vendedor('V05', 'Dário Vidigais do Finigal', 350000))
-listaVendedores.append(Vendedor('V06', 'Eduarda Susana Cimeira', 300000))
-listaVendedores.append(Vendedor('V07', 'Helena Correia Zifulmática', 360000))
-listaVendedores.append(Vendedor('V08', 'João Sumido Santeiro', 470000))
-listaVendedores.append(Vendedor('V05', 'Jorge Santos Reis Tomar', 420000))
-listaVendedores.append(Vendedor('V05', 'Jorge Pais dos Reis', 430000))
-
-listaVendas = []
-
-for trabalhador in listaVendedores:
-    listaVendas.append(trabalhador.vendas)
-
-somaVendas = sum(listaVendas)
-mediaVendas = somaVendas / len(listaVendas)
-
-for trabalhador in listaVendedores:
-    trabalhador.avaliaVendedor(mediaVendas, 0.005)
+plt.show()

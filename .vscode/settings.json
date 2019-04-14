@@ -1,0 +1,6 @@
+{
+    "html.format.indentHandlebars": true,
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "python.pythonPath": "/usr/bin/python3",
+    "python.linting.pylintEnabled": true
+}
