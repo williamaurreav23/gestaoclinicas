@@ -19,7 +19,7 @@ from login import views
 
 urlpatterns = [
     path('', include('index.urls')),
-    path('login/', include('django.contrib.auth.urls')), 
+    path('login/', include('login.urls')), 
     path('grh/', include('grh.urls')),
     path('desempenho/', include('grh.urls')),
     path('dashboard/', include('dashboard.urls')),

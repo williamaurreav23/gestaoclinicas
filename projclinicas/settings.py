@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'planejamento',
 ]
 LOGIN_REDIRECT_URL = '/'
+LOUGOUT_REDIRECT_URL = '/login/'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
