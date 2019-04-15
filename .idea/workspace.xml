@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cac32906-69d2-49f2-a251-a4cb1fef8f95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/grh/templates/desempenho.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grh/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grh/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pessoas/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/grh/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pessoas/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/grh/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pessoas/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/grh/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pessoas/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/grh/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pessoas/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/grh/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pessoas/templates/pessoas.html" beforeDir="false" afterPath="$PROJECT_DIR$/grh/templates/funcionarios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pessoas/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/grh/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pessoas/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projclinicas/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/projclinicas/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projclinicas/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projclinicas/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/projclinicas/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu.html" afterDir="false" />
     </list>
     <ignored path="venv/" />
     <ignored path=".idea/workspace.xml" />
@@ -34,12 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/projclinicas/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2205">
-              <caret line="147" selection-start-line="147" selection-end-line="147" />
+            <state relative-caret-position="335">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -98,13 +80,13 @@
         <option value="$PROJECT_DIR$/grh/tests.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/footer.html" />
-        <option value="$PROJECT_DIR$/projclinicas/settings.py" />
         <option value="$PROJECT_DIR$/login/views.py" />
         <option value="$PROJECT_DIR$/login/urls.py" />
         <option value="$PROJECT_DIR$/projclinicas/urls.py" />
         <option value="$PROJECT_DIR$/templates/menu.html" />
         <option value="$PROJECT_DIR$/login/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/projclinicas/settings.py" />
       </list>
     </option>
   </component>
@@ -132,7 +114,7 @@
             <path>
               <item name="gestaoclinicas" type="b2602c69:ProjectViewProjectNode" />
               <item name="gestaoclinicas" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="projclinicas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -225,15 +207,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="941" y="36" width="952" height="1044" extended-state="0" />
+    <frame x="-1" y="35" width="1922" height="1046" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25618947" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12532912" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49839914" weight="0.3426423" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49839914" weight="0.34196332" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4994664" weight="0.396348" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -345,8 +329,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sgp/funcionario/admin.py" />
-    <entry file="file://$PROJECT_DIR$/sgp/funcionario/views.py" />
     <entry file="file://$PROJECT_DIR$/sgp/business_unit/views.py" />
     <entry file="file://$PROJECT_DIR$/sgp/business_unit/models.py" />
     <entry file="file://$PROJECT_DIR$/sgp/business_unit/admin.py" />
@@ -848,23 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projclinicas/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projclinicas/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-          <folding>
-            <element signature="e#636#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -896,6 +861,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2205">
           <caret line="147" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projclinicas/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="e#636#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projclinicas/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/django/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="175" selection-start-line="175" selection-end-line="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projclinicas/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
