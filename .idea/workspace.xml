@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cac32906-69d2-49f2-a251-a4cb1fef8f95" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/login/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projclinicas/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projclinicas/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projclinicas/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/projclinicas/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="venv/" />
     <ignored path=".idea/workspace.xml" />
@@ -95,7 +91,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="939" />
+    <option name="x" value="402" />
     <option name="y" value="53" />
     <option name="width" value="952" />
     <option name="height" value="947" />
@@ -108,7 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,6 +120,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,15 +207,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="939" y="53" width="952" height="947" extended-state="0" />
+    <frame x="402" y="53" width="952" height="947" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21578947" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22066738" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49684212" weight="0.3408019" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4962325" weight="0.33978236" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4994664" weight="0.396348" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -227,8 +223,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.8643703" weight="0.32527205" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.4994618" weight="0.32769045" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5031579" side_tool="true" weight="0.3408019" />
-      <window_info anchor="bottom" auto_hide="true" x="551" y="343" width="687" height="236" id="Terminal" order="11" sideWeight="0.49838537" weight="0.32285368" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5037675" side_tool="true" weight="0.33978236" />
+      <window_info active="true" anchor="bottom" auto_hide="true" x="551" y="343" width="687" height="236" id="Terminal" order="11" sideWeight="0.49838537" visible="true" weight="0.32285368" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -332,7 +328,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sgp/business_unit/models.py" />
     <entry file="file://$PROJECT_DIR$/sgp/business_unit/admin.py" />
     <entry file="file://$PROJECT_DIR$/sgp/funcionario/models.py" />
     <entry file="file://$PROJECT_DIR$/sgp/treinamento/models.py" />
@@ -876,15 +871,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/projclinicas/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/projclinicas/urls.py">
       <provider selected="true" editor-type-id="text-editor">
