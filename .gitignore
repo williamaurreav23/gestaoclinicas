@@ -3,3 +3,4 @@ pyvenv.cfg
 .venv
 workspace.xml
 /venv
+settings.py
