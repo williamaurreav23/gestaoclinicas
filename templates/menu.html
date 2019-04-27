@@ -1,36 +1,39 @@
 {% block menu %}
 {% load static %}
-<nav class="navbar">
-                    <div class="container">
-                        <div class="navbar-brand">
-                            <a class="navbar-item" href="../">
-                                <img src="{% static 'imgs/logo.png' %}" width="50px" height="150px">
-                            </a>
-                            <span class="navbar-burger burger" data-target="navbarMenu">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </div>
-                        <div id="navbarMenu" class="navbar-menu">
-                            <div class="navbar-end">
-                                <div class="tabs is-right">
-                                    <ul>
-                                        <li class="is-active"><a href="{% url 'index' %}">Home</a></li>
-                                        <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
-                                        <li><a href="{% url 'grh' %}">GRH</a></li>
-                                        <li><a href="{% url 'desempenho' %}">Desempenho</a></li>
-                                        <li><a href="{% url 'login' %}">Login</a></li>
-                                    </ul>
-                                    <span class="navbar-item">
-                                        <i class="fab fa-facebook-square fa-2x"></i>
-                                    </span>
-                                    <span class="navbar-item">
-                                        <i class="fab fa-instagram fa-2x"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+<nav class="navbar is-fixed-top">
+    <div class="container">
+            <a href="{% url 'index' %}"><img src="{% static 'imgs/logomenu.svg' %}"> </a>
+        <div class="navbar-brand">
+            <span class="navbar-burger burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+                
+            <div class="navbar-end">
+                <div class="tabs is-right">
+                    <ul>
+                        <li class="is-active"><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'empresa' %}">A empresa </a></li>
+                        <li><a href="{% url 'equipe' %}">A equipe </a></li>
+                        <li><a href="{% url 'servicos' %}">Serviços </a></li>
+                        <li><a href="{% url 'clientes' %}">Clientes </a></li>
+                        <li><a href="{% url 'blog' %}">Blog </a></li>
+                        <li><a href="{% url 'contatos' %}">Contatos </a></li>
+                    </ul>
+                    <span class="navbar-item">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </span>
+                    <span class="navbar-item">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="columns">
+</div>
 {% endblock %}

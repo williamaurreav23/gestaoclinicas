@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+{% include "menu.html" %} 
+    <section class="hero is-fullheight is-default is-bold">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="columns is-vcentered">
+                        <div class="column is-5">
+                            <figure class="image is-4by3">
+                                <img src="https://picsum.photos/800/600/?random" alt="Description">
+                            </figure>
+                        </div>
+
+                    <div id="loader-wrapper">
+                        <div class="atom-loader">
+                          <div class="atom-loader-inner atom-one"></div>
+                          <div class="atom-loader-inner atom-two"></div>
+                          <div class="atom-loader-inner atom-three"></div>
+                        </div>
+                      </div>
+                        <div class="column is-6 is-offset-1">
+                                <img src="{% static 'imgs/logo.svg' %}" width="200px">
+                            <h1 class="title is-2">
+                                Virtual Design Consultoria LTDA.
+                            </h1>
+                            <h2 class="subtitle is-4">
+                                Gestão empresarial inovadora e criativa.
+                            </h2>
+                            <br>
+                            <p class="has-text-centered">
+                                <a class="button is-medium is-info is-outlined">
+                                    Learn more
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endblock %}

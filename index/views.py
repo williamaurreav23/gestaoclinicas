@@ -21,4 +21,26 @@ def design(request):
 
 def data(request):
     return render(request, 'data.html')
-    
+
+def empresa(request):
+    return render(request, 'empresa.html')
+
+def equipe(request):
+    return render(request, 'equipe.html')
+
+def servicos(request):
+    return render(request, 'servicos.html')
+
+def clientes(request):
+    return render(request, 'clientes.html')
+
+def blog(request):
+    return render(request, 'blog.html')
+
+def contatos(request):
+    return render(request, 'contatos.html')
+
+
+
+
+

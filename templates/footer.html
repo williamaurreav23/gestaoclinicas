@@ -8,19 +8,13 @@
                                                 <h3>Company</h3>
                     </div>
                     <ul class="link-list">
-                                                                        <li><a href="">
-                                A empresa </a></li>
-                                                                        <li><a href="">
-                                A equipe </a></li>
-                                                                        <li><a href="">
-                                Serviços </a></li>
-                                                                        <li><a href="">
-                                Clientes </a></li>
-                                                                        <li><a href="">
-                                Blog </a></li>
-                                                                        <li><a href="">
-                                Contatos </a></li>
-                                            </ul>
+                        <li><a href="{% url 'empresa' %}">A empresa </a></li>
+                        <li><a href="{% url 'equipe' %}">A equipe </a></li>
+                        <li><a href="{% url 'servicos' %}">Serviços </a></li>
+                        <li><a href="{% url 'clientes' %}">Clientes </a></li>
+                        <li><a href="{% url 'blog' %}">Blog </a></li>
+                        <li><a href="{% url 'contatos' %}">Contatos </a></li>
+                    </ul>
                 </div>
             </div>
             <div class="column">
@@ -42,7 +36,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="column">
                 <div class="footer-column">
                     <div class="footer-header">
@@ -73,7 +66,6 @@
                                 <a href="" class="level-item">
                                         <img src="{% static 'imgs/instagram.svg' %}" width="30px" height="30px">
                                 </a>
-
                             </div>
                         </nav>
                     </div>
