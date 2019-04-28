@@ -3,31 +3,54 @@
 
 {% block content %}
 {% include "menu.html" %}   
-<section class="hero-body">
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <div class="column is-6 is-offset-3">
-                        <h1 class="title">
-                            Coming Soon
-                        </h1>
-                        <h2 class="subtitle">
-                            $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
-                        </h2>
-                        <div class="box">
-                            <div class="field is-grouped">
-                                <p class="control is-expanded">
-                                    <input class="input" type="text" placeholder="Enter your email">
-                                </p>
-                                <p class="control">
-                                    <a class="button is-info">
-                                        Notify Me
-                                    </a>
-                                </p>
+<section class="section">
+        <div class="container has-text-centered">
+            <h2 class="title">Contatos</h2>
+
+            <form>
+                <div class="field is-horizontal">
+                    <div class="field-body">
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="text" placeholder="Name">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control has-icons-left has-icons-right">
+                                <input class="input" type="email" placeholder="Email">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Message us"></textarea>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="field is-horizontal">
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-primary">
+                                    Send message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
     {% endblock %}

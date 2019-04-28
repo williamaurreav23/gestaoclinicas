@@ -2,6 +2,10 @@
 background: url(imgs/hero.svg);
 }
 
+.heroemail {
+  background: url(imgs/email.svg);
+  }
+
 body {
     font-family: 'Quicksand', sans-serif;
     font-size: 1em;
