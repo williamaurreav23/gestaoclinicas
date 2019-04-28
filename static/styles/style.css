@@ -1,9 +1,9 @@
 .heroindex {
-background: url(imgs/hero.svg);
+background: url(/static/imgs/hero.svg);
 }
 
 .heroemail {
-  background: url(imgs/email.svg);
+  background: url(/static/imgs/email.svg);
   }
 
 body {
