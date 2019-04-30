@@ -1,6 +1,29 @@
 .heroindex {
 background: url(/static/imgs/hero.svg);
 }
+.heroempresa {
+background: url(/static/imgs/empresa.svg);
+}
+.herogestao {
+background: url(/static/imgs/gestao.png);
+}
+
+.herotop {
+background: url(/static/imgs/top.png);
+}
+.heromark {
+background: url(/static/imgs/marketing.png);
+}
+.heroplan {
+  background: url(/static/imgs/plan.png);
+  }
+.herodesign {
+background: url(/static/imgs/design.png);
+}
+
+.herodata {
+background: url(/static/imgs/data.png);
+}
 
 body {
     font-family: 'Quicksand', sans-serif;

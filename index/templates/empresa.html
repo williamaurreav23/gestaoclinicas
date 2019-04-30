@@ -1,43 +1,41 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
-{% include "menu.html" %} 
+{% include "menu.html" %}
 
 <body>
-        <section class="section">
-            <div class="container">
 
-            <div class="columns is-mobile">
-                <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                        <figure class="box image is-4by3">
-                            <img src="{% static 'imgs/logo.svg' %}" width="200px">
-                            </figure>
-                </div>
-                <div class="column">
-                    <h1 class="title is-2">
-                        Virtual Design Consultoria LTDA.
-                        </h1>
-                        <h2 class="subtitle is-4">
-                        Gestão empresarial inovadora e criativa.
-                        </h2>
-                </div>
-              </div>
-                      <div class="columns is-mobile">
-                            <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                                    <figure class="box image is-4by3">
-                                            <img src="https://picsum.photos/800/600/?random" alt="Description">
-                                        </figure>
-                            </div>
-                            <div class="column">
-                                    <h1 class="title is-2">Visão da Empresa</h1>
-                                <p>Desenvolver soluções de gestão para nossos clientes e auxiliar na excelência em seus negócios.</p>
-                            </div>
-                          </div>
+        <section class="heroempresa is-primary">
+                <div class="hero-body">
+                        <div class="container has-text-right">
+                                <img src="{% static 'imgs/logo.svg' %}" width="200px">
+                                <h1 class="title">
+                                        Virtual Design Consultoria LTDA.
+                                </h1>
+                                <h2 class="subtitle">
+                                        Gestão empresarial inovadora e criativa.
+                                </h2>
                         </div>
-                    
-                    </div>
-        </section>]
+                </div>
+        </section>
+        <div class="level"></div>
+        <section>
+                <div class="container">
+                        <div class="columns is-mobile">
+                                <div
+                                        class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
+                                        <figure class="box image is-4by3">
+                                                <img src="https://picsum.photos/800/600/?random" alt="Description">
+                                        </figure>
+                                </div>
+                                <div class="column">
+                                        <h1 class="title is-2">Visão da Empresa</h1>
+                                        <p>Desenvolver soluções de gestão para nossos clientes e auxiliar na excelência
+                                                em seus negócios.</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
 </body>
 
-        {% endblock %}
+{% endblock %}

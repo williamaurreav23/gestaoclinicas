@@ -5,161 +5,165 @@
 <section class="heroindex has-background-white-ter">
 	{% include "menu.html" %}
 	<div class="hero-body">
-    <div class="container is-widescreen">
-          <img src="{% static 'imgs/logo.svg' %}" width="300px">
-    </div>
+		<div class="container is-widescreen">
+			<img src="{% static 'imgs/logo.svg' %}" width="300px">
+		</div>
 
 	</div>
-   </section>
-		<section class="section">
-			<div class="container">
-				<div class="columns is-multiline">
-					<div class="column is-one-third">
-						<article class="media notification has-background-white">
-							<figure class="media-left">
-								<span class="icon has-text-warning">
-                                        <i class="fas fa-chart-line fa-2x"></i>
-								</span>
-							</figure>
-							<div class="media-content">
-								<div class="content">
-                                        <h1 class="title is-size-4">Gestão Empresarial</h1>
-									<p class="subtitle is-size-5">
-										O poder da  <strong>gestão</strong> aplicado a sua empresa.
-                                    </p>
-                                    <a class="button is-rounded is-light" href="{% url 'gestao' %}">Saiba mais</a>
-								</div>
-							</div>
-						</article>
+</section>
+<section class="section">
+	<div class="container">
+		<div class="columns is-multiline">
+			<div class="column is-one-third">
+				<article class="media notification has-background-white">
+					<figure class="media-left">
+						<span class="icon has-text-warning">
+							<i class="fas fa-chart-line fa-2x"></i>
+						</span>
+					</figure>
+					<div class="media-content">
+						<div class="content">
+							<h1 class="title is-size-4">Gestão Empresarial</h1>
+							<p class="subtitle is-size-5">
+								O poder da <strong>gestão</strong> aplicado a sua empresa.
+							</p>
+							<a class="button is-rounded is-light" href="{% url 'gestao' %}">Saiba mais</a>
+						</div>
 					</div>
-					<div class="column is-one-third">
-						<article class="media notification has-background-white">
-							<figure class="media-left">
-								<span class="icon has-text-info">
-                                        <i class="fas fa-bullhorn fa-2x"></i>
-								</span>
-							</figure>
-							<div class="media-content">
-								<div class="content">
-									<h1 class="title is-size-4">Top of Mind</h1>
-									<p class="subtitle is-size-5">
-										 A <strong>marca</strong> da sua empresa na cabeça das pessoas.
-                                    </p>
-                                    <a class="button is-rounded is-light" href="{% url 'top' %}">Saiba mais</a>
-								</div>
-							</div>
-						</article>
+				</article>
+			</div>
+			<div class="column is-one-third">
+				<article class="media notification has-background-white">
+					<figure class="media-left">
+						<span class="icon has-text-info">
+							<i class="fas fa-bullhorn fa-2x"></i>
+						</span>
+					</figure>
+					<div class="media-content">
+						<div class="content">
+							<h1 class="title is-size-4">Top of Mind</h1>
+							<p class="subtitle is-size-5">
+								A <strong>marca</strong> da sua empresa na cabeça das pessoas.
+							</p>
+							<a class="button is-rounded is-light" href="{% url 'top' %}">Saiba mais</a>
+						</div>
 					</div>
-					<div class="column is-one-third">
-						<article class="media notification has-background-white">
-							<figure class="media-left">
-								<span class="icon has-text-success">
-                                        <i class="far fa-lightbulb fa-2x"></i>
-								</span>
-							</figure>
-							<div class="media-content">
-								<div class="content">
-									<h1 class="title is-size-4">Marketing Digital</h1>
-									<p class="subtitle is-size-5">
-										Criação de um <strong>funil</strong> de vendas para sua empresa.
-                                    </p>
-                                    <a class="button is-rounded is-light" href="{% url 'marketing' %}">Saiba mais</a>
-								</div>
-							</div>
-						</article>
+				</article>
+			</div>
+			<div class="column is-one-third">
+				<article class="media notification has-background-white">
+					<figure class="media-left">
+						<span class="icon has-text-success">
+							<i class="far fa-lightbulb fa-2x"></i>
+						</span>
+					</figure>
+					<div class="media-content">
+						<div class="content">
+							<h1 class="title is-size-4">Marketing Digital</h1>
+							<p class="subtitle is-size-5">
+								Criação de um <strong>funil</strong> de vendas para sua empresa.
+							</p>
+							<a class="button is-rounded is-light" href="{% url 'marketing' %}">Saiba mais</a>
+						</div>
 					</div>
-					<div class="column is-one-third">
-						<article class="media notification has-background-white">
-							<figure class="media-left">
-								<span class="icon has-text-link">
-                                        <i class="fas fa-tasks fa-2x"></i>
-								</span>
-							</figure>
-							<div class="media-content">
-								<div class="content">
-									<h1 class="title is-size-4">Planejamento Estrátegico</h1>
-									<p class="subtitle is-size-5">
-										Criar um <strong>plano</strong> para fazer sua empresa expandir.
-                                    </p>
-                                    <a class="button is-rounded is-light" href="{% url 'planejamento' %}">Saiba mais</a>
-								</div>
-							</div>
-						</article>
+				</article>
+			</div>
+			<div class="column is-one-third">
+				<article class="media notification has-background-white">
+					<figure class="media-left">
+						<span class="icon has-text-link">
+							<i class="fas fa-tasks fa-2x"></i>
+						</span>
+					</figure>
+					<div class="media-content">
+						<div class="content">
+							<h1 class="title is-size-4">Planejamento Estrátegico</h1>
+							<p class="subtitle is-size-5">
+								Criar um <strong>plano</strong> para fazer sua empresa expandir.
+							</p>
+							<a class="button is-rounded is-light" href="{% url 'planejamento' %}">Saiba mais</a>
+						</div>
 					</div>
-					<div class="column is-one-third">
-						<article class="media notification has-background-white">
-							<figure class="media-left">
-								<span class="icon has-text-primary">
-                                        <i class="fas fa-pen-fancy fa-2x"></i>
-								</span>
-							</figure>
-							<div class="media-content">
-								<div class="content">
-									<h1 class="title is-size-4">Design Instrucional</h1>
-									<p class="subtitle is-size-5">
-										Desenhamos um <strong>curso</strong> de acordo com a necessidade da sua empresa.
-                                    </p>
-                                    <a class="button is-rounded is-light" href="{% url 'design' %}">Saiba mais</a>
-								</div>
-							</div>
-						</article>
+				</article>
+			</div>
+			<div class="column is-one-third">
+				<article class="media notification has-background-white">
+					<figure class="media-left">
+						<span class="icon has-text-primary">
+							<i class="fas fa-pen-fancy fa-2x"></i>
+						</span>
+					</figure>
+					<div class="media-content">
+						<div class="content">
+							<h1 class="title is-size-4">Design Instrucional</h1>
+							<p class="subtitle is-size-5">
+								Desenhamos um <strong>curso</strong> de acordo com a necessidade da sua empresa.
+							</p>
+							<a class="button is-rounded is-light" href="{% url 'design' %}">Saiba mais</a>
+						</div>
 					</div>
-					<div class="column is-one-third">
-						<article class="media notification has-background-white">
-							<figure class="media-left">
-								<span class="icon has-text-danger">
-                                        <i class="fas fa-database fa-2x"></i>
-								</span>
-							</figure>
-							<div class="media-content">
-								<div class="content">
-									<h1 class="title is-size-4">Data Science</h1>
-									<p class="subtitle is-size-5">
-										Transformamos seus dados em <strong>informação</strong> para auxiliar nas decisões da empresa.
-                                    </p>
-                                    <a class="button is-rounded is-light" href="{% url 'data' %}">Saiba mais</a>
-								</div>
-							</div>
-						</article>
+				</article>
+			</div>
+			<div class="column is-one-third">
+				<article class="media notification has-background-white">
+					<figure class="media-left">
+						<span class="icon has-text-danger">
+							<i class="fas fa-database fa-2x"></i>
+						</span>
+					</figure>
+					<div class="media-content">
+						<div class="content">
+							<h1 class="title is-size-4">Data Science</h1>
+							<p class="subtitle is-size-5">
+								Transformamos seus dados em <strong>informação</strong> para auxiliar nas decisões da
+								empresa.
+							</p>
+							<a class="button is-rounded is-light" href="{% url 'data' %}">Saiba mais</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="hero is-info is-medium is-bold">
+	<div class="hero-body">
+		<div class="container has-text-centered">
+			<div class="column is-6 is-offset-3">
+				<h1 class="title">
+					Qual o seu melhor email ?
+				</h1>
+				<h2 class="subtitle">
+					$this is the best software platform for running an internet business. We handle billions of dollars
+					every year for forward-thinking businesses around the world.
+				</h2>
+				<div class="box">
+					<div class="field is-grouped">
+						<p class="control is-expanded">
+							<input class="input" type="text" placeholder="Coloque seu email">
+						</p>
+						<p class="control">
+							<a class="button is-info">
+								Cadastrar
+							</a>
+						</p>
 					</div>
 				</div>
 			</div>
-		</section>
-        <section class="hero is-info is-medium is-bold">
-                <div class="hero-body">
-                        <div class="container has-text-centered">
-                            <div class="column is-6 is-offset-3">
-                                <h1 class="title">
-                                    Qual o seu melhor email ?
-                                </h1>
-                                <h2 class="subtitle">
-                                    $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
-                                </h2>
-                                <div class="box">
-                                    <div class="field is-grouped">
-                                        <p class="control is-expanded">
-                                            <input class="input" type="text" placeholder="Coloque seu email">
-                                        </p>
-                                        <p class="control">
-                                            <a class="button is-info">
-                                                Cadastrar
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        </section>
-        <div class="box cta">
-            <p class="has-text-centered">
-                <span class="tag is-danger">Atenção</span> Não somos fãs de spam, seu e-mail estará seguro conosco pois só vamos usar para entrar em contato ou lhe informar sobre as novidades.
-            </p>
-        </div>
-        <section class="container">
-            <div class="intro column is-8 is-offset-2">
-                <h2 class="title">Perfeito para sua empresa!</h2><br>
-                <p class="subtitle">Vel fringilla est ullamcorper eget nulla facilisi. Nulla facilisi nullam vehicula ipsum a. Neque egestas congue quisque egestas diam in arcu cursus.</p>
-            </div>
-        </section>
+		</div>
+	</div>
+</section>
+<div class="box cta">
+	<p class="has-text-centered">
+		<span class="tag is-danger">Atenção</span> Não somos fãs de spam, seu e-mail estará seguro conosco pois só vamos
+		usar para entrar em contato ou lhe informar sobre as novidades.
+	</p>
+</div>
+<section class="container">
+	<div class="intro column is-8 is-offset-2">
+		<h2 class="title">Perfeito para sua empresa!</h2><br>
+		<p class="subtitle">Vel fringilla est ullamcorper eget nulla facilisi. Nulla facilisi nullam vehicula ipsum a.
+			Neque egestas congue quisque egestas diam in arcu cursus.</p>
+	</div>
+</section>
 {% endblock %}

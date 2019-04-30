@@ -11,9 +11,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="50"
+   height="50"
+   viewBox="0 0 13.229167 13.229167"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -57,7 +57,7 @@
        y1="153.30313"
        x2="151.49799"
        y2="153.14711"
-       gradientTransform="matrix(1.056574,0,0,0.95508546,14.278572,5.6303975)" />
+       gradientTransform="matrix(0.10624399,0,0,0.10656352,-3.4249238,274.60885)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -66,19 +66,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0744254"
-     inkscape:cx="295.43261"
-     inkscape:cy="562.9703"
-     inkscape:document-units="mm"
+     inkscape:zoom="12.190051"
+     inkscape:cx="41.541431"
+     inkscape:cy="26.143835"
+     inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-text-baseline="false"
      inkscape:lockguides="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1023"
+     inkscape:window-height="1030"
      inkscape:window-x="0"
-     inkscape:window-y="28"
-     inkscape:window-maximized="1" />
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     units="px"
+     width="50px" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -87,34 +89,35 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-283.77083)">
     <path
        id="path3723"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:97.3943634px;line-height:1.25;font-family:'Noto Serif Display';-inkscape-font-specification:'Noto Serif Display, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient6178);fill-opacity:1;stroke:none;stroke-width:10.12573051"
-       d="m 114.56844,184.75677 v -1.02228 h 1.21724 q 7.67818,0 7.67818,-7.36033 v -56.63382 q 0,-6.95147 -7.67818,-6.95147 h -1.21724 v -1.02225 h 28.65266 q 14.51362,0 22.47268,9.50709 8.05272,9.50715 8.05272,26.88577 0,11.14275 -3.46454,19.42315 -3.37089,8.17817 -10.11271,12.67614 -6.74181,4.498 -16.94815,4.498 z m 18.35268,-1.02228 h 8.14635 q 11.70452,0 16.94813,-8.38261 5.33727,-8.48484 5.33727,-27.1924 0,-18.60535 -5.24361,-26.98798 -5.24364,-8.38263 -16.94816,-8.38263 h -8.23998 z m -52.155329,1.02228 -21.442683,-66.44763 q -0.936359,-3.16904 -2.43456,-4.29354 -1.404539,-1.22673 -4.307253,-1.22673 h -1.217268 v -1.02225 h 25.749937 v 1.02225 h -2.247263 q -2.996351,0 -4.40089,0.92005 -1.404564,0.81783 -1.404564,2.96457 0,2.04454 0.936385,4.80467 l 11.610882,36.49512 q 3.277259,10.12046 5.056342,17.78752 1.029994,-3.88464 2.434535,-8.5871 1.404538,-4.80466 2.715467,-9.20042 l 10.674522,-35.67729 q 0.46818,-1.63561 0.74909,-2.86234 0.28091,-1.22674 0.28091,-2.24901 0,-2.45347 -1.49818,-3.37349 -1.4982,-1.02228 -4.775457,-1.02228 h -5.524521 v -1.02225 h 22.847218 v 1.02225 h -3.37089 q -2.62183,0 -4.21364,1.73788 -1.49818,1.63563 -2.80908,6.13363 l -19.382694,64.09639 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:97.3943634px;line-height:1.25;font-family:'Noto Serif Display';-inkscape-font-specification:'Noto Serif Display, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient6178);fill-opacity:1;stroke:none;stroke-width:1.07253563"
+       d="m 6.6597416,294.59485 v -0.11406 h 0.1223999 q 0.7720805,0 0.7720805,-0.82123 v -6.31891 q 0,-0.77561 -0.7720805,-0.77561 H 6.6597416 v -0.11406 h 2.8811735 q 1.4594199,0 2.2597449,1.06076 0.809742,1.06075 0.809742,2.99977 0,1.24326 -0.348377,2.16713 -0.338961,0.91249 -1.016885,1.41434 -0.677924,0.50187 -1.7042249,0.50187 z m 1.8454569,-0.11406 h 0.8191578 q 1.1769507,0 1.7042227,-0.93529 0.53669,-0.94669 0.53669,-3.03399 0,-2.07589 -0.527272,-3.01118 -0.527275,-0.93529 -1.7042257,-0.93529 H 8.5051985 Z m -5.2444886,0.11406 -2.1561726,-7.41389 q -0.094156,-0.35358 -0.24480749,-0.47905 -0.1412338,-0.13687 -0.43311664,-0.13687 h -0.1224028 v -0.11406 H 2.8935001 v 0.11406 H 2.6675259 q -0.3012983,0 -0.442532,0.10266 -0.1412361,0.0912 -0.1412361,0.33077 0,0.22812 0.094158,0.53608 l 1.1675343,4.07194 q 0.3295452,1.12919 0.5084412,1.98464 0.1035714,-0.43343 0.2448051,-0.95811 0.1412337,-0.53608 0.2730544,-1.02653 l 1.0733784,-3.9807 q 0.047077,-0.18249 0.075325,-0.31936 0.028249,-0.13687 0.028249,-0.25093 0,-0.27375 -0.1506497,-0.3764 -0.150652,-0.11406 -0.4801972,-0.11406 H 4.362338 v -0.11406 h 2.2974059 v 0.11406 H 6.3207833 q -0.2636384,0 -0.423703,0.1939 -0.1506496,0.18249 -0.2824679,0.68436 l -1.9490299,7.15155 z"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:8.30527878px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.20763196"
-       x="96.235451"
-       y="101.90352"
+       style="font-style:normal;font-weight:normal;font-size:0.97162175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.02429054"
+       x="4.3443527"
+       y="284.04233"
        id="text2918"
-       transform="scale(0.94355205,1.0598249)"
+       transform="scale(0.99305362,1.006995)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan2916"
-         x="96.235451"
-         y="101.90352"
-         style="stroke-width:0.20763196">@Virtual Design</tspan></text>
+         x="4.3443527"
+         y="284.04233"
+         style="stroke-width:0.02429054">@Virtual Design</tspan></text>
   </g>
 </svg>
