@@ -1,56 +1,51 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
-{% include "menu.html" %}   
 <section class="section">
-        <div class="container has-text-centered">
-            <h2 class="title">Contatos</h2>
-
-            <form>
-                <div class="field is-horizontal">
-                    <div class="field-body">
-                        <div class="field">
-                            <p class="control has-icons-left">
-                                <input class="input" type="text" placeholder="Name">
-                                <span class="icon is-small is-left">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="field">
-                            <p class="control has-icons-left has-icons-right">
-                                <input class="input" type="email" placeholder="Email">
-                                <span class="icon is-small is-left">
-                                    <i class="fas fa-envelope"></i>
-                                </span>
-                            </p>
+    <div class="container has-text-centered">
+        <h2 class="title">Contatos</h2>
+        <form>
+            <div class="field is-horizontal">
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control has-icons-left">
+                            <input class="input" type="text" placeholder="Name">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" placeholder="Email">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <textarea class="textarea" placeholder="Message us"></textarea>
                         </div>
                     </div>
                 </div>
-
-                <div class="field is-horizontal">
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                <textarea class="textarea" placeholder="Message us"></textarea>
-                            </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <button class="button is-primary">
+                                Send message
+                            </button>
                         </div>
                     </div>
                 </div>
-
-                <div class="field is-horizontal">
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                <button class="button is-primary">
-                                    Send message
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-    {% endblock %}
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
