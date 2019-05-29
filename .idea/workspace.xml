@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cac32906-69d2-49f2-a251-a4cb1fef8f95" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projclinicas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projclinicas.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requeriments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requeriments.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate.csh" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projclinicas/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projclinicas/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/python3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/python3.7" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python3.7" afterDir="false" />
@@ -23,7 +18,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projclinicas/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="110" column="1" lean-forward="true" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,7 +82,6 @@
         <option value="$PROJECT_DIR$/login/views.py" />
         <option value="$PROJECT_DIR$/login/urls.py" />
         <option value="$PROJECT_DIR$/login/templates/login.html" />
-        <option value="$PROJECT_DIR$/projclinicas/settings.py" />
         <option value="$PROJECT_DIR$/projclinicas/urls.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/static/styles/style.css" />
@@ -88,10 +92,11 @@
         <option value="$PROJECT_DIR$/index/templates/equipe.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/requeriments.txt" />
+        <option value="$PROJECT_DIR$/projclinicas/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="692" />
     <option name="y" value="159" />
     <option name="width" value="960" />
@@ -115,13 +120,7 @@
             <path>
               <item name="gestaoclinicas" type="b2602c69:ProjectViewProjectNode" />
               <item name="gestaoclinicas" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gestaoclinicas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gestaoclinicas" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="projclinicas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -134,7 +133,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projclinicas/settings.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -165,9 +164,6 @@
       <module name="projclinicas" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -175,7 +171,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
       <option name="PARAMETERS" value="runserver" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -214,24 +210,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="692" y="159" width="960" height="772" extended-state="0" />
+    <frame x="0" y="36" width="1920" height="1044" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21589689" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.106371775" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4962325" weight="0.30250785" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4962325" weight="0.3010989" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4994664" weight="0.396348" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49578947" weight="0.31957546" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.8643703" weight="0.32527205" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
-      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.4994618" weight="0.32769045" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="9" sideWeight="0.4994618" visible="true" weight="0.32747254" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5037675" side_tool="true" weight="0.33978236" />
-      <window_info active="true" anchor="bottom" auto_hide="true" x="551" y="343" width="687" height="236" id="Terminal" order="11" sideWeight="0.49838537" visible="true" weight="0.45300463" />
+      <window_info anchor="bottom" auto_hide="true" x="551" y="343" width="687" height="236" id="Terminal" order="11" sideWeight="0.49838537" weight="0.31428573" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info active="true" anchor="bottom" id="Inspection Results" order="13" visible="true" weight="0.3296837" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -464,13 +460,6 @@
     </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/django/conf/__init__.py" />
     <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg" />
-    <entry file="file://$PROJECT_DIR$/projclinicas/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grh/templates/funcionarios.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3276">
@@ -599,6 +588,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projclinicas/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="110" column="1" lean-forward="true" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
         </state>
       </provider>
     </entry>
