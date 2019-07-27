@@ -40,8 +40,7 @@ INSTALLED_APPS = [
     'login',
     'index',
     'dashboard',
-    'grh',
-    'planejamento',
+    'bdprojeto',
 ]
 
 LOGIN_REDIRECT_URL = 'dashboard'
