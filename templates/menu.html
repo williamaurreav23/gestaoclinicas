@@ -1,48 +1,50 @@
 {% block menu %}
 {% load static %}
-        <nav class="navbar is-fixed-top">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item">
-                            <a href="{% url 'index' %}"><img src="{% static 'imgs/logo.svg' %}"></a>
-                        </a>
-                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </div>
-                    <div id="navbarMenuHeroA" class="navbar-menu">
-                        <div class="navbar-end">
-                            <a class="navbar-item is-active" href="{% url 'index' %}">
-                                Home
-                            </a>
-                            <a class="navbar-item" href="{% url 'empresa' %}">
-                                A empresa
-                            </a>
-                            <a class="navbar-item" href="{% url 'equipe' %}">
-                                A equipe
-                            </a>
-                            <a class="navbar-item" href="{% url 'servicos' %}">
-                                Serviços
-                            </a>
-                            <a class="navbar-item" href="{% url 'clientes' %}">
-                                Clientes
-                            </a>
-                            <a class="navbar-item" href="{% url 'blog' %}">
-                                Blog
-                            </a>
-                            <a class="navbar-item" href="{% url 'contatos' %}">
-                                Contatos
-                            </a>
-                            <span class="navbar-item">
-                                <i class="fab fa-twitter fa-2x"></i>
-                            </span>
-                            <span class="navbar-item">
-                                <i class="fab fa-instagram fa-2x"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+<div class='container .navbar'>
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    
+      <img class="is-rounded" src="{% static 'imgs/logo.svg' %}" alt="Data Business LTDA" width="112" height="28">
+   
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+<div class="navbar-end">
+          
+                <a class="navbar-item is-active" href="{% url 'index' %}">
+                    Home
+                </a>
+                <a class="navbar-item" href="{% url 'empresa' %}">
+                    A empresa
+                </a>
+                <a class="navbar-item" href="{% url 'equipe' %}">
+                    A equipe
+                </a>
+                <a class="navbar-item" href="{% url 'servicos' %}">
+                    Serviços
+                </a>
+                <a class="navbar-item" href="{% url 'clientes' %}">
+                    Clientes
+                </a>
+                <a class="navbar-item" href="{% url 'blog' %}">
+                    Blog
+                </a>
+                <a class="navbar-item" href="{% url 'contatos' %}">
+                    Contatos
+                </a>
+                <span class="navbar-item">
+                    <img src='{% static 'imgs/whatsapp.svg' %}'></img>
+                </span>
+                <span class="navbar-item">
+                    <img src='{% static 'imgs/instagram.svg' %}'></img>
+                </span>
+            </div>
+  </div>
+</nav>
+</div>
 {% endblock %}

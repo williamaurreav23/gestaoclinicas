@@ -11,19 +11,12 @@
   <link rel="stylesheet" href="/static/styles/blog.css" />
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&amp;subset=latin-ext,vietnamese"
     rel="stylesheet">
-  <!-- <link rel="stylesheet" href="{% static '/styles/debug.css' %}"/> -->
+  {% comment %} <link rel="stylesheet" href="{% static '/styles/debug.css' %}"/> {% endcomment %}
   <title>Projeto de Gestão de Clinicas</title>
 </head>
 
 <body>
-  {% include "menu.html" %}
-  <div class="columns">
-    <div class="column is-narrow">
-      First column
-    </div>
-  </div>>
-
-  </div>
+{% include "menu.html" %}
   {% block content %}
   {% endblock %}
   {% include "footer.html" %}

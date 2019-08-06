@@ -1,13 +1,28 @@
-.heroindex {
+.hero {
 background: url(/static/imgs/hero.svg);
+background-position: top;
+background-size: cover;
+margin-bottom: -2rem;
 }
+.altura{
+  min-height: 100vh;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-content: stretch;
+  
+}
+
 .heroempresa {
 background: url(/static/imgs/empresa.svg);
 }
 .herogestao {
 background: url(/static/imgs/gestao.png);
 }
-
 .herotop {
 background: url(/static/imgs/top.png);
 }

@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100"
-   height="100"
-   viewBox="0 0 26.458333 26.458333"
+   width="148"
+   height="148"
+   viewBox="0 0 39.158333 39.158333"
    version="1.1"
    id="svg3876"
-   inkscape:version="0.92.4 (unknown)"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
    sodipodi:docname="logo.svg">
   <defs
      id="defs3870">
@@ -59,16 +59,16 @@
      inkscape:pageshadow="2"
      inkscape:zoom="4.721"
      inkscape:cx="57.37"
-     inkscape:cy="33.2"
+     inkscape:cy="67.091125"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     width="100px"
+     width="148px"
      inkscape:window-width="1920"
-     inkscape:window-height="1004"
+     inkscape:window-height="973"
      inkscape:window-x="0"
-     inkscape:window-y="36"
+     inkscape:window-y="25"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata3873">
@@ -86,10 +86,10 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-270.54167)">
+     transform="translate(0,-257.84167)">
     <g
        id="g4329"
-       transform="matrix(0.1243,0,0,0.1283,8.291,243.7)">
+       transform="matrix(0.1805143,0,0,0.19665225,12.980038,216.38619)">
       <g
          transform="matrix(0.1147,0,0,0.1077,11.16,253)"
          id="g4109">
@@ -195,28 +195,28 @@
         </g>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:15.6456px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3911"
+           style="font-style:normal;font-weight:normal;font-size:15.64560032px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39109999"
            x="-42.09"
-           y="377.9"
+           y="377.89999"
            id="text3558"
            transform="matrix(0.939,-0.0049,0.0075,1.065,0,0)"><tspan
              sodipodi:role="line"
              id="tspan3556"
              x="-42.09"
-             y="377.9"
-             style="stroke-width:0.3911">CONSULTORIA</tspan></text>
+             y="377.89999"
+             style="stroke-width:0.39109999">CONSULTORIA</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:21.8152px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5454"
-           x="-55.9"
+           style="font-style:normal;font-weight:normal;font-size:21.81520081px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.54540002"
+           x="-55.900002"
            y="362.5"
            id="text3864"
            transform="scale(0.946,1.057)"><tspan
              sodipodi:role="line"
              id="tspan3862"
-             x="-55.9"
+             x="-55.900002"
              y="362.5"
-             style="stroke-width:0.5454">Businessdata</tspan></text>
+             style="stroke-width:0.54540002">Businessdata</tspan></text>
         <g
            id="g3931"
            transform="matrix(0.3527,0,0,0.3527,289,6.455)">
@@ -224,34 +224,34 @@
              id="path3866"
              d="m -707.6,607.1 h -134.7 c -12,0 -21.9,9.3 -21.9,20.9 v 128.5 c 0,11.6 9.9,20.9 21.9,20.9 h 134.7 c 12,0 22,-9.3 22,-20.9 V 628 c 0,-11.6 -10,-20.9 -22,-20.9 z m 12,149.4 c 0,6.2 -5,11.2 -12,11.2 h -134.7 c -6.5,0 -11.8,-5 -11.8,-11.2 V 628 c 0,-6.2 5.3,-11.2 11.8,-11.2 h 134.7 c 7,0 12,5 12,11.2 z m 0,0"
              inkscape:connector-curvature="0"
-             style="fill:#ffffff;stroke:none;stroke-width:0.8231" />
+             style="fill:#ffffff;stroke:none;stroke-width:0.82309997" />
           <path
              id="path3868"
              d="m -690.9,583 h -168.5 c -16.7,0 -30.4,13 -30.4,28.9 v 160.7 c 0,15.9 13.7,28.9 30.4,28.9 h 168.5 c 17,0 31,-13 31,-28.9 V 611.9 c 0,-15.9 -14,-28.8 -31,-28.9 z m 20,189.6 c 0,10.6 -9,19.2 -20,19.2 h -168.5 c -11.2,0 -20.3,-8.6 -20.3,-19.2 V 611.9 c 0,-10.6 9.1,-19.2 20.3,-19.2 h 168.5 c 11,0 20,8.6 20,19.2 z m 0,0"
              inkscape:connector-curvature="0"
-             style="fill:#ffffff;stroke-width:0.8231" />
+             style="fill:#ffffff;stroke-width:0.82309997" />
           <text
              xml:space="preserve"
-             style="font-style:normal;font-weight:normal;font-size:113.5803px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.8397"
-             x="-790.7"
-             y="783.6"
+             style="font-style:normal;font-weight:normal;font-size:113.58029938px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.83969998"
+             x="-790.70001"
+             y="783.59998"
              id="text3905"
              transform="scale(1.077,0.9285)"><tspan
                sodipodi:role="line"
                id="tspan3903"
-               x="-790.7"
-               y="783.6"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lemon/Milk';-inkscape-font-specification:'Lemon/Milk';fill:#ffffff;stroke-width:2.8396">B</tspan></text>
+               x="-790.70001"
+               y="783.59998"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lemon/Milk';-inkscape-font-specification:'Lemon/Milk';fill:#ffffff;stroke-width:2.83960009">B</tspan></text>
           <text
              transform="scale(0.9597,1.042)"
              id="text3909"
-             y="698.2"
-             x="-810.7"
-             style="font-style:normal;font-weight:normal;font-size:101.7066px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5426"
+             y="698.20001"
+             x="-810.70001"
+             style="font-style:normal;font-weight:normal;font-size:101.70659637px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.54259992"
              xml:space="preserve"><tspan
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lemon/Milk';-inkscape-font-specification:'Lemon/Milk';fill:#ffffff;stroke-width:2.5427"
-               y="698.2"
-               x="-810.7"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lemon/Milk';-inkscape-font-specification:'Lemon/Milk';fill:#ffffff;stroke-width:2.54270005"
+               y="698.20001"
+               x="-810.70001"
                id="tspan3907"
                sodipodi:role="line">D</tspan></text>
         </g>
@@ -360,12 +360,12 @@
          transform="matrix(0.914,-0.005,0.0073,1.094,0,0)"
          id="text3558-9"
          y="346.5"
-         x="-4.501"
-         style="font-style:normal;font-weight:normal;font-size:13.3161px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.3329"
+         x="-4.5009999"
+         style="font-style:normal;font-weight:normal;font-size:13.31610012px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.33289999"
          xml:space="preserve"><tspan
-           style="fill:#ffffff;stroke-width:0.3329"
+           style="fill:#ffffff;stroke-width:0.33289999"
            y="346.5"
-           x="-4.501"
+           x="-4.5009999"
            id="tspan3556-2"
            sodipodi:role="line">CONSULTORIA</tspan></text>
       <text
@@ -373,7 +373,7 @@
          id="text3864-2"
          y="333.5"
          x="-25.82"
-         style="font-style:normal;font-weight:normal;font-size:18.5664px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.4641"
+         style="font-style:normal;font-weight:normal;font-size:18.56640053px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.4641"
          xml:space="preserve"><tspan
            style="fill:#ffffff;stroke-width:0.4641"
            y="333.5"
@@ -384,39 +384,39 @@
          transform="matrix(0.3527,0,0,0.3527,315,52.7)"
          id="g3931-9">
         <path
-           style="fill:#ffffff;stroke:none;stroke-width:0.8231"
+           style="fill:#ffffff;stroke:none;stroke-width:0.82309997"
            inkscape:connector-curvature="0"
            d="m -707.6,607.1 h -134.7 c -12,0 -21.9,9.3 -21.9,20.9 v 128.5 c 0,11.6 9.9,20.9 21.9,20.9 h 134.7 c 12,0 22,-9.3 22,-20.9 V 628 c 0,-11.6 -10,-20.9 -22,-20.9 z m 12,149.4 c 0,6.2 -5,11.2 -12,11.2 h -134.7 c -6.5,0 -11.8,-5 -11.8,-11.2 V 628 c 0,-6.2 5.3,-11.2 11.8,-11.2 h 134.7 c 7,0 12,5 12,11.2 z m 0,0"
            id="path3866-7" />
         <path
-           style="fill:#ffffff;stroke-width:0.8231"
+           style="fill:#ffffff;stroke-width:0.82309997"
            inkscape:connector-curvature="0"
            d="m -690.9,583 h -168.5 c -16.7,0 -30.4,13 -30.4,28.9 v 160.7 c 0,15.9 13.7,28.9 30.4,28.9 h 168.5 c 17,0 31,-13 31,-28.9 V 611.9 c 0,-15.9 -14,-28.8 -31,-28.9 z m 20,189.6 c 0,10.6 -9,19.2 -20,19.2 h -168.5 c -11.2,0 -20.3,-8.6 -20.3,-19.2 V 611.9 c 0,-10.6 9.1,-19.2 20.3,-19.2 h 168.5 c 11,0 20,8.6 20,19.2 z m 0,0"
            id="path3868-3" />
         <text
            transform="scale(1.077,0.9285)"
            id="text3905-6"
-           y="783.6"
-           x="-790.7"
-           style="font-style:normal;font-weight:normal;font-size:113.5803px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.8397"
+           y="783.59998"
+           x="-790.70001"
+           style="font-style:normal;font-weight:normal;font-size:113.58029938px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.83969998"
            xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lemon/Milk';-inkscape-font-specification:'Lemon/Milk';fill:#ffffff;stroke-width:2.8396"
-             y="783.6"
-             x="-790.7"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lemon/Milk';-inkscape-font-specification:'Lemon/Milk';fill:#ffffff;stroke-width:2.83960009"
+             y="783.59998"
+             x="-790.70001"
              id="tspan3903-1"
              sodipodi:role="line">B</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:101.7066px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.5426"
-           x="-810.7"
-           y="698.2"
+           style="font-style:normal;font-weight:normal;font-size:101.70659637px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.54259992"
+           x="-810.70001"
+           y="698.20001"
            id="text3909-2"
            transform="scale(0.9597,1.042)"><tspan
              sodipodi:role="line"
              id="tspan3907-9"
-             x="-810.7"
-             y="698.2"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lemon/Milk';-inkscape-font-specification:'Lemon/Milk';fill:#ffffff;stroke-width:2.5427">D</tspan></text>
+             x="-810.70001"
+             y="698.20001"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lemon/Milk';-inkscape-font-specification:'Lemon/Milk';fill:#ffffff;stroke-width:2.54270005">D</tspan></text>
       </g>
     </g>
   </g>
