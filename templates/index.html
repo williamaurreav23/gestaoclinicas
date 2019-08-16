@@ -120,7 +120,6 @@
                     <div class="media-content has-text-centered">
                         <h3 class="title"><a href="/" class="has-text-dark" title="">Gestão Empresarial</a></h3>
                         <p class="title is-5 has-text-weight-bold">O poder da <strong>gestão</strong> aplicado a sua empresa.</p>
-
                         <div><a class="button is-rounded is-light" href="{% url 'gestao' %}">Saiba mais</a></div>
                     </div>
                 </div>
@@ -175,7 +174,6 @@
                     <div class="media-content has-text-centered">
                         <h3 class="title"><a href="/" class="has-text-dark" title="">Data Science</a></h3>
                         <p class="title is-5 has-text-weight-bold">Transformamos seus dados em <strong>informação</strong> para auxiliar nas decisões da empresa.</p>
-
                         <div><a class="button is-rounded is-light" href="{% url 'data' %}">Saiba mais</a></div>
                     </div>
                 </div>
@@ -183,16 +181,18 @@
         </div>
     </div>
 </section>
-<section class="hero is-info is-medium is-bold">
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <div class="column is-6 is-offset-3">
+
+<section>
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <img src="/static/imgs/back.jpg" alt="">
+            </div>
+            <div class="column">
                 <h1 class="title">
                     Qual o seu melhor email ?
                 </h1>
-                <h2 class="subtitle">
-                    $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
-                </h2>
+                <h2 class="title">Perfeito para sua empresa!</h2><br>
                 <div class="box">
                     <div class="field is-grouped">
                         <p class="control is-expanded">
@@ -200,25 +200,16 @@
                         </p>
                         <p class="control">
                             <a class="button is-info">
-								Cadastrar
-							</a>
+                                        Cadastrar
+                            </a>
                         </p>
                     </div>
                 </div>
+                <p class="has-text-centered">
+                    <span class="tag is-danger">Atenção</span> Não somos fãs de spam, seu e-mail estará seguro conosco pois só vamos usar para entrar em contato ou lhe informar sobre as novidades.
+                </p>
             </div>
         </div>
-    </div>
-
-    <div class="box cta">
-        <p class="has-text-centered">
-            <span class="tag is-danger">Atenção</span> Não somos fãs de spam, seu e-mail estará seguro conosco pois só vamos usar para entrar em contato ou lhe informar sobre as novidades.
-        </p>
-    </div>
-</section>
-<section class="container">
-    <div class="intro column is-8 is-offset-2">
-        <h2 class="title">Perfeito para sua empresa!</h2><br>
-        <p class="subtitle">Vel fringilla est ullamcorper eget nulla facilisi. Nulla facilisi nullam vehicula ipsum a. Neque egestas congue quisque egestas diam in arcu cursus.</p>
     </div>
 </section>
 {% endblock %}
