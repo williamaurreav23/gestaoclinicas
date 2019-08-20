@@ -6,8 +6,8 @@ from django.contrib.postgres.fields import ArrayField
     email = models.EmailField(_(""), max_length=254)
     descricao = models.TextField(_(""))
     def __str__(self):
-        return 
+        return
 
     def __unicode__(self):
-        return 
+        return
  """
