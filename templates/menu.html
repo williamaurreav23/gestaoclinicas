@@ -4,8 +4,7 @@
         <div class="navbar-brand">
 
             <img class="is-rounded" src="{% static 'imgs/logo.svg' %}" alt="Data Business LTDA" width="112" height="28">
-
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <div class="navbar-burger burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -18,24 +17,12 @@
                 <a class="navbar-item is-active" href="{% url 'index' %}">
                     Home
                 </a>
-                <a class="navbar-item" href="{% url 'empresa' %}">
-                    A empresa
-                </a>
-                <a class="navbar-item" href="{% url 'equipe' %}">
-                    A equipe
-                </a>
-                <a class="navbar-item" href="{% url 'servicos' %}">
-                    Serviços
-                </a>
-                <a class="navbar-item" href="{% url 'clientes' %}">
-                    Clientes
-                </a>
-                <a class="navbar-item" href="{% url 'blog' %}">
-                    Blog
-                </a>
-                <a class="navbar-item" href="{% url 'contatos' %}">
-                    Contatos
-                </a>
+                <a class="navbar-item" href="{% url 'empresa' %}">A empresa</a>
+                <a class="navbar-item" href="{% url 'equipe' %}">A equipe</a>
+                <a class="navbar-item" href="{% url 'servicos' %}">Serviços</a>
+                <a class="navbar-item" href="{% url 'clientes' %}">Clientes</a>
+                <a class="navbar-item" href="{% url 'blog' %}">Blog</a>
+                <a class="navbar-item" href="{% url 'contatos' %}">Contatos</a>
                 <span class="navbar-item">
                     <img src='{% static 'imgs/whatsapp.svg' %}'></img>
                 </span>
@@ -46,4 +33,7 @@
         </div>
     </nav>
 </div>
+
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<script href="{% static 'anime.js' %}"></script>
 {% endblock %}
