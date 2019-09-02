@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero is-fullheight">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="column is-4 is-offset-4">
+                <div id="content" class="colM">
+                    <h1>Clientes</h1>
+                    <ul>
+                        {% for bdclientes in object_list %}
+                        <li><a href="{% url 'detail' bdclientes.pk %}">{{ bdclientes.nome}} {{ bdclientes.sobrenome}}</a></li>
+                        {% empty %}
+                        <li>Clientes não encontrado.</li>
+                        {% endfor %}
+                    </ul>
+                    <br>
+                    <a class="button" href="{% url 'new' %}">Novo</a>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock%}

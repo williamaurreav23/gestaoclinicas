@@ -70,6 +70,12 @@ TEMPLATES = [
             ],
         },
     },
+    {'BACKEND': 'django.template.backends.jinja2.Jinja2',
+        'DIRS': [
+            '/home/html/jinja2',
+        ],
+    },
+
 ]
 
 WSGI_APPLICATION = 'projclinicas.wsgi.application'
@@ -83,7 +89,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'clinicas',
         'USER': 'clinicas',
-        'PASSWORD': 'clinicas',
+        'PASSWORD': 'jedai2003',
         'HOST': '*',
         'PORT': '5432',
     },

@@ -1,13 +1,11 @@
 from django.db import models
-from django.contrib.postgres.fields import ArrayField
-# Create your models here.
 
-""" class contato(models.Model):
-    email = models.EmailField(_(""), max_length=254)
-    descricao = models.TextField(_(""))
-    def __str__(self):
-        return
 
-    def __unicode__(self):
-        return
- """
+class bdclientes(models.Model):
+
+    id_cliente = models.AutoField(primary_key=True)
+    nome = models.CharField(max_length=30, blank=True, null=True)
+    sobrenome = models.CharField(max_length=30, blank=True, null=True)
+    cnpj = models.CharField(max_length=11, blank=False, null=True)
+    celular = models.CharField(max_length=9, blank=True, null=True)
+    email = models.CharField(max_length=254, blank=True, null=True)
