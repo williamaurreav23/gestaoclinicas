@@ -1,22 +1,15 @@
 from django import forms
+from django_crispy_bulma.forms import EmailField
 
 
-class bdclientes(forms.Form):
-    class meta:
-        fields = ['id_cliente','nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
-        # widget = {
-        #     'nome' : forms.Textarea(attrs={'size': '40'}),
-        #     'sobrenome' : forms.TextInput(attrs={'class': 'input is-danger'}),
-        #     'cnpj' : forms.TextInput(attrs={'class': 'input is-danger'}),
-        #     'celular' : forms.TextInput(attrs={'class': 'input is-danger'}),
-        #     'email' : forms.TextInput(attrs={'class': 'input is-danger'})
+class ClienteForms(forms.Form):
 
-        # }
+        nome = forms.CharField(widget=forms.TextInput(attrs={'class': 'special'}))
+        sobrenome = forms.CharField(widget=forms.TextInput(attrs={'class': 'special'}))
+        cnpj = forms.CharField(widget=forms.TextInput(attrs={'class': 'special'}))
+        celular = forms.CharField(widget=forms.TextInput(attrs={'class': 'special'}))
+        email = forms.CharField(widget=forms.TextInput(attrs={'class': 'special'}))
 
-#
-#        fields = ['id_cliente','nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
-#        widgets={'nome': Textarea(attrs={'class' : 'form-control'})})
-#
 # class Media:
 #         css = {
 #             'all': ('bulma.css',)

@@ -3,7 +3,9 @@ from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView
 from django.views.generic.edit import UpdateView
 from django.views.generic.edit import DeleteView
+from django.views.generic.edit import FormView
 from .models import bdclientes
+from bdprojeto.forms import ClienteForms
 from django.utils import timezone
 from django.urls import reverse_lazy
 
@@ -35,3 +37,10 @@ class ClienteDelete(DeleteView):
         context = super().get_context_data(**kwargs)
         context['now'] = timezone.now()
         return context
+
+
+
+
+
+
+

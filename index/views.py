@@ -1,4 +1,13 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
+from .models import comentarios
+from django.urls import reverse_lazy
+
+
+class ClienteCreate(CreateView):
+    model = comentarios
+    fields = ['nome', 'comentario', 'url']
+    success_url = reverse_lazy('list')
 
 
 def index(request):
@@ -43,6 +52,10 @@ def servicos(request):
 
 def clientes(request):
     return render(request, 'clientes.html')
+
+
+def parceiros(request):
+    return render(request, 'parceiros.html')
 
 
 def blog(request):

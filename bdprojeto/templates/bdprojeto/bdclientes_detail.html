@@ -2,30 +2,42 @@
 {% block content %}
 <section class="hero is-fullheight">
     <div class="hero-body">
-        <div class="container has-text-centered">
-            <div class="column is-4 is-offset-3">
+        <div class="container has-text-left">
+            <div class="column is-moblie">
                 <div id="content" class="colM">
-                    <h1 class='label'>Clientes</h1>
-
+                    <h1 class="title is-1">Informações do Cliente</h1>
                     <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                            </tr>
-                        </thead>
-                        <tfoot>
-                            <tr>
-                              <th>{{ object.nome }}</th>
+                      <thead>
+                        <tr>
+                          <th>Nome</th>
+                          <th>SobreNome</th>
+                          <th>Cnpj</th>
+                          <th>Celular</th>
+                          <th>Email</th>
                         </tr>
-                        </tfoot>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>{{ object.nome }}</th>
+                          <td>{{ object.sobrenome }}</td>
+                          <td>{{ object.cnpj }}</td>
+                          <td>{{ object.celular }}</td>
+                          <td>{{ object.email }}</td>
+                      </tbody>
                     </table>
                     <p>Data: {{ now|date }}</p>
-                    <a class="button" href="{% url 'update' object.pk %}">Atualizar</a>
-                    </div>
-                    <a class="button" href="{% url 'delete' object.pk %}">Excluir</a>
+                    <div class="field is-grouped">
+                      <p class="control">
+                        <a  href="{% url 'update' object.pk %}"><span class="button is-success">Atualizar</span></a>
+                      </p>
+                      <p class="control">
+                        <a  href="{% url 'delete' object.pk %}"><span class="button is-danger">Excluir</span></a>
+                      </p>
+                    </div>                  
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </section>
 {% endblock%}

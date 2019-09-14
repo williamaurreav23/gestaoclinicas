@@ -5,10 +5,10 @@
         <div class="container has-text-centered">
             <div class="column is-4 is-offset-3">
                 <div id="content" class="colM">
-                    <h1 class='label'>Clientes</h1>
+                    <h1 class="title is-2">Clientes</h1>
                     <form method="post">{% csrf_token %}
                             <p>Tem certeza que deseja deletar o cliente "{{ object.nome }}"?</p>
-                            <input type="submit" value="Confirm">
+                            <button class="button is-danger" type="submit" value="Confirm">Confirmar</button>
                         </form>
                     <p>Data: {{ now|date }}</p>
                 </div>
