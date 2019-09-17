@@ -1,5 +1,4 @@
 from django import forms
-from django_crispy_bulma.forms import EmailField
 
 
 class ClienteForms(forms.Form):
