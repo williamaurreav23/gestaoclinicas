@@ -22,7 +22,7 @@ class ClienteDetail(DetailView):
 
 class ClienteCreate(CreateView):
     model = bdclientes
-    fields = ['id_cliente','nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
+    fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
     success_url = reverse_lazy('list')
 
 class ClienteUpdate(UpdateView):

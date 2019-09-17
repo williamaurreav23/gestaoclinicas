@@ -6,9 +6,23 @@
             <div class="column mobile">
                 <div id="content" class="colM">
                     <h1 class="title is-2">Clientes</h1>
-                        {{ form.as_p }}
-                        <br>
-                        <button class="button is-success" type="submit" value="Salvar">Salvar</button>
+                    <!-- {{ form.as_p }} -->
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <p><label for="nome">Nome:</label>
+                            <input id="nome" type="text" name="nome" maxlength="100" required></p>
+                        <p><label for="sobrenome">Sobrenome:</label>
+                            <input id="sobrenome" type="text" name="sobrenome" maxlength="100" required></p>
+                        <p><label for="cnpj">Cnpj:</label>
+                            <input id="cnpj" type="text" name="cnpj" maxlength="11" required></p>
+                        <p><label for="celular">Celular:</label>
+                            <input id="celular" type="text" name="celular" maxlength="9" required></p>
+                        <p><label for="email">Email:</label>
+                            <input id="email" type="text" name="email" maxlength="100" required></p>
+                            <br>
+                            <button class="button is-success" type="submit" value="Salvar">Salvar</button>
+                    </form>
+                    
                 </div>
             </div>
             <br>
