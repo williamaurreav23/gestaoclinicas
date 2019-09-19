@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'bdprojeto',
 ]
 
-
 LOGIN_REDIRECT_URL = 'dashboard'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
