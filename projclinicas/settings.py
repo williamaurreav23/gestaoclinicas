@@ -25,7 +25,7 @@ SECRET_KEY = 'ca*an(wv#cx^*c5x#=^8v2_!v-n!jpo32%)d$=1oqy*49l$(yq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['businessdata.com.br', 'www.businessdata.com.br']
 
 
 # Application definition
@@ -37,23 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy_forms',
-    'django_crispy_bulma',
     'login',
     'index',
     'dashboard',
     'bdprojeto',
 ]
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = (
-    "bootstrap",
-    "uni_form",
-    "bootstrap3",
-    "bootstrap4",
-    "bulma",
-)
-
-CRISPY_TEMPLATE_PACK = "bulma"
 
 LOGIN_REDIRECT_URL = 'dashboard'
 MIDDLEWARE = [
@@ -81,11 +70,6 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
         },
-    },
-    {'BACKEND': 'django.template.backends.jinja2.Jinja2',
-        'DIRS': [
-            '/home/html/jinja2',
-        ],
     },
 
 ]
