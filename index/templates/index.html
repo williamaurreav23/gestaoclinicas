@@ -3,8 +3,8 @@
 <section class="hero is-large">
     <div class="hero-body">
         <div class="container">
-
-            <div class="columns is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
+            <div
+                class="columns is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
                 <div class="column">
                     <figure class="box image is-16by9">
                         <img src="/static/imgs/heroimg.jpg" alt="Description">
@@ -14,10 +14,9 @@
                     <h1 class="title is-3">NEGÓCIOS INTELIGENTES É COM A DATA BUSINESS CONSULTORIA</h1>
                     <h2 class="title is-4">Desenvolvemos soluções de gestão para nossos clientes e auxiliamos na
                         excelência de seus negócios.</h2>
-                        <a class="button is-danger is-outlined">Saiba mais</a>
+                    <a href="{% url 'empresa' %}" class="button is-danger is-outlined">Saiba mais</a>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -33,7 +32,8 @@
 </section> -->
 <section class='section'>
     <div class='container'>
-        <div class="row columns is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd ">
+        <div
+            class="row columns is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd ">
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-image">
@@ -189,43 +189,79 @@
     </div>
 </section>
 
-<section>
+<section class="section">
     <div class="container">
+        <div class="heading">
+            <h1 class="title">Section</h1>
+            <h2 class="subtitle">
+                A simple container to divide your page into <strong>sections</strong>, like the one you're currently
+                reading
+            </h2>
+        </div>
         <div class="columns">
             <div class="column">
-                <img src="/static/imgs/back.jpg" alt="">
+                <figure class="box image is-16by9">
+                    <img src="/static/imgs/back.jpg" alt="">
+                </figure>
             </div>
             <div class="column">
-                <h1 class="title">
-                    Qual o seu melhor email ?
-                </h1>
-                <h2 class="title">Perfeito para sua empresa!</h2><br>
-                <div class="box">
-                    <form method="post">
+                    <p class="is-larger has-text-centered">
+                        <span class="tag is-danger">Atenção</span> Não somos fãs de spam, seu e-mail estará seguro
+                        conosco
+                        pois só vamos usar para entrar em contato ou lhe informar sobre as novidades.
+                    </p>
+                    <br />
+                    <!-- <form method="post">
+                                {% csrf_token %}
+                                {% for form in form %}
+                                {{ form.as_p }}
+                                {% endfor %}
+                                <br>
+                                <button class="button is-success" type="submit" value="Salvar">Salvar</button>
+                            </form> -->
+                    <form method="POST">
                         {% csrf_token %}
-                        {% for form in form %}
-                        {{ form.as_p }}
-                        {% endfor %}
-                        <br>
-                        <button class="button is-success" type="submit" value="Salvar">Salvar</button>
+                        <p>Nome: <input class=" input is-primary" type="text" name="nome" maxlength="30" required> <span
+                                class="helptext">100 characters max.</span></p>
+                        <p>Sobrenome: <input class="input is-primary" type="text" name="sobrenome" maxlength="30"
+                                required></p>
+                        <p>Cpf: <input class="input is-primary" type="text" name="cpf" maxlength="11" required></p>
+                        <p>Telefone: <input class="input is-primary" type="text" name="telefone" maxlength="11"
+                                required></p>
+                        <p>email: <input class="input is-primary" type="text" name="email" required> A valid email
+                            address, please.</p>
+                        <input class="button is-primary is-rounded" type="submit" value="Submeter">
                     </form>
-                    <!--                    <form method="POST">-->
-                    <!--                        {% csrf_token %}-->
-                    <!--                            <p>Nome: <input class=" input is-primary" type="text" name="nome" maxlength="30" required> <span class="helptext">100-->
-                    <!--                                    characters max.</span></p>-->
-                    <!--                            <p>Sobrenome: <input class="input is-primary" type="text" name="sobrenome" maxlength="30" required></p>-->
-                    <!--                            <p>Cpf: <input class="input is-primary" type="text" name="cpf" maxlength="11" required></p>-->
-                    <!--                            <p>Telefone: <input class="input is-primary" type="text" name="telefone" maxlength="11" required></p>-->
-                    <!--                            <p>email: <input class="input is-primary" type="text" name="email" required> A valid email address, please.</p>-->
-                    <!--                            <input class="button is-primary is-rounded" type="submit" value="Submeter">-->
-                    <!--                    </form>-->
+                    <br />
+                    <div class="is-divider"></div>
+                    <div class="columns about-links">
+                        <div class="column">
+                            <p class="heading">
+                                <strong>Qual o seu melhor email ?</strong>
+                            </p>
+                            <p class="subheading">
+                                123-456-7890
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p class="heading">
+                                <strong>Email Me</strong>
+                            </p>
+                            <p class="subheading">
+                                hello@example.com
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p class="heading">
+                                <strong>View my portfolio</strong>
+                            </p>
+                            <p class="subheading">
+                                example.com
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <p class="has-text-centered">
-                    <span class="tag is-danger">Atenção</span> Não somos fãs de spam, seu e-mail estará seguro conosco
-                    pois só vamos usar para entrar em contato ou lhe informar sobre as novidades.
-                </p>
             </div>
-        </div>
     </div>
 </section>
 {% endblock %}
