@@ -1,39 +1,35 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<section class="heroempresa is-primary">
+<section class="heroempresa is-large">
         <div class="hero-body">
-                <div class="container has-text-right">
-                        <img src="{% static 'imgs/logo.svg' %}" width="200px">
-                        <h1 class="title">
-                                Business Data Consultoria LTDA.
-                        </h1>
-                        <h2 class="subtitle">
-                                Gestão empresarial Inovadora e Criativa.
-                        </h2>
+                <div class="container">
+                        <div class="columns  has-text-right">
+                                <div class="column">
+                                        <img src="{% static 'imgs/logo.svg' %}" width="200px">
+                                </div>
+                                <div class="column  has-text-right ">
+                                        <h1 class="title">Business Data Consultoria LTDA.</h1>
+                                        <h2 class="subtitle">Gestão empresarial Inovadora e Criativa.</h2>
+                                </div>
+                        </div>
                 </div>
         </div>
 </section>
-<div class="level"></div>
-<section>
+
+<section class="section">
         <div class="container">
-                <div class="columns is-mobile">
-                        <div
-                                class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                                <figure class="box image is-4by3">
-                                        <img src="https://picsum.photos/800/600/?random" alt="Description">
-                                </figure>
+                <div class="columns is-desktop">
+                        <div class="column">
+                                <figure><img src="https://picsum.photos/800/600/?random" width="480" height="480" alt="Description"></figure>
                         </div>
                         <div class="column">
                                 <title> Visão da Empresa</title>
                                 <h1 class="title">Visão da Empresa</h1>
                                 <h2 class="subtitle">Desenvolver soluções de gestão para nossos clientes e auxiliar na
-                                        excelência
-                                        em seus negócios.</h2>
+                                        excelência em seus negócios.</h2>
                         </div>
                 </div>
         </div>
-
-        
 </section>
 {% endblock %}

@@ -1,26 +1,28 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<section class="hero is-primary">
-  <div class="hero-body">
-    <div class="columns">
-      <div class="column is-12">
-        <div class="container content">
-          <h1 class="title">Sistema de <em>Gestão</em> para todos!</h1>
-          <h3 class="subtitle">
-            Collection of code goodies for next-level dev
-          </h3>
-          <a href="https://github.com/dansup/bulma-templates" target="_blank" class="button is-primary is-large">
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-            <span>Github</span>
-
-
-          </a>
-        </div>
+<!-- Start Hero Carousel -->
+<section class="hero is-medium has-carousel">
+    <div id="carousel-demo" class="hero-carousel">
+      <div class="item-1">
+        <figure class="image is-5by4 is-600x480">
+          <img src="https://bulma.io/images/placeholders/600x480.png">
+        </figure>
+      </div>
+      <div class="item-2">
+        <figure class="image is-4by3 is-640x480">
+          <img src="https://bulma.io/images/placeholders/640x480.png">
+        </figure>
+      </div>
+      <div class="item-3">
+        <figure class="image is-3by2 is-480x320">
+          <img src="https://bulma.io/images/placeholders/480x320.png">
+        </figure>
       </div>
     </div>
-  </div>
-</section>
+    <div class="hero-head"></div>
+    <div class="hero-body"></div>
+    <div class="hero-foot"></div>
+  </section>
+
 {% endblock %}
