@@ -215,14 +215,13 @@
                     <form method="POST">
                         {% csrf_token %}
                         <p>Nome: <input class=" input is-primary" type="text" name="nome" maxlength="30" required> <span
-                                class="helptext">100 characters max.</span></p>
+                                class="helptext">100 caracteres no máximo.</span></p>
                         <p>Sobrenome: <input class="input is-primary" type="text" name="sobrenome" maxlength="30"
                                 required></p>
                         <p>Cpf: <input class="input is-primary" type="text" name="cpf" maxlength="11" required></p>
                         <p>Telefone: <input class="input is-primary" type="text" name="telefone" maxlength="11"
                                 required></p>
-                        <p>email: <input class="input is-primary" type="text" name="email" required> A valid email
-                            address, please.</p>
+                        <p>Email: <input class="input is-primary" type="text" name="email" required> Um email válido, por favor.</p>
                         <input class="button is-primary is-rounded" type="submit" value="Submeter">
                     </form>
                     <br />
