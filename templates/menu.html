@@ -1,41 +1,41 @@
 {% block menu %} {% load static %}
-
-<div class='container .navbar'>
-    <nav class="navbar is-transparent">
-        <div class="navbar-brand">
-
-            <img class="is-rounded" src="{% static 'imgs/logo.svg' %}" alt="Data Business LTDA" width="112" height="28">
-            <div class="navbar-burger burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
-                <span></span>
-                <span></span>
-                <span></span>
+<div class="hero-head">
+    <div class='container .navbar'>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img class="is-rounded" src="{% static 'imgs/logo.svg' %}" alt="Data Business LTDA" width="112"
+                    height="28">
+                <div class="navbar-burger burger"
+                    onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </div>
-
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item is-active" href="{% url 'index' %}">
-                    Home
-                </a>
-                <a class="navbar-item" href="{% url 'empresa' %}">A empresa</a>
-                <a class="navbar-item" href="{% url 'equipe' %}">A equipe</a>
-                <a class="navbar-item" href="{% url 'servicos' %}">Serviços</a>
-                <a class="navbar-item" href="{% url 'clientes' %}">Clientes</a>
-                <a class="navbar-item" href="{% url 'parceiros' %}">Parceiros</a>
-                <a class="navbar-item" href="{% url 'blog' %}">Blog</a>
-                <a class="navbar-item" href="{% url 'list' %}">Clienteslist</a>
-               
-                <span class="navbar-item">
-                    <a href="https://www.instagram.com/businessdataconsultoria/"><img src='{% static 'imgs/instagram.svg' %}'></img></a>
-                </span>
-                <span class="navbar-item">
-                    <img src='{% static 'imgs/whatsapp.svg' %}'></img>  
-                </span>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item is-active has-text-link" href="{% url 'index' %}">
+                        Home
+                    </a>
+                    <a class="navbar-item" href="{% url 'empresa' %}">A empresa</a>
+                    <a class="navbar-item" href="{% url 'equipe' %}">A equipe</a>
+                    <a class="navbar-item" href="{% url 'servicos' %}">Serviços</a>
+                    <a class="navbar-item" href="{% url 'clientes' %}">Clientes</a>
+                    <a class="navbar-item" href="{% url 'parceiros' %}">Parceiros</a>
+                    <a class="navbar-item" href="{% url 'blog' %}">Blog</a>
+                    <a class="navbar-item" href="{% url 'list' %}">Clienteslist</a>
+                    <span class="navbar-item">
+                        <a href="https://www.instagram.com/businessdataconsultoria/"><img
+                                src='{% static 'imgs/instagram.svg' %}'></img></a>
+                    </span>
+                    <span class="navbar-item">
+                        <img src='{% static 'imgs/whatsapp.svg' %}'></img>
+                    </span>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 </div>
-
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 <script href="{% static 'anime.js' %}"></script>
 {% endblock %}

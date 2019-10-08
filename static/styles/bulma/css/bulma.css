@@ -357,7 +357,7 @@ button,
 input,
 select,
 textarea {
-  font-family: Quicksand, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 code,
@@ -10594,7 +10594,7 @@ label.panel-block:hover {
 }
 
 .footer {
-  background-color: #fafafa;
+  background-color: #cfcfcf;
   padding: 3rem 1.5rem 6rem;
 }
 /*# sourceMappingURL=bulma.css.map */
