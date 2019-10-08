@@ -1,13 +1,66 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView
-from .models import comentarios
+from django.views.generic.edit import UpdateView
+from django.views.generic.edit import DeleteView
+from django.views.generic.edit import FormView
+from .models import registerclientes
+from index.forms import ClienteForms
+from django.utils import timezone
 from django.urls import reverse_lazy
 
+class listcliente(ListView):
+    model = registerclientes
 
-class ClienteCreate(CreateView):
-    model = comentarios
-    fields = ['nome', 'comentario', 'url']
+class ClienteDetail(DetailView):
+    model = registerclientes
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['now'] = timezone.now()
+        return context
+
+class registerclient(CreateView):
+    model = registerclientes
+    fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
+    success_url = reverse_lazy('listclientes')
+
+class ClienteUpdate(UpdateView):
+    model = registerclientes
+    fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
     success_url = reverse_lazy('list')
+
+class ClienteDelete(DeleteView):
+    model = registerclientes
+    success_url = reverse_lazy('list')
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['now'] = timezone.now()
+        return context
+
+
+
+
+
+
+
+
+
+
+
+# def registerclient(request):
+#     if request.method =='POST' :
+#         form = ClienteForms(request.POST)
+
+#         if form.is_valid():
+#             redirect('index')
+#         else:
+#             form = ClienteForms()
+#         context = {'form' : form}
+
+#         return render(request, 'index.html', context)
+
 
 
 def index(request):

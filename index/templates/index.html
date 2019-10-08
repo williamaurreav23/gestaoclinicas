@@ -11,7 +11,7 @@
                     </figure>
                 </div>
                 <div class="column ">
-                    <h1 class="title is-3">NEGÓCIOS INTELIGENTES É COM A DATA BUSINESS CONSULTORIA</h1>
+                    <h1 class="title is-3">NEGÓCIOS INTELIGENTES É COM A BUSINESS DATA CONSULTORIA</h1>
                     <h2 class="title is-4">Desenvolvemos soluções de gestão para nossos clientes e auxiliamos na
                         excelência de seus negócios.</h2>
                     <a href="{% url 'empresa' %}" class="button is-danger is-outlined">Saiba mais</a>
@@ -202,28 +202,26 @@
                 </figure>
             </div>
             <div class="column">
-                    
-                    <br />
-                    <!-- <form method="post">
-                                {% csrf_token %}
-                                {% for form in form %}
-                                {{ form.as_p }}
-                                {% endfor %}
-                                <br>
-                                <button class="button is-success" type="submit" value="Salvar">Salvar</button>
-                            </form> -->
-                    <form method="POST">
-                        {% csrf_token %}
-                        <p>Nome: <input class=" input is-primary" type="text" name="nome" maxlength="30" required> <span
-                                class="helptext">100 caracteres no máximo.</span></p>
-                        <p>Sobrenome: <input class="input is-primary" type="text" name="sobrenome" maxlength="30"
-                                required></p>
-                        <p>Cpf: <input class="input is-primary" type="text" name="cpf" maxlength="11" required></p>
-                        <p>Telefone: <input class="input is-primary" type="text" name="telefone" maxlength="11"
-                                required></p>
-                        <p>Email: <input class="input is-primary" type="text" name="email" required> Um email válido, por favor.</p>
-                        <input class="button is-primary is-rounded" type="submit" value="Submeter">
+                    <h1 class="title is-2">Clientes</h1>
+                    <form action="" method="POST">
+                            {{ form.as_p }}
                     </form>
+                    
+                    <!-- <form action="" method="post">
+                        {% csrf_token %}
+                        <p><label for="nome">Nome:</label>
+                            <input id="nome" type="text" name="nome" maxlength="100" required></p>
+                        <p><label for="sobrenome">Sobrenome:</label>
+                            <input id="sobrenome" type="text" name="sobrenome" maxlength="100" required></p>
+                        <p><label for="cnpj">Cnpj:</label>
+                            <input id="cnpj" type="text" name="cnpj" maxlength="11" required></p>
+                        <p><label for="celular">Celular:</label>
+                            <input id="celular" type="text" name="celular" maxlength="9" required></p>
+                        <p><label for="email">Email:</label>
+                            <input id="email" type="text" name="email" maxlength="100" required></p>
+                            <br>
+                            <button class="button is-success" type="submit" value="Salvar">Salvar</button>
+                    </form> -->
                     <br />
                     <div class="is-divider"></div>
                     <p class="is-larger has-text-centered">

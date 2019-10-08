@@ -1,11 +1,9 @@
 from django.urls import path
 from index import views
-from .views import ClienteCreate
 
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('', ClienteCreate.as_view() , name='new'),
     path('gestao.html', views.gestao, name='gestao'),
     path('top.html', views.top, name='top'),
     path('planejamento.html', views.planejamento, name='planejamento'),

@@ -4,7 +4,6 @@
     background-size: cover;
     margin-bottom: -5rem;
 }
-
 .altura {
     min-height: 100vh;
     height: 100%;
@@ -43,11 +42,6 @@
 
 .herodata {
     background: url(/static/imgs/data.png);
-}
-
-body {
-    font-family: Proximanova, sans-serif;
-    font-size: 1em;
 }
 
 div#loader-wrapper .atom-loader {
@@ -310,3 +304,4 @@ div#loader-wrapper .atom-loader-inner.atom-three {
         transform: rotate(359deg)
     }
 }
+
