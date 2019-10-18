@@ -21,15 +21,6 @@
     </div>
 </section>
 
-
-<!-- <section class="hero is-fullheight">
-    <div class="hero-body">
-        <div class="container">
-            
-        </div>
-    </div>
-
-</section> -->
 <section class='section'>
     <div class='container'>
         <div
@@ -45,16 +36,17 @@
                         <div class="media">
                             <div class="media-content">
                                 <p class="title is-4">Consultoria Empresarial</p>
-                                <p class="subtitle is-6">@bdata</p>
+                                <p class="subtitle is-6">@business</p>
                             </div>
                         </div>
 
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                            <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            Visa proporcionar à empresa as condições necessárias para o desenvolvimento e aprimoramento
+                            de modo que seu desempenho atinja níveis satisfatórios de eficiência e eficácia
                             <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <br>
+                            <a href="{% url 'empresa' %}"><button class="button is-info is-rounded"> Saiba
+                                    mais</button></a>
                         </div>
                     </div>
                 </div>
@@ -70,16 +62,19 @@
                         <div class="media">
                             <div class="media-content">
                                 <p class="title is-4">Data Science</p>
-                                <p class="subtitle is-6">@bdata</p>
+                                <p class="subtitle is-6">@data</p>
                             </div>
                         </div>
 
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                            <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            Empresas inteligentes usam e abusam do data science. Utilizar as informações de forma sábia, faz com que a sua empresa se destaque no mercado. 
+                            <span class="tag is-info">data</span>.
+                            <a href="#">#dados</a> <a href="#">#datascience</a>
                             <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <br>
+                            <div></div>
+                            <a href="{% url 'empresa' %}"><button class="button is-danger is-rounded"> Saiba
+                                    mais</button></a>
                         </div>
                     </div>
                 </div>
@@ -191,46 +186,46 @@
 
 <section class="section">
     <div class="container">
-        <div class="heading">
-            <h1 class="title">Contato</h1>
-            
-        </div>
         <div class="columns">
             <div class="column">
-                <figure class="box image is-16by9">
-                    <img src="/static/imgs/back.jpg" alt="">
-                </figure>
+                <h1 class="title is-2">Peça um orçamento</h1>
+                <form action="{% url 'new' %}" method="post">
+                    {% csrf_token %}
+                    <div class="field">
+                        <label for="nome" class="label">Nome</label>
+                        <input class="input" id="nome" type="text" name="nome" maxlength="100" required>
+                    </div>
+                    <div class="field">
+                        <label for="sobrenome" class="label">Sobrenome</label>
+                        <input class="input" id="sobrenome" type="text" name="sobrenome" maxlength="100" required>
+                    </div>
+                    <div class="field">
+                        <label for="cnpj" class="label">Cnpj</label>
+                        <input class="input" id="cnpj" type="text" name="cnpj" maxlength="11" required>
+                    </div>
+                    <div class="field">
+                        <label for="celular" class="label">Celular</label>
+                        <input class="input" id="celular" type="text" name="celular" maxlength="9" required>
+                    </div>
+                    <div class="field">
+                        <label for="email" class="label">Email</label>
+                        <input class="input" id="email" type="text" name="email" maxlength="100" required>
+                    </div>
+                    <button class="button is-success" type="submit" value="Salvar">Salvar</button>
+                </form>
+                <br />
+                <div class="is-divider"></div>
             </div>
             <div class="column">
-                    <h1 class="title is-2">Clientes</h1>
-                    <form action="" method="POST">
-                            {{ form.as_p }}
-                    </form>
-                    
-                    <!-- <form action="" method="post">
-                        {% csrf_token %}
-                        <p><label for="nome">Nome:</label>
-                            <input id="nome" type="text" name="nome" maxlength="100" required></p>
-                        <p><label for="sobrenome">Sobrenome:</label>
-                            <input id="sobrenome" type="text" name="sobrenome" maxlength="100" required></p>
-                        <p><label for="cnpj">Cnpj:</label>
-                            <input id="cnpj" type="text" name="cnpj" maxlength="11" required></p>
-                        <p><label for="celular">Celular:</label>
-                            <input id="celular" type="text" name="celular" maxlength="9" required></p>
-                        <p><label for="email">Email:</label>
-                            <input id="email" type="text" name="email" maxlength="100" required></p>
-                            <br>
-                            <button class="button is-success" type="submit" value="Salvar">Salvar</button>
-                    </form> -->
-                    <br />
-                    <div class="is-divider"></div>
-                    <p class="is-larger has-text-centered">
+                <figure class="box image is-16by9">
+                        <img src="https://picsum.photos/800/600/?random" width="480" height="480" alt="Description">
+                </figure>
+                <p class="is-larger has-text-centered">
                         <span class="tag is-danger">Atenção</span> Não somos fãs de spam, seu e-mail estará seguro
-                        conosco
-                        pois só vamos usar para entrar em contato ou lhe informar sobre as novidades.
-                    </p>
-                </div>
+                        conosco pois só vamos usar para entrar em contato ou lhe informar sobre as novidades.
+                </p>
             </div>
+        </div>
     </div>
 </section>
 {% endblock %}
