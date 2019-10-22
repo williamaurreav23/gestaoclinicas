@@ -19,8 +19,7 @@
             </div>
         </div>
     </div>
-</section>
-
+</section>,
 <section class='section'>
     <div class='container'>
         <div
@@ -67,7 +66,8 @@
                         </div>
 
                         <div class="content">
-                            Empresas inteligentes usam e abusam do data science. Utilizar as informações de forma sábia, faz com que a sua empresa se destaque no mercado. 
+                            Empresas inteligentes usam e abusam do data science. Utilizar as informações de forma sábia,
+                            faz com que a sua empresa se destaque no mercado.
                             <span class="tag is-info">data</span>.
                             <a href="#">#dados</a> <a href="#">#datascience</a>
                             <br>
@@ -90,16 +90,17 @@
                         <div class="media">
                             <div class="media-content">
                                 <p class="title is-4">Marketing Digital</p>
-                                <p class="subtitle is-6">bdata</p>
+                                <p class="subtitle is-6">@bdata</p>
                             </div>
                         </div>
-
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                            <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            Com o marketing digital sua empresa pode desenvolver um funil de vendas personalizado
+                            atraindo potenciais clientes para seu negócio.
+                            <a>@data</a>.
+                            <a href="#">#marketing</a> <a href="#">#digital</a>
                             <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <br>
+                            <a href="{% url 'empresa' %}"><button class="button is-success is-rounded"> Saiba mais</button></a>
                         </div>
                     </div>
                 </div>
@@ -188,7 +189,7 @@
     <div class="container">
         <div class="columns">
             <div class="column">
-                <h1 class="title is-2">Peça um orçamento</h1>
+                <h1 class="title is-2">Solicite um orçamento</h1>
                 <form action="{% url 'new' %}" method="post">
                     {% csrf_token %}
                     <div class="field">
@@ -217,12 +218,12 @@
                 <div class="is-divider"></div>
             </div>
             <div class="column">
-                <figure class="box image is-16by9">
-                        <img src="https://picsum.photos/800/600/?random" width="480" height="480" alt="Description">
+                <figure class="image is-5by4 is-480x480">
+                    <img src="/static/imgs/2795146.svg">
                 </figure>
                 <p class="is-larger has-text-centered">
-                        <span class="tag is-danger">Atenção</span> Não somos fãs de spam, seu e-mail estará seguro
-                        conosco pois só vamos usar para entrar em contato ou lhe informar sobre as novidades.
+                    <span class="tag is-danger">Atenção</span> Não somos fãs de spam, seu e-mail estará seguro
+                    conosco pois só vamos usar para entrar em contato ou lhe informar sobre as novidades.
                 </p>
             </div>
         </div>

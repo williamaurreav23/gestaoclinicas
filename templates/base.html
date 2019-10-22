@@ -16,7 +16,17 @@
 </head>
 
 <body>
-    {% include "menu.html" %} {% block content %} {% endblock %} {% include "footer.html" %}
+    {% include "menu.html" %} 
+    {% load django_bootstrap_breadcrumbs %}
+
+{% block breadcrumbs %}
+    {% clear_breadcrumbs %}
+    {% breadcrumb "Home" "/" %}
+    {% breadcrumb "Users and groups" "users_and_groups_index" %}
+{% endblock %}
+    {% block content %} {% endblock %} 
+    
+    {% include "footer.html" %}
 </body>
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 <script href="{% static 'anime.js' %}"></script>
