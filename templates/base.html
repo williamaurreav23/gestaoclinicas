@@ -13,25 +13,33 @@
     {% comment %}
     <link rel="stylesheet" href="{% static '/styles/debug.css' %}" />{% endcomment %}
     <title>Business Data Consultoria LTDA</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W7FQGS35QC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-W7FQGS35QC');
+    </script>
 </head>
 
 <body>
-    {% include "menu.html" %} 
+    {% include "menu.html" %}
     {% load django_bootstrap_breadcrumbs %}
 
-{% block breadcrumbs %}
+    {% block breadcrumbs %}
     {% clear_breadcrumbs %}
     {% breadcrumb "Home" "/" %}
     {% breadcrumb "Users and groups" "users_and_groups_index" %}
-{% endblock %}
-    {% block content %} {% endblock %} 
-    
+    {% endblock %}
+    {% block content %} {% endblock %}
+
     {% include "footer.html" %}
 </body>
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 <script href="{% static 'anime.js' %}"></script>
-  <!-- End Hero Carousel -->
+<!-- End Hero Carousel -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
 
 </html>
