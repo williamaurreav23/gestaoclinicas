@@ -1,13 +1,13 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 
-<section class="hero is-large">
+<section class="hero">
     <div class="hero-body">
         <div class="container">
             <div
                 class="columns is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
                 <div class="column">
-                    <figure class="box image is-16by9">
-                        <img src="/static/imgs/heroimg.jpg" alt="Description">
+                    <figure class="image is-square is-480x480">
+                      <img src="/static/imgs/2614794.svg">
                     </figure>
                 </div>
                 <div class="column ">
@@ -44,8 +44,7 @@
                             de modo que seu desempenho atinja níveis satisfatórios de eficiência e eficácia
                             <br>
                             <br>
-                            <a href="{% url 'empresa' %}"><button class="button is-info is-rounded"> Saiba
-                                    mais</button></a>
+                            <a href="{% url 'empresa' %}"><button class="button is-info is-rounded"> Saiba mais</button></a>
                         </div>
                     </div>
                 </div>
@@ -73,8 +72,7 @@
                             <br>
                             <br>
                             <div></div>
-                            <a href="{% url 'empresa' %}"><button class="button is-danger is-rounded"> Saiba
-                                    mais</button></a>
+                            <a href="{% url 'empresa' %}"><button class="button is-danger is-rounded"> Saiba mais</button></a>
                         </div>
                     </div>
                 </div>
