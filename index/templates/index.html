@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 
-<section class="hero">
+<section class="hero index">
     <div class="hero-body">
         <div class="container">
             <div
@@ -19,7 +19,21 @@
             </div>
         </div>
     </div>
-</section>,
+</section>
+<section>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Hero title
+          </h1>
+          <h2 class="subtitle">
+            Hero subtitle
+          </h2>
+        </div>
+      </div>
+    </section>
+</section>
 <section class='section'>
     <div class='container'>
         <div
@@ -199,7 +213,7 @@
                         <input class="input" id="sobrenome" type="text" name="sobrenome" maxlength="100" required>
                     </div>
                     <div class="field">
-                        <label for="cnpj" class="label">Cnpj</label>
+                        <label for="cnpj" class="label">CNPJ</label>
                         <input class="input" id="cnpj" type="text" name="cnpj" maxlength="11" required>
                     </div>
                     <div class="field">

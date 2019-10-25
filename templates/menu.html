@@ -3,8 +3,12 @@
     <div class='container .navbar'>
         <nav class="navbar">
             <div class="navbar-brand">
-                <img class="is-rounded" src="{% static 'imgs/logo.svg' %}" alt="Data Business LTDA" width="112"
-                    height="28">
+                <figure class="image is-96x96">
+                    <a href="{% url 'index' %}">
+                        <img src="{% static 'imgs/logo.svg' %}" alt="Data Business LTDA">
+                    </a>
+                </figure>
+
                 <div class="navbar-burger burger"
                     onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
                     <span></span>
@@ -23,7 +27,16 @@
                     <a class="navbar-item" href="{% url 'clientes' %}">Clientes</a>
                     <a class="navbar-item" href="{% url 'parceiros' %}">Parceiros</a>
                     <!-- <a class="navbar-item" href="{% url 'blog' %}">Blog</a> -->
-                    <span class="navbar-item"> <button class="button is-success is-rounded">Login</button> </span>
+                    <span class="navbar-item">
+                        <a class="navbar-item" href="/accounts/login"><button
+                                class="button is-success is-rounded">Login</button></a>
+                    </span>
+                    {% if user.is_authenticated %}
+                    <span class="navbar-item">
+                        <a class="navbar-item" href="/accounts/logout"><button
+                                class="button is-danger is-rounded">Sair</button></a>
+                    </span>
+                    {% endif %}
                     <!-- <a class="navbar-item" href="{% url 'list' %}">Clienteslist</a> -->
                     <span class="navbar-item">
                         <a href="https://www.instagram.com/businessdataconsultoria/"><img
