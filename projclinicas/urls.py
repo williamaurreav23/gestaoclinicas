@@ -22,5 +22,4 @@ urlpatterns = [
     path('bdprojeto/', include('bdprojeto.urls')),
     path('dashboard/', include('dashboard.urls')),
     path('admin/', admin.site.urls),
-    
 ]
