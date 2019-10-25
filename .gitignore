@@ -2,7 +2,6 @@
 pyvenv.cfg
 .venv
 workspace.xml
-settings.py
 .idea
 .vscode
 venv
