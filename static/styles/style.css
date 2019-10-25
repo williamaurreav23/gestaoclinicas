@@ -1,8 +1,7 @@
-.hero {
+.index {
     background: url(/static/imgs/hero.svg);
-    background-position: top;
+    background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: -5rem;
 }
 .altura {
     min-height: 100vh;
@@ -17,7 +16,8 @@
 }
 
 .heroempresa {
-    background: url(/static/imgs/empresa.svg);
+    background: url(/static/imgs/empresa.png);
+    max-zoom: 50%;
 }
 
 .herogestao {
