@@ -1,17 +1,7 @@
 {% load static %}
 <footer class="footer">
     <div class="container">
-        <div class="columns">
-                <div class="column is-narrow" style="width: 300px;">
-                        <div class="image is-128x128">
-                                <img src="/static/imgs/logo.svg" width="150px" height="100px">
-                            </div><br>
-                    <div class="content is-small"><img src="{% static 'imgs/whatsapp.svg' %}" width="30px" height="30px">
-                        <a class="has-text-dark" href="mailto:info@ftwcoin.io">(98)98707-3706</a></br>
-                        <img src="{% static 'imgs/instagram.svg' %}" width="30px" height="30px">
-                        <a class="has-text-dark" href="mailto:info@ftwcoin.io">@businessdata</a>
-                    </div>
-                </div>
+        <div class="columns">    
             <div class="column">
                 <div class="footer-column">
                     <div class="footer-header">
@@ -51,7 +41,16 @@
                     </div>
                     <ul class="link-list">
                         <li><a href="{% url 'new' %}">
-                                Fale Conosco </a></li>
+                                Fale Conosco </a>
+                        </li>
+                        <li>
+                                <img class="icon" src="{% static 'imgs/whatsapp.svg' %}">
+                                <a class="has-text-dark" href="mailto:info@ftwcoin.io">(98)98707-3706</a>
+                        </li>
+                        <li>
+                                <img class="icon" src="{% static 'imgs/instagram.svg' %}">
+                                <a class="has-text-dark" href="mailto:info@ftwcoin.io">@businessdata</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -59,6 +58,7 @@
         <div class="copyright">
             <span class="moto light-text">© 2019 Data Business Consultoria LTDA.</span>
         </div>
+        
         <div class="content has-text-centered">
             <p>
                 <a class="icon" href="https://github.com/evanildobarros/gestaoclinicas">
