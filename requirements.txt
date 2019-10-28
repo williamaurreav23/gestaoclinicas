@@ -4,7 +4,6 @@ crispy-forms-bulma==1.1.4
 crispy-forms-bulma-django2==1.1.5
 Django==2.2.5
 django-bootstrap-breadcrumbs==0.9.1
-django-bulma==0.6.0
 django-crispy-bulma==0.1.2
 django-crispy-forms==1.7.2
 forms-extras==0.1.1
