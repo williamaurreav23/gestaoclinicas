@@ -14638,3 +14638,5 @@
 179.155.178.38 - - [28/Oct/2019:17:52:56 -0300] "GET /static/imgs/2614794.svg HTTP/1.1" 200 123210 "http://businessdata.com.br/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"
 179.155.178.38 - - [28/Oct/2019:17:52:56 -0300] "GET /static/imgs/database.svg HTTP/1.1" 200 2525 "http://businessdata.com.br/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"
 179.155.178.38 - - [28/Oct/2019:17:53:01 -0300] "GET /favicon.ico HTTP/1.1" 404 1196 "http://businessdata.com.br/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"
+179.155.178.38 - - [28/Oct/2019:17:53:46 -0300] "GET / HTTP/1.1" 200 4326 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"
+179.155.178.38 - - [28/Oct/2019:17:53:47 -0300] "GET / HTTP/1.1" 200 4332 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"
