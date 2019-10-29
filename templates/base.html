@@ -25,14 +25,11 @@
 
 <body>
     {% include "menu.html" %}
-    {% load django_bootstrap_breadcrumbs %}
-
+    {% block content %} 
     {% block breadcrumbs %}
-    {% clear_breadcrumbs %}
-    {% breadcrumb "Home" "/" %}
-    {% breadcrumb "Users and groups" "users_and_groups_index" %}
     {% endblock %}
-    {% block content %} {% endblock %}
+    
+    {% endblock %}
 
     {% include "footer.html" %}
 </body>
