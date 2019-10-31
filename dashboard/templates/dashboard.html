@@ -33,7 +33,7 @@
                 Ativos: R$ 7000,00
               </p>
               <div class="panel-block">
-                {% include 'ativos.html' %}
+                {% include 'bar_stacked.html' %}
               </div>
             </div>
           </div>
@@ -43,9 +43,7 @@
                 Gráfico teste - R$2000,00
               </p>
               <div class="panel-block">
-                <div style="width:1000;height:100">
-{{ graph_div|safe }}
-</div>
+                {% include 'ativos.html' %}
               </div>
             </div>
           </div>
@@ -55,9 +53,7 @@
                 Something
               </p>
               <div class="panel-block">
-                <figure class="image is-16x9">
-                  <img src="https://placehold.it/1280x720">
-                </figure>
+                {% include "iris.html" %}
               </div>
             </div>
           </div>
@@ -67,9 +63,9 @@
                 Something Else
               </p>
               <div class="panel-block">
-                <figure class="image is-16x9">
-                  <img src="https://placehold.it/1280x720">
-                </figure>
+                <div style="width:1000;height:100">
+                  {{ graph_div|safe }}
+                  </div>
               </div>
             </div>
           </div>
