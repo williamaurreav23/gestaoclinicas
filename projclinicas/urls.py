@@ -31,8 +31,5 @@ urlpatterns = [
     path('chatbot/', include('chatbot.urls')),
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
-]
-=======
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
->>>>>>> 23012881c0fe03bfe72d3e7cb74272fa007c780c
+  ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
