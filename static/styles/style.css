@@ -3,6 +3,21 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Alternate the background color of the output rows */
+.list-group-item:nth-child(even) {
+    background-color: #bdf1ac;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.chat-log {
+    max-height:200px;
+    overflow-y:scroll;
+    overflow: hidden;
+}
 .altura {
     min-height: 100vh;
     height: 100%;

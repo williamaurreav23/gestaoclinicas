@@ -3,9 +3,31 @@ import json
 from django.views.generic.base import TemplateView
 from django.views.generic import View
 from django.http import JsonResponse
-from chatterbot import ChatBot
 from chatterbot.ext.django_chatterbot import settings
-# Create your views here.
+from chatterbot.trainers import ChatterBotCorpusTrainer
+from chatterbot.trainers import ListTrainer
+from chatterbot import ChatBot
+from chatterbot.response_selection import get_most_frequent_response
+from chatterbot.comparisons import levenshtein_distance
+from chatterbot import filters
+from unittest import TestCase
+
+chatbot = ChatBot(
+    "Bdata",
+    preprocessors=[
+        'chatterbot.preprocessors.clean_whitespace'
+    ],
+    filters=[filters.get_recent_repeated_responses],
+    response_selection_method=get_most_frequent_response
+)
+
+# Start by training our bot with the ChatterBot corpus data
+# trainer = ChatterBotCorpusTrainer(chatbot)
+
+# trainer.train(
+#     'chatbot/adm.yml',
+#     'chatterbot.corpus.portuguese.conversations'
+# )
 
 
 class ChatterBotAppView(TemplateView):
@@ -16,7 +38,7 @@ class ChatterBotApiView(View):
     """
     Provide an API endpoint to interact with ChatterBot.
     """
-
+    
     chatterbot = ChatBot(**settings.CHATTERBOT)
 
     def post(self, request, *args, **kwargs):
@@ -46,4 +68,3 @@ class ChatterBotApiView(View):
         return JsonResponse({
             'name': self.chatterbot.name
         })
-

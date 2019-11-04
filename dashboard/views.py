@@ -1,18 +1,66 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
+from django.views.generic.edit import CreateView
+from django.views.generic.edit import UpdateView
+from django.views.generic.edit import DeleteView
+from django.views.generic.edit import FormView
+from .models import bdclientes
+from dashboard.forms import ClienteForms
+from django.utils import timezone
+from django.urls import reverse_lazy
+from bokeh.core.properties import value
+from bokeh.io import show, output_file
+from bokeh.plotting import figure
+
+#Login
 
 @login_required
 def dashboard(request):
     return render(request, 'dashboard.html')
+
 
 @login_required
 def listclientes(request):
     return render(request, 'listclientes.html')
 
 
-from bokeh.core.properties import value
-from bokeh.io import show, output_file
-from bokeh.plotting import figure
+# Formulários
+
+class listcliente(ListView):
+    model = bdclientes
+
+class ClienteDetail(DetailView):
+    model = bdclientes
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['now'] = timezone.now()
+        return context
+
+class ClienteCreate(CreateView):
+    model = bdclientes
+    fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
+    success_url = reverse_lazy('list')
+
+class ClienteUpdate(UpdateView):
+    model = bdclientes
+    fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
+    success_url = reverse_lazy('list')
+
+class ClienteDelete(DeleteView):
+    model = bdclientes
+    success_url = reverse_lazy('list')
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['now'] = timezone.now()
+        return context
+    
+class ClientesViewset(object):
+    pass
+
+# Gráficos
 
 output_file("dashboard/templates/bar_stacked.html")
 
@@ -55,27 +103,20 @@ p.circle(flowers["petal_length"], flowers["petal_width"],
 output_file("dashboard/templates/iris.html", title="iris.py example")
 
 
-import matplotlib.colors as mcolors
-import numpy as np
-from numpy.random import multivariate_normal
+#DESEMPENHO
 
-data = np.vstack([
-    multivariate_normal([10, 10], [[3, 2], [2, 3]], size=100000),
-    multivariate_normal([30, 20], [[2, 3], [1, 3]], size=1000)
-])
 
-gammas = [0.8, 0.5, 0.3]
+# Create your views here.
 
-fig, axes = plt.subplots(nrows=2, ncols=2)
+def rotatividade(admissoes, demissoes, colaboadores):
+    numerador = (admissoes + demissoes) / 2
+    racio = numerador / colaboadores
+    taxa = racio * 100
+    print("o valor de rotatividade foi de :", taxa, "%")
 
-axes[0, 0].set_title('Linear normalization')
-axes[0, 0].hist2d(data[:, 0], data[:, 1], bins=100)
 
-for ax, gamma in zip(axes.flat[1:], gammas):
-    ax.set_title(r'Power law $(\gamma=%1.1f)$' % gamma)
-    ax.hist2d(data[:, 0], data[:, 1],
-              bins=100, norm=mcolors.PowerNorm(gamma))
+def grh(request):
+    return render(request, 'funcionarios.html')
 
-fig.tight_layout()
-
-plt.show()
+def desempenho(request):
+    return render(request, 'desempenho.html')
