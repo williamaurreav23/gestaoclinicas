@@ -21,13 +21,11 @@ chatbot = ChatBot(
     response_selection_method=get_most_frequent_response
 )
 
-# Start by training our bot with the ChatterBot corpus data
-# trainer = ChatterBotCorpusTrainer(chatbot)
+trainer = ChatterBotCorpusTrainer(chatbot)
 
-# trainer.train(
-#     'chatbot/adm.yml',
-#     'chatterbot.corpus.portuguese.conversations'
-# )
+trainer.train(
+     'chatbot/adm.yml',
+ )
 
 
 class ChatterBotAppView(TemplateView):
