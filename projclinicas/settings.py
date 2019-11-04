@@ -26,16 +26,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'chatterbot.ext.django_chatterbot',
+    'rest_framework',
     'crispy_forms',
     'django_crispy_bulma',
     'login',
+    'chatbot',
     'index',
     'django_bootstrap_breadcrumbs',
     'dashboard',
-    'bdprojeto',
+    # 'dashboard',
 ]
 LOGIN_REDIRECT_URL = 'dashboard'
-LOGOUT_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = 'dashboard'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -117,6 +120,12 @@ USE_L10N = True
 
 USE_TZ = True
 
+CHATTERBOT = {
+    'name': 'Bdatarobo',
+    'django_app_name': 'django_chatterbot'
+}
+    
+
 # crispy
 CRISPY_ALLOWED_TEMPLATE_PACKS = (
     "bootstrap",
@@ -132,8 +141,14 @@ CRISPY_TEMPLATE_PACK = "bulma"
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+
+
+
 STATIC_URL = '/static/'
 STATIC_ROOT = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+#
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
