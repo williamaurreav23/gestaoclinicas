@@ -62,13 +62,19 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="funcionarios">
 	<schema name="public"/>
 	<role name="postgres"/>
-	<position x="340" y="320"/>
-	<column name="id_func">
+	<position x="940" y="100"/>
+	<column name="id_func" not-null="true">
 		<type name="smallint" length="0"/>
 	</column>
 	<column name="nome">
 		<type name="smallint" length="0"/>
 	</column>
+	<column name="nr_func">
+		<type name="smallint" length="0"/>
+	</column>
+	<constraint name="funcionarios_pk" type="pk-constr" table="public.funcionarios">
+		<columns names="id_func" ref-type="src-columns"/>
+	</constraint>
 </table>
 
 <table name="ativos">
@@ -89,7 +95,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="passivos">
 	<schema name="public"/>
 	<role name="postgres"/>
-	<position x="923" y="441"/>
+	<position x="920" y="440"/>
 	<column name="id_passivo" not-null="true">
 		<type name="smallint" length="0"/>
 	</column>
@@ -100,5 +106,113 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<columns names="id_passivo" ref-type="src-columns"/>
 	</constraint>
 </table>
+
+<table name="lucratividade">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="80" y="220"/>
+	<column name="id" not-null="true">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="lucro_liquido_anual">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="receita_total_anual">
+		<type name="smallint" length="0"/>
+	</column>
+	<constraint name="lucratividade_pk" type="pk-constr" table="public.lucratividade">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="turnover">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="1300" y="200"/>
+	<column name="id">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="contratados">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="desligamentos">
+		<type name="smallint" length="0"/>
+	</column>
+</table>
+
+<table name="ticket_medio_vendas">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="80" y="480"/>
+	<column name="id">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="total_receita">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="total_vendas">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="nr_compras">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="periodo">
+		<type name="date" length="0"/>
+	</column>
+</table>
+
+<table name="taxa_conversao">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="520" y="480"/>
+	<column name="visitantes">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="id">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="conversoes">
+		<type name="smallint" length="0"/>
+	</column>
+</table>
+
+<table name="roi">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="380" y="560"/>
+	<column name="id">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="receita">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="custo">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="item">
+		<type name="smallint" length="0"/>
+	</column>
+</table>
+
+<table name="indicadores_negativos">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="800" y="240"/>
+	<column name="id">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="questao">
+		<type name="smallint" length="0"/>
+	</column>
+</table>
+
+<relationship name="turnover_has_one_funcionarios" type="rel11"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#4a033e"
+	 src-table="public.funcionarios"
+	 dst-table="public.turnover"
+	 src-required="false" dst-required="false"/>
 
 </dbmodel>
