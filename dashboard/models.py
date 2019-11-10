@@ -31,11 +31,18 @@ class Gestor(models.Model):
         return self.nome
 
 class Funcionario(models.Model):
-    funcionario_id = models.AutoField(primary_key=True)
-    nome = models.CharField(max_length=100)
-    email = models.CharField(max_length=20, blank=True, null=True)
-    celular = models.CharField(max_length=11, blank=True, null=True)
-    especialidade = models.CharField(max_length=30, blank=True, null=True)
+    id_func = models.AutoField(primary_key=True)
+    nome = models.CharField(max_length=100, blank=True, null=True)
+    nacionalidade = models.CharField(max_length=50, blank=True, null=True)
+    naturalidade_cid = models.CharField(max_length=20, blank=True, null=True)
+    naturalidade_estado = models.CharField(max_length=20, blank=True, null=True)
+    data_nasc = models.DateField(blank=True, null=True)
+    sexo = models.CharField(max_length=10, blank=True, null=True)
+    estado_civil = models.CharField(max_length=10, blank=True, null=True)
+    mae = models.CharField(max_length=50, blank=True, null=True)
+    pai = models.CharField(max_length=50, blank=True, null=True)
+    cor_raca = models.CharField(max_length=10, blank=True, null=True)
+    dependentes = models.IntegerField(blank=True, null=True)
 
     def __str__(self):
         return self.nome
@@ -49,15 +56,27 @@ class Clinica(models.Model):
     contato = models.CharField(max_length=11, blank=True, null=True)
     especialidade = models.CharField(max_length=30, blank=True, null=True)
 
-
-
 class Ativos(models.Model):
-    id_ativo = models.SmallIntegerField(blank=True, null=True)
-    nome = models.SmallIntegerField(blank=True, null=True)
-    valor = models.SmallIntegerField(blank=True, null=True)
+    id_ativo = models.AutoField(primary_key=True)
+    tipo_ativo = models.CharField(max_length=20, blank=True, null=True)
+    descricao_passivo = models.CharField(max_length=20, blank=True, null=True)
+    valor_ativo = models.IntegerField(blank=True, null=True)
+    data_ativo = models.DateField(blank=True, null=True)
 
     def __str__(self):
-        return self.nome
+        return self.id_ativo
+
+
+class Passivos(models.Model):
+    id_passivo = models.AutoField(primary_key=True)
+    tipo_passivo = models.CharField(max_length=20, blank=True, null=True)
+    descricao_passivo = models.CharField(max_length=20, blank=True, null=True)
+    valor_passivo = models.IntegerField(blank=True, null=True)
+    data_passivo = models.DateField(blank=True, null=True)
+
+def __str__(self):
+        return self.id_passivo
+
 
 class Contatos(models.Model):
     nome = models.CharField(max_length=50, blank=True, null=True)
@@ -76,16 +95,6 @@ class Empresas(models.Model):
     cnpj = models.CharField(max_length=11)
 
 
-
-class Funcionarios(models.Model):
-    id_func = models.SmallIntegerField(primary_key=True)
-    nome = models.SmallIntegerField(blank=True, null=True)
-    nr_func = models.SmallIntegerField(blank=True, null=True)
-
-
-
-
-
 class IndicadoresNegativos(models.Model):
     id = models.SmallIntegerField(primary_key=True, blank=True, null=False)
     questao = models.SmallIntegerField(blank=True, null=True)
@@ -98,14 +107,6 @@ class Lucratividade(models.Model):
     receita_total_anual = models.SmallIntegerField(blank=True, null=True)
 
 
-
-
-class Passivos(models.Model):
-    id_passivo = models.SmallIntegerField(primary_key=True)
-    nome = models.SmallIntegerField(blank=True, null=True)
-
-def __str__(self):
-        return self.nome
 
 
 class Roi(models.Model):
@@ -139,5 +140,3 @@ class Turnover(models.Model):
     id = models.SmallIntegerField(primary_key=True, blank=True, null=False)
     contratados = models.SmallIntegerField(blank=True, null=True)
     desligamentos = models.SmallIntegerField(blank=True, null=True)
-    id_func_funcionarios = models.ForeignKey(Funcionarios, models.DO_NOTHING, db_column='id_func_funcionarios', unique=False, blank=True, null=True)
-

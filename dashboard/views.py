@@ -2,11 +2,8 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from django.views.generic.edit import CreateView
-from django.views.generic.edit import UpdateView
-from django.views.generic.edit import DeleteView
-from django.views.generic.edit import FormView
-from .models import Clientes, Gestor
+from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
+from .models import Clientes, Gestor, Funcionario
 from dashboard.forms import ClienteForms
 from django.utils import timezone
 from django.urls import reverse_lazy
@@ -26,7 +23,7 @@ def listclientes(request):
     return render(request, 'listclientes.html')
 
 
-# Formulários
+# Listar Dados
 
 class listcliente(ListView):
     model = Clientes
@@ -38,11 +35,18 @@ class ClienteDetail(DetailView):
         context = super().get_context_data(**kwargs)
         context['now'] = timezone.now()
         return context
-
+#Criar Dados
 class ClienteCreate(CreateView):
     model = Clientes
     fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
     success_url = reverse_lazy('list')
+
+class FuncionarioCreate(CreateView):
+    model = Funcionario
+    fields = ['id_func', 'nome', 'nacionalidade', 'naturalidade_cid', 
+    'naturalidade_estado', 'data_nasc', 'sexo', 'estado_civil', 'mae',
+    'pai', 'cor_raca', 'dependentes' ]
+    success_url = reverse_lazy('funcionario')
 
 class ClienteUpdate(UpdateView):
     model = Clientes
@@ -70,46 +74,6 @@ class GestorCreate(CreateView):
 
 # Gráficos
 
-output_file("dashboard/templates/bar_stacked.html")
-
-indices = ['despesas', 'receitas', 'lucro']
-years = ["2017", "2018", "2019"]
-colors = ["#c9d9d3", "#718dbf", "#e84d60"]
-
-data = {'indices' : indices,
-        '2017'   : [23, 14, 47],
-        '2018'   : [53, 36, 43],
-        '2019'   : [38, 27, 44]}
-
-p = figure(x_range=indices, plot_height=250, title="indices da Empresa",
-           toolbar_location=None, tools="hover", tooltips="$name @indices: @$name")
-
-p.vbar_stack(years, x='indices', width=0.9, color=colors, source=data,
-             legend=[value(x) for x in years])
-
-p.y_range.start = 0
-p.x_range.range_padding = 0.1
-p.xgrid.grid_line_color = None
-p.axis.minor_tick_line_color = None
-p.outline_line_color = None
-p.legend.location = "top_left"
-p.legend.orientation = "horizontal"
-
-from bokeh.plotting import figure, show, output_file
-from bokeh.sampledata.iris import flowers
-
-colormap = {'setosa': 'red', 'versicolor': 'green', 'virginica': 'blue'}
-colors = [colormap[x] for x in flowers['species']]
-
-p = figure(title = "Iris Morphology")
-p.xaxis.axis_label = 'Petal Length'
-p.yaxis.axis_label = 'Petal Width'
-
-p.circle(flowers["petal_length"], flowers["petal_width"],
-         color=colors, fill_alpha=0.2, size=10)
-
-output_file("dashboard/templates/iris.html", title="iris.py example")
-
 
 #DESEMPENHO
 
@@ -122,9 +86,6 @@ def rotatividade(admissoes, demissoes, colaboadores):
     taxa = racio * 100
     print("o valor de rotatividade foi de :", taxa, "%")
 
-
-def grh(request):
-    return render(request, 'funcionarios.html')
 
 def desempenho(request):
     return render(request, 'desempenho.html')

@@ -7,3 +7,6 @@ admin.site.register(Clientes)
 
 from .models import Gestor
 admin.site.register(Gestor)
+
+from .models import Funcionario
+admin.site.register(Funcionario)
