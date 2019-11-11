@@ -17,13 +17,15 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from dashboard.api.viewsets import ClientesViewset, FuncionarioViewset
+from dashboard.api.viewsets import ClientesViewset, FuncionarioViewset, AtivosViewset, PassivosViewset
 from django.conf import settings
 from django.conf.urls.static import static
 
 router = DefaultRouter()
 router.register(r'bdclientes', ClientesViewset, base_name='ClientesViewset')
 router.register(r'funcionario', FuncionarioViewset, base_name='FuncionarioViewset')
+router.register(r'ativos', AtivosViewset, base_name='AtivosViewset')
+router.register(r'passivos', PassivosViewset, base_name='PassivosViewset')
 
 urlpatterns = [
     path('', include('index.urls')),

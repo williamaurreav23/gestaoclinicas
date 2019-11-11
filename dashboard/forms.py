@@ -24,7 +24,16 @@ class FuncionarioForms(forms.Form):
         dependentes = forms.IntegerField(widget=forms.TextInput)
 
 
-# class Media:
-#         css = {
-#             'all': ('bulma.css',)
-#         }
+class AtivosForm(forms.Form):
+    tipo_ativo = forms.CharField(label='Tipo Ativo', max_length=20)
+    descricao_ativo = forms.CharField(label='Descrição Ativo', max_length=20)
+    valor_ativo = forms.IntegerField(label='Valor do Ativo')
+    data_ativo = forms.DateField(label='Data do Ativo')
+
+
+class CalendarWidget(forms.TextInput):
+    class Media:
+        css = {
+            'all': ('bulma.css',)
+        }
+        js = ('animations.js', 'actions.js')

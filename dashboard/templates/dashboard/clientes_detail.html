@@ -1,11 +1,32 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
-<section class="hero">
-    <div class="hero-body">
-        <div class="container has-text-left">
-            <div class="column is-moblie">
-                <div id="content" class="colM">
-                    <h1 class="title is-1">Informações do Cliente</h1>
+
+<header class="hero is-light">
+    <div class="hero-head">
+    </div>
+</header>
+
+<div class="section">
+    <div class="columns">
+        {% include 'nav.html' %}
+        <main class="column">
+            {% include 'breadcumbs.html' %}
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <div class="title">Painel de Gestão do {{ user.username }}</div>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <button type="button" class="button is-small">
+                            Hoje é {% now " D j F Y H:i" %}
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <h1 class="title is-1">Informações do Cliente</h1>
                     <table class="table">
                       <thead>
                         <tr>
@@ -14,6 +35,8 @@
                           <th>Cnpj</th>
                           <th>Celular</th>
                           <th>Email</th>
+                          <th>Atualizar</th>
+                          <th>Excluir</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -23,20 +46,12 @@
                           <td>{{ object.cnpj }}</td>
                           <td>{{ object.celular }}</td>
                           <td>{{ object.email }}</td>
+                          <td><a  href="{% url 'update' object.pk %}"><span class="button is-success">Atualizar</span></a></td>
+                          <td><a  href="{% url 'delete' object.pk %}"><span class="button is-danger">Excluir</span></a></td>
                       </tbody>
                     </table>
-                    <p>Data: {{ now|date }}</p>
-                    <div class="field is-grouped">
-                      <p class="control">
-                        <a  href="{% url 'update' object.pk %}"><span class="button is-success">Atualizar</span></a>
-                      </p>
-                      <p class="control">
-                        <a  href="{% url 'delete' object.pk %}"><span class="button is-danger">Excluir</span></a>
-                      </p>
-                    </div>
                 </div>
-            </div>
-        </div>
+        </main>
     </div>
-</section>
+</div>
 {% endblock%}

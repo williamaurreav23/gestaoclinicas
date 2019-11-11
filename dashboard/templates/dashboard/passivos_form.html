@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<header class="hero is-light">
+    <div class="hero-head">
+    </div>
+</header>
+
+<div class="section">
+    <div class="columns">
+        {% include 'nav.html' %}
+        <main class="column">
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <div class="title">Painel de Gestão do {{ user.username }}</div>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <button type="button" class="button is-small">
+                            Hoje é {% now " D j F Y H:i" %}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h1 class="title is-2">Clientes</h1>
+            <form method="post" enctype="multipart/form-data">{% csrf_token %}
+                {{ form.as_p }}
+                <button class="button is-success" type="submit" value="Salvar">Salvar</button>
+            </form>
+        </main>
+    </div>
+</div>
+{% endblock%}

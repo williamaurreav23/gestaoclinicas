@@ -6,12 +6,11 @@
             <div class="column is-4 is-offset-4">
                 <div id="content" class="colM">
                     <h1 class="title is-2">Clientes</h1>
-                    <form method="put">{% csrf_token %}
+                    <form method="post">{% csrf_token %}
                         {{ form.as_p }}
-                        <input type="submit" value="Save">
+                        <input type="submit" value="Update">
                     </form>
                     <br>
-
                 </div>
             </div>
         </div>

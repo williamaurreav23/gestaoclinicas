@@ -1,11 +1,31 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
-<section class="hero">
-    <div class="hero-body">
-        <div class="container has-text-left">
-            <div class="columns is-mobile">
-                <div id="content">
-                    <h1 class="title is-2">Clientes</h1>
+
+<header class="hero is-light">
+    <div class="hero-head">
+    </div>
+</header>
+
+<div class="section">
+    <div class="columns">
+        {% include 'nav.html' %}
+        <main class="column">
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <div class="title">Painel de Gestão do {{ user.username }}</div>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <button type="button" class="button is-small">
+                            Hoje é {% now " D j F Y H:i" %}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h1 class="title is-2">Clientes</h1>
                     <table class="table">
                         <thead>
                         <tr>
@@ -15,6 +35,7 @@
                             <th>Celular</th>
                             <th>Email</th>
                             <th>Foto</th>
+
                         </tr>
                         </thead>
                         <tbody>
@@ -25,7 +46,7 @@
                             <td>{{ bdclientes.cnpj}}</td>
                             <td>{{ bdclientes.celular}}</td>
                             <td>{{ bdclientes.email}}</td>
-                            <td>{{ bdclientes.foto}}</td>
+                            {{ bdclientes.foto}}
                         </tr>
                         </tbody>
                         {% empty %}
@@ -37,9 +58,7 @@
                         <button class='button is-success'>Novo</button>
                     </a>
                     <br>
-                </div>
-            </div>
-        </div>
+        </main>
     </div>
-</section>
+</div>
 {% endblock%}

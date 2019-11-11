@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from dashboard.api.serializers import ClientesSerializer, FuncionarioSerializer
-from dashboard.models import Clientes, Funcionario
+from dashboard.api.serializers import ClientesSerializer, FuncionarioSerializer, AtivosSerializer, PassivosSerializer
+from dashboard.models import Clientes, Funcionario, Ativos, Passivos
 
 
 class ClientesViewset(viewsets.ModelViewSet):
@@ -20,3 +20,21 @@ class FuncionarioViewset(viewsets.ModelViewSet):
 
     def get_queryset(self):
         return Funcionario.objects.filter()
+
+class AtivosViewset(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    serializer_class = AtivosSerializer
+
+    def get_queryset(self):
+        return Ativos.objects.filter()
+
+class PassivosViewset(viewsets.ModelViewSet):
+        """
+        API endpoint that allows users to be viewed or edited.
+        """
+        serializer_class = PassivosSerializer
+
+        def get_queryset(self):
+            return Passivos.objects.filter()

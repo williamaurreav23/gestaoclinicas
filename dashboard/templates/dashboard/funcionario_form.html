@@ -20,72 +20,64 @@
                     </div>
                 </div>
             </div>
+            <div class="column is-two-thirds">
+                <form action="" method="post">
+                    {% csrf_token %}
 
+                    <div id="div_id_nome" class="field">
+                        <label for="" class="label">Nome Completo</label>
+                        <input type="text" name="nome" maxlength="100" class="input" id="id_nome">
+                    </div>
 
-<!--<div class="control">-->
-<!--      {{ form|crispy }}-->
-<!--</div>-->
+                    <div id="div_id_nacionalidade" class="field">
+                        <label for="" class="label">Nacionalidade</label>
+                        <input type="text" name="nacionalidade" maxlength="50" class="input" id="id_nacionalidade">
+                    </div>
 
-<div class="column is-two-thirds">
-    <form action="" method="post">
-        {% csrf_token %}
-        <div id="div_id_nome" class="field"><label for="" class="label">
-            Nome Completo
+                    <div id="div_id_naturalidade_cid" class="field">
+                        <label for="" class="label">Naturalidade Cidade</label>
+                        <input type="text" name="naturalidade_cid" maxlength="20" class="input" id="id_naturalidade_cid">
+                    </div>
 
-        </label><input type="text" name="nome" maxlength="100" class="input" id="id_nome"></div>
-        <div id="div_id_nacionalidade" class="field"><label for="" class="label">
-            Nacionalidade
+                    <div id="div_id_naturalidade_estado" class="field">
+                        <label for="" class="label">Naturalidade Estado</label>
+                        <input type="text" name="naturalidade_estado" maxlength="20" class="input" id="id_naturalidade_estado">
+                    </div>
 
-        </label><input type="text" name="nacionalidade" maxlength="50" class="input"
-                       id="id_nacionalidade">
-        </div>
-        <div id="div_id_naturalidade_cid" class="field"><label for="" class="label">
-            Naturalidade Cidade
+                    <div id="div_id_data_nasc" class="field">
+                        <label for="" class="label">Data de Nascimento</label>
+                        <input type="date" name="data_nasc" class="input" id="id_data_nasc">
+                    </div>
 
-        </label><input type="text" name="naturalidade_cid" maxlength="20" class="input"
-                       id="id_naturalidade_cid"></div>
-        <div id="div_id_naturalidade_estado" class="field"><label for="" class="label">
-            Naturalidade Estado
+                    <div id="div_id_sexo" class="field">
+                        <label for="" class="label">Sexo</label>
+                        <input type="text" name="sexo" maxlength="10" class="input" id="id_sexo">
+                    </div>
 
-        </label><input type="text" name="naturalidade_estado" maxlength="20" class="input"
-                       id="id_naturalidade_estado"></div>
-        <div id="div_id_data_nasc" class="field"><label for="" class="label">
-            Data de Nascimento
-        </label><input type="date" name="data_nasc" class="input" id="id_data_nasc">
+                    <div id="div_id_estado_civil" class="field">
+                        <label for="" class="label">Estado civil</label>
+                        <input type="text" name="estado_civil" maxlength="10" class="input" id="id_estado_civil">
+                    </div>
 
-        </div>
-
-
-        <div id="div_id_sexo" class="field"><label for="" class="label">
-            Sexo
-
-        </label><input type="text" name="sexo" maxlength="10" class="input" id="id_sexo"></div>
-        <div id="div_id_estado_civil" class="field"><label for="" class="label">
-            Estado civil
-        </label><input type="text" name="estado_civil" maxlength="10" class="input" id="id_estado_civil">
-        </div>
-        <div id="div_id_mae" class="field"><label for="" class="label">
-            Mãe
-
-        </label><input type="text" name="mae" maxlength="50" class="input" id="id_mae"></div>
-        <div id="div_id_pai" class="field"><label for="" class="label">
-            Pai
-
-        </label><input type="text" name="pai" maxlength="50" class="input" id="id_pai"></div>
-        <div id="div_id_cor_raca" class="field"><label for="" class="label">
-            Cor raca
-
-        </label><input type="text" name="cor_raca" maxlength="10" class="input" id="id_cor_raca"></div>
-        <div id="div_id_dependentes" class="field"><label for="" class="label">
-            Dependentes
-
-        </label><input type="text" name="dependentes" class="input" id="id_dependentes"></div>
-
-        <button class="button is-success" type="submit" value="Salvar">Salvar</button>
-    </form>
-</div>
-</main>
-</div>
+                    <div id="div_id_mae" class="field"><label for="" class="label">Mãe</label>
+                        <input type="text" name="mae" maxlength="50" class="input" id="id_mae">
+                    </div>
+                    <div id="div_id_pai" class="field"><label for="" class="label">Pai</label>
+                        <input type="text" name="pai" maxlength="50" class="input" id="id_pai">
+                    </div>
+                    <div id="div_id_cor_raca" class="field">
+                        <label for="" class="label">Cor raca</label>
+                        <input type="text" name="cor_raca" maxlength="10" class="input" id="id_cor_raca">
+                    </div>
+                    <div id="div_id_dependentes" class="field">
+                        <label for="" class="label">Dependentes</label>
+                        <input type="text" name="dependentes" class="input" id="id_dependentes">
+                    </div>
+                    <button class="button is-success" type="submit" value="Salvar">Salvar</button>
+                </form>
+            </div>
+        </main>
+    </div>
 </div>
 
 {% endblock%}
