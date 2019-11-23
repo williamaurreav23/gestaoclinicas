@@ -21,11 +21,11 @@ chatbot = ChatBot(
     response_selection_method=get_most_frequent_response,
 )
 
-# trainer = ChatterBotCorpusTrainer(chatbot)
+trainer = ChatterBotCorpusTrainer(chatbot)
 
-# trainer.train(
-#      'chatbot/adm.yml',
-#  )
+trainer.train(
+     'chatbot/adm.yml',
+ )
 
 
 class ChatterBotAppView(TemplateView):
