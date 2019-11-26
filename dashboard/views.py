@@ -1,17 +1,16 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from django.views.generic.detail import DetailView
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Clientes, Gestor, Funcionario, Ativos, Passivos
 from django.utils import timezone
 from django.urls import reverse_lazy
-from bokeh.core.properties import value
-from bokeh.io import show, output_file
-from bokeh.plotting import figure
-
 from django.http import HttpResponseRedirect
 from .forms import AtivosForm
+import pandas as pd
+from django.views import View
+
+
 
 def get_name(request):
     # if this is a POST request we need to process the form data
@@ -33,6 +32,7 @@ def get_name(request):
 
 # Login
 
+
 @login_required
 def dashboard(request):
     return render(request, 'dashboard.html')
@@ -41,9 +41,9 @@ def dashboard(request):
 # Listar Dados
 
 class ListClientes(ListView):
+    model = Clientes
     template_name = "clientes_list.html"
     queryset = Clientes.objects.all()
-
 
 
 class ClienteDetail(DetailView):
@@ -54,12 +54,14 @@ class ClienteDetail(DetailView):
         context['now'] = timezone.now()
         return context
 
-
 # Criar Dados
+
+
 class ClienteCreate(CreateView):
     model = Clientes
     fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email', 'foto']
     success_url = reverse_lazy('list')
+
 
 class FuncionarioCreate(CreateView):
     model = Funcionario
@@ -87,36 +89,27 @@ class ClienteDelete(DeleteView):
 
 class AtivoCreate(CreateView):
     model = Ativos
-    fields = ['id_ativo', 'tipo_ativo', 'descricao_ativo', 'valor_ativo', 'data_ativo']
+    fields = ['id_ativo', 'tipo_ativo',
+              'descricao_ativo', 'valor_ativo', 'data_ativo']
     success_url = reverse_lazy("dashboard")
+
 
 class PassivoCreate(CreateView):
     model = Passivos
-    fields = ['id_passivo', 'tipo_passivo', 'descricao_passivo', 'valor_passivo', 'data_passivo']
+    fields = ['id_passivo', 'tipo_passivo',
+              'descricao_passivo', 'valor_passivo', 'data_passivo']
     success_url = reverse_lazy("dashboard")
 
-# Gestores
 
 class GestorCreate(CreateView):
     model = Gestor
     fields = ['gestor_id', 'nome', 'email', 'celular', 'especialidade']
     success_url = reverse_lazy('list')
 
-
 # Gráficos
 
 
-# DESEMPENHO
-
-
-# Create your views here.
-
-def rotatividade(admissoes, demissoes, colaboadores):
-    numerador = (admissoes + demissoes) / 2
-    racio = numerador / colaboadores
-    taxa = racio * 100
-    print("o valor de rotatividade foi de :", taxa, "%")
-
-
-def desempenho(request):
-    return render(request, 'desempenho.html')
+class AtivosView(DetailView):
+    model = Ativos
+    template_name = 'dashboard.html'
+    query_pk_and_slug = 'id_ativo=1'

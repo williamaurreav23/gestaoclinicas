@@ -3,6 +3,8 @@ from . import views
 from .views import ClienteDetail, ClienteCreate, ListClientes, ClienteUpdate, ClienteDelete
 from .views import GestorCreate, FuncionarioCreate
 from .views import AtivoCreate, PassivoCreate
+from .views import AtivosView
+
 urlpatterns = [
     path('', views.dashboard, name='dashboard'),
     path('listclientes', ListClientes.as_view(), name='list'),
@@ -13,6 +15,7 @@ urlpatterns = [
     path('gestor/', GestorCreate.as_view(), name='gestor'),
     path('funcionario/', FuncionarioCreate.as_view(), name='funcionario'),
     path('ativo/', AtivoCreate.as_view(), name='ativo'),
+    path('<int:pk>/', AtivosView.as_view(), name='ativos'),
     path('passivo/', PassivoCreate.as_view(), name='passivo'),
 
 ]

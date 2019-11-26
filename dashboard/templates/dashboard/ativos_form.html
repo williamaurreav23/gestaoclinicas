@@ -1,6 +1,4 @@
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
 <header class="hero is-light">
     <div class="hero-head">
@@ -20,8 +18,8 @@
                 <div class="level-right">
                     <div class="level-item">
                         <button type="button" class="button is-small">
-                            Hoje é {% now " D j F Y H:i" %}
-                        </button>
+              Hoje é {% now " D j F Y H:i" %}
+            </button>
                     </div>
                 </div>
             </div>
@@ -33,15 +31,16 @@
             <!--            </form>-->
             <form method="post" enctype="multipart/form-data">
                 {% csrf_token %}
-                        <p><label class="label" for="id_tipo_ativo">Tipo ativo:</label>
-                            <input class="input" type="text" name="tipo_ativo" maxlength="20" id="id_tipo_ativo"></p>
-                        <p><label class="label" for="id_descricao_ativo">Descricao ativo:</label>
-                            <input class="input" type="text" name="descricao_ativo" maxlength="20" id="id_descricao_ativo"></p>
-                        <p><label class="label" for="id_valor_ativo">Valor ativo:</label>
-                            <input class="input" type="number" name="valor_ativo" id="id_valor_ativo"></p>
-                        <p><label class="label" for="id_data_ativo">Data ativo:</label>
-                            <input class="input" type="text" name="data_ativo" id="id_data_ativo"></p>
-                        <button class="button is-success" type="submit" value="Salvar">Salvar</button>
+                <p><label class="label" for="id_tipo_ativo">Tipo ativo:</label>
+                    <input class="input" type="text" name="tipo_ativo" maxlength="20" id="id_tipo_ativo"></p>
+                <p><label class="label" for="id_descricao_ativo">Descricao ativo:</label>
+                    <input class="input" type="text" name="descricao_ativo" maxlength="20" id="id_descricao_ativo"></p>
+                <p><label class="label" for="id_valor_ativo">Valor ativo:</label>
+                    <input class="input" type="number" name="valor_ativo" id="id_valor_ativo"></p>
+                <p><label class="label" for="id_data_ativo">Data ativo:</label>
+                    <input class="input" type="text" name="data_ativo" id="id_data_ativo"></p>
+                <br>
+                <button class="button is-success" type="submit" value="Salvar">Salvar</button>
             </form>
 
         </main>
