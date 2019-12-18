@@ -1,7 +1,7 @@
 {% load static %}
 {% block sidebar %}
 <div class="hero-head">
-        <br>
+    <br>
     <div class='container .navbar'>
         <nav class="navbar">
             <div class="navbar-brand">
@@ -12,7 +12,7 @@
                 </figure>
 
                 <div class="navbar-burger burger"
-                    onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                     onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -41,20 +41,19 @@
                     {% endif %}
                     <!-- <a class="navbar-item" href="{% url 'list' %}">Clienteslist</a> -->
                     <span class="navbar-item">
-                        <a href="https://www.instagram.com/businessdataconsultoria/"><img
-                                src='{% static 'imgs/instagram.svg' %}'></img></a>
+                        <a href="https://www.instagram.com/businessdataconsultoria/">
+                        <img class="icon is-medium" src="{% static 'imgs/instagram.svg' %}"></a>
                     </span>
                     <span class="navbar-item">
-                        <img src='{% static 'imgs/whatsapp.svg' %}'></img>
+                       <img class="icon is-medium" src="{% static 'imgs/whatsapp.svg' %}">
                     </span>
                 </div>
             </div>
         </nav>
+        <br>
+
     </div>
 </div>
 
-<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-<script href="{% static 'anime.js' %}"></script>
 {% endblock %}
 <br>
-

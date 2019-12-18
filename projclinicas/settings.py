@@ -1,9 +1,7 @@
-
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -14,8 +12,7 @@ SECRET_KEY = 'ca*an(wv#cx^*c5x#=^8v2_!v-n!jpo32%)d$=1oqy*49l$(yq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['businessdata.com.br', 'www.businessdata.com.br']
-
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -35,7 +32,6 @@ INSTALLED_APPS = [
     'index',
     'django_bootstrap_breadcrumbs',
     'dashboard',
-    # 'dashboard',
 ]
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGOUT_REDIRECT_URL = 'dashboard'
@@ -51,6 +47,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'projclinicas.urls'
+
 
 TEMPLATES = [
     {
@@ -71,7 +68,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'projclinicas.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -85,8 +81,6 @@ DATABASES = {
         'PORT': '5432',
     },
 }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -106,7 +100,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -124,7 +117,6 @@ CHATTERBOT = {
     'name': 'Bdatarobo',
     'django_app_name': 'django_chatterbot'
 }
-    
 
 # crispy
 CRISPY_ALLOWED_TEMPLATE_PACKS = (
@@ -137,11 +129,8 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = (
 
 CRISPY_TEMPLATE_PACK = "bulma"
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-
-
 
 
 STATIC_URL = '/static/'

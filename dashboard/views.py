@@ -6,7 +6,7 @@ from django.views.generic.edit import CreateView
 from django.views.generic.edit import UpdateView
 from django.views.generic.edit import DeleteView
 from django.views.generic.edit import FormView
-from .models import bdclientes
+from .models import Clientes, Gestor
 from dashboard.forms import ClienteForms
 from django.utils import timezone
 from django.urls import reverse_lazy
@@ -29,10 +29,10 @@ def listclientes(request):
 # Formulários
 
 class listcliente(ListView):
-    model = bdclientes
+    model = Clientes
 
 class ClienteDetail(DetailView):
-    model = bdclientes
+    model = Clientes
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -40,17 +40,17 @@ class ClienteDetail(DetailView):
         return context
 
 class ClienteCreate(CreateView):
-    model = bdclientes
+    model = Clientes
     fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
     success_url = reverse_lazy('list')
 
 class ClienteUpdate(UpdateView):
-    model = bdclientes
+    model = Clientes
     fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
     success_url = reverse_lazy('list')
 
 class ClienteDelete(DeleteView):
-    model = bdclientes
+    model = Clientes
     success_url = reverse_lazy('list')
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -59,6 +59,14 @@ class ClienteDelete(DeleteView):
     
 class ClientesViewset(object):
     pass
+
+#Gestores
+
+class GestorCreate(CreateView):
+    model = Gestor
+    fields = ['gestor_id', 'nome', 'email', 'celular', 'especialidade']
+    success_url = reverse_lazy('list')
+
 
 # Gráficos
 

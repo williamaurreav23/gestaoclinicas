@@ -1,0 +1,22 @@
+<nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+        {% load django_bootstrap_breadcrumbs %}
+
+        {% block breadcrumbs %}
+        {% clear_breadcrumbs %}
+        {% breadcrumb "Home" "/" %}
+
+        <li><a href="{% url 'index' %}">Dashboard</a></li>
+        <li><a href="{% url 'login' %}">Level 1</a></li>
+        <li class="active">Level 2</li>
+        <li><a href="#">Bulma</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Components</a></li>
+        <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+        {% endblock %}
+
+        {% block content %}
+        {% render_breadcrumbs %}
+        {% endblock %}
+    </ul>
+</nav>

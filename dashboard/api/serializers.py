@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from dashboard.models import bdclientes
+from dashboard.models import Clientes
 
 
 class ClientesSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = bdclientes
+        model = Clientes
         fields = ['id', 'nome', 'sobrenome', 'cnpj', 'celular', 'email', 'foto']
