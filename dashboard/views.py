@@ -34,7 +34,7 @@ def get_name(request):
 
 
 @login_required
-def dashboard(request):
+def dashboard(request, id_ativo=2):
     return render(request, 'dashboard.html')
 
 
