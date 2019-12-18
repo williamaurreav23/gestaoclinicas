@@ -104,8 +104,3 @@ class TicketMedioVendas(models.Model):
     total_vendas = models.TextField(blank=True, null=True)
     nr_compras = models.TextField(blank=True, null=True)
     periodo = models.DateField(blank=True, null=True)
-
-class Turnover(models.Model):
-    id = models.AutoField(primary_key=True, blank=True, null=False)
-    contratados = models.TextField(blank=True, null=True)
-    desligamentos = models.TextField(blank=True, null=True)
