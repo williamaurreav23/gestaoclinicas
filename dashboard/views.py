@@ -1,35 +1,50 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from django.views.generic.list import ListView
-from django.views.generic.detail import DetailView
-from django.views.generic.edit import CreateView
-from django.views.generic.edit import UpdateView
-from django.views.generic.edit import DeleteView
-from django.views.generic.edit import FormView
-from .models import Clientes, Gestor
-from dashboard.forms import ClienteForms
+from django.views.generic import ListView, DetailView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from .models import Clientes, Gestor, Funcionario, Ativos, Passivos
 from django.utils import timezone
 from django.urls import reverse_lazy
-from bokeh.core.properties import value
-from bokeh.io import show, output_file
-from bokeh.plotting import figure
+from django.http import HttpResponseRedirect
+from .forms import AtivosForm
+import pandas as pd
+from django.views import View
 
-#Login
+
+
+def get_name(request):
+    # if this is a POST request we need to process the form data
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        form = AtivosForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
+            # process the data in form.cleaned_data as required
+            # ...
+            # redirect to a new URL:
+            return HttpResponseRedirect('/dashboard/')
+
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = AtivosForm()
+
+    return render(request, "ativos_form.html", {'form': form})
+
+# Login
+
 
 @login_required
 def dashboard(request):
     return render(request, 'dashboard.html')
 
 
-@login_required
-def listclientes(request):
-    return render(request, 'listclientes.html')
+# Listar Dados
 
-
-# Formulários
-
-class listcliente(ListView):
+class ListClientes(ListView):
     model = Clientes
+    template_name = "clientes_list.html"
+    queryset = Clientes.objects.all()
+
 
 class ClienteDetail(DetailView):
     model = Clientes
@@ -39,92 +54,62 @@ class ClienteDetail(DetailView):
         context['now'] = timezone.now()
         return context
 
+# Criar Dados
+
+
 class ClienteCreate(CreateView):
     model = Clientes
-    fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
+    fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email', 'foto']
     success_url = reverse_lazy('list')
+
+
+class FuncionarioCreate(CreateView):
+    model = Funcionario
+    fields = ['id_func', 'nome', 'nacionalidade', 'naturalidade_cid',
+              'naturalidade_estado', 'data_nasc', 'sexo', 'estado_civil', 'mae',
+              'pai', 'cor_raca', 'dependentes']
+    success_url = reverse_lazy('funcionario')
+
 
 class ClienteUpdate(UpdateView):
     model = Clientes
-    fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email' ]
-    success_url = reverse_lazy('list')
+    fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email']
+    success_url = reverse_lazy("list")
+
 
 class ClienteDelete(DeleteView):
     model = Clientes
     success_url = reverse_lazy('list')
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['now'] = timezone.now()
         return context
-    
-class ClientesViewset(object):
-    pass
 
-#Gestores
+
+class AtivoCreate(CreateView):
+    model = Ativos
+    fields = ['id_ativo', 'tipo_ativo',
+              'descricao_ativo', 'valor_ativo', 'data_ativo']
+    success_url = reverse_lazy("dashboard")
+
+
+class PassivoCreate(CreateView):
+    model = Passivos
+    fields = ['id_passivo', 'tipo_passivo',
+              'descricao_passivo', 'valor_passivo', 'data_passivo']
+    success_url = reverse_lazy("dashboard")
+
 
 class GestorCreate(CreateView):
     model = Gestor
     fields = ['gestor_id', 'nome', 'email', 'celular', 'especialidade']
     success_url = reverse_lazy('list')
 
-
 # Gráficos
 
-output_file("dashboard/templates/bar_stacked.html")
 
-indices = ['despesas', 'receitas', 'lucro']
-years = ["2017", "2018", "2019"]
-colors = ["#c9d9d3", "#718dbf", "#e84d60"]
-
-data = {'indices' : indices,
-        '2017'   : [23, 14, 47],
-        '2018'   : [53, 36, 43],
-        '2019'   : [38, 27, 44]}
-
-p = figure(x_range=indices, plot_height=250, title="indices da Empresa",
-           toolbar_location=None, tools="hover", tooltips="$name @indices: @$name")
-
-p.vbar_stack(years, x='indices', width=0.9, color=colors, source=data,
-             legend=[value(x) for x in years])
-
-p.y_range.start = 0
-p.x_range.range_padding = 0.1
-p.xgrid.grid_line_color = None
-p.axis.minor_tick_line_color = None
-p.outline_line_color = None
-p.legend.location = "top_left"
-p.legend.orientation = "horizontal"
-
-from bokeh.plotting import figure, show, output_file
-from bokeh.sampledata.iris import flowers
-
-colormap = {'setosa': 'red', 'versicolor': 'green', 'virginica': 'blue'}
-colors = [colormap[x] for x in flowers['species']]
-
-p = figure(title = "Iris Morphology")
-p.xaxis.axis_label = 'Petal Length'
-p.yaxis.axis_label = 'Petal Width'
-
-p.circle(flowers["petal_length"], flowers["petal_width"],
-         color=colors, fill_alpha=0.2, size=10)
-
-output_file("dashboard/templates/iris.html", title="iris.py example")
-
-
-#DESEMPENHO
-
-
-# Create your views here.
-
-def rotatividade(admissoes, demissoes, colaboadores):
-    numerador = (admissoes + demissoes) / 2
-    racio = numerador / colaboadores
-    taxa = racio * 100
-    print("o valor de rotatividade foi de :", taxa, "%")
-
-
-def grh(request):
-    return render(request, 'funcionarios.html')
-
-def desempenho(request):
-    return render(request, 'desempenho.html')
+class AtivosView(DetailView):
+    model = Ativos
+    template_name = 'dashboard.html'
+    query_pk_and_slug = 'id_ativo=1'

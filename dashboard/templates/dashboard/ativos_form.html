@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<header class="hero is-light">
+    <div class="hero-head">
+    </div>
+</header>
+
+<div class="section">
+    <div class="columns">
+        {% include 'nav.html' %}
+        <main class="column">
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <div class="title">Painel de Gestão do {{ user.username }}</div>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <button type="button" class="button is-small">
+              Hoje é {% now " D j F Y H:i" %}
+            </button>
+                    </div>
+                </div>
+            </div>
+            <h1 class="title is-2">Clientes</h1>
+            <!--            <form action="/dashboard/" method="post">-->
+            <!--                {% csrf_token %}-->
+            <!--                {{ form.as_p }}-->
+            <!--                <input type="submit" value="Submit">-->
+            <!--            </form>-->
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <p><label class="label" for="id_tipo_ativo">Tipo ativo:</label>
+                    <input class="input" type="text" name="tipo_ativo" maxlength="20" id="id_tipo_ativo"></p>
+                <p><label class="label" for="id_descricao_ativo">Descricao ativo:</label>
+                    <input class="input" type="text" name="descricao_ativo" maxlength="20" id="id_descricao_ativo"></p>
+                <p><label class="label" for="id_valor_ativo">Valor ativo:</label>
+                    <input class="input" type="number" name="valor_ativo" id="id_valor_ativo"></p>
+                <p><label class="label" for="id_data_ativo">Data ativo:</label>
+                    <input class="input" type="text" name="data_ativo" id="id_data_ativo"></p>
+                <br>
+                <button class="button is-success" type="submit" value="Salvar">Salvar</button>
+            </form>
+
+        </main>
+    </div>
+</div>
+{% endblock%}

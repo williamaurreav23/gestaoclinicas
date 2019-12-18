@@ -1,192 +1,32 @@
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
-
-<header class="hero is-light">
-    <div class="hero-head">
-    </div>
-</header>
-
-<div class="section">
-    <div class="columns">
+<div class=wrapper>
+    <div class=columns>
         {% include 'nav.html' %}
-        <main class="column">
-            {% include 'breadcumbs.html' %}
-            <div class="level">
-                <div class="level-left">
-                    <div class="level-item">
-                        <div class="title">Painel de Gestão do {{ user.username }}</div>
+        <main class="column main">
+            <nav class="breadcrumb is-small" aria-label=breadcrumbs>
+                <ul>
+                    <li><a href=#>Home</a></li>
+                    <li class=is-active><a href=# aria-current=page>Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class=level>
+                <div class=level-left>
+                    <div class=level-item>
+                        <div class="title has-text-primary"><i class="fas fa-tachometer-alt"></i>Painel de Gestão do {{ user.username }}</div>
                     </div>
                 </div>
-                <div class="level-right">
-                    <div class="level-item">
-                        <button type="button" class="button is-small">
-                            Hoje é {% now " D j F Y H:i" %}
-                        </button>
+                <div class=level-right>
+                    <div class=level-item>
+                        <button class="button is-small" type="button">Hoje é {% now " D j F Y H:i" %}</button>
                     </div>
-                </div>
-            </div>
-            {% include 'widgets.html' %}
-
-            <div class="tile is-ancestor" id="bloco1">
-                <div class="tile is-vertical is-8">
-                    <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                            <article class="tile is-child notification is-primary">
-                                <p class="title">Vertical...</p>
-                                <p class="subtitle">Top tile</p>
-                            </article>
-                            <article class="tile is-child notification is-warning">
-                                <p class="title">...tiles</p>
-                                <p class="subtitle">Bottom tile</p>
-                            </article>
-                        </div>
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification is-info">
-                                <p class="title">Ativos: R$ 7000,00</p>
-                                <p class="subtitle">With an image</p>
-                                {% include 'bar_stacked.html' %}
-                            </article>
-                        </div>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification ">
-                            <p class="title">Gráfico teste - R$2000,00</p>
-                            <p class="subtitle">Aligned with the right tile</p>
-                            <div class="content">
-                                {% include 'ativos.html' %}
-                            </div>
-                        </article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                            <p class="title">Gráfico teste - R$200,00</p>
-                            <p class="subtitle">Aligned with the right tile</p>
-                            <div class="content">
-                                {% include "iris.html" %}
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-success">
-                        <div class="content">
-                            <p class="title">Gráfico teste - R$2000,00</p>
-                            <p class="subtitle">With even more content</p>
-                            <div class="content">
-
-                            </div>
-                        </div>
-                    </article>
                 </div>
             </div>
-            <div class="tile is-ancestor" id="bloco2">
-                <div class="tile is-vertical is-8">
-                    <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                            <article class="tile is-child notification is-primary">
-                                <p class="title">Vertical...</p>
-                                <p class="subtitle">Top tile</p>
-                            </article>
-                            <article class="tile is-child notification is-warning">
-                                <p class="title">...tiles</p>
-                                <p class="subtitle">Bottom tile</p>
-                            </article>
-                        </div>
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification is-info">
-                                <p class="title">Ativos: R$ 7000,00</p>
-                                <p class="subtitle">With an image</p>
-                                {% include 'bar_stacked.html' %}
-                            </article>
-                        </div>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification ">
-                            <p class="title">Gráfico teste - R$2000,00</p>
-                            <p class="subtitle">Aligned with the right tile</p>
-                            <div class="content">
-                                {% include 'ativos.html' %}
-                            </div>
-                        </article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                            <p class="title">Gráfico teste - R$200,00</p>
-                            <p class="subtitle">Aligned with the right tile</p>
-                            <div class="content">
-                                {% include "iris.html" %}
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-success">
-                        <div class="content">
-                            <p class="title">Gráfico teste - R$2000,00</p>
-                            <p class="subtitle">With even more content</p>
-                            <div class="content">
-
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="tile is-ancestor" id="bloco3">
-                <div class="tile is-vertical is-8">
-                    <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                            <article class="tile is-child notification is-primary">
-                                <p class="title">Vertical...</p>
-                                <p class="subtitle">Top tile</p>
-                            </article>
-                            <article class="tile is-child notification is-warning">
-                                <p class="title">...tiles</p>
-                                <p class="subtitle">Bottom tile</p>
-                            </article>
-                        </div>
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification is-info">
-                                <p class="title">Ativos: R$ 7000,00</p>
-                                <p class="subtitle">With an image</p>
-                                {% include 'bar_stacked.html' %}
-                            </article>
-                        </div>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification ">
-                            <p class="title">Gráfico teste - R$2000,00</p>
-                            <p class="subtitle">Aligned with the right tile</p>
-                            <div class="content">
-                                {% include 'ativos.html' %}
-                            </div>
-                        </article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                            <p class="title">Gráfico teste - R$200,00</p>
-                            <p class="subtitle">Aligned with the right tile</p>
-                            <div class="content">
-                                {% include "iris.html" %}
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-success">
-                        <div class="content">
-                            <p class="title">Gráfico teste - R$2000,00</p>
-                            <p class="subtitle">With even more content</p>
-                            <div class="content">
-
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
+            {% include 'dashboard/widgets.html' %} {% include 'dashboard/chars.html' %}
         </main>
     </div>
 </div>
-<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+</div>
+
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js" type="text/javascript"></script>
 {% endblock %}

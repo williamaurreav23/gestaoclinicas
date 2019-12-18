@@ -3,9 +3,9 @@
 CAUTION: Do not modify this file unless you know what you are doing.
          Unexpected results may occur if the code is changed deliberately.
 -->
-<dbmodel pgmodeler-ver="0.9.1" last-position="0,0" last-zoom="1"
+<dbmodel pgmodeler-ver="0.9.1" last-position="169,0" last-zoom="1"
 	 default-schema="public" default-owner="postgres">
-<database name="new_database" is-template="false" allow-conns="true">
+<database name="bd_teste" is-template="false" allow-conns="true">
 </database>
 
 <schema name="public" fill-color="#e1e1e1" sql-disabled="true">
@@ -14,7 +14,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="empresas">
 	<schema name="public"/>
 	<role name="postgres"/>
-	<position x="200" y="80"/>
+	<position x="80" y="40"/>
 	<column name="id_cliente" not-null="true">
 		<type name="smallint" length="0"/>
 	</column>
@@ -62,15 +62,42 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="funcionarios">
 	<schema name="public"/>
 	<role name="postgres"/>
-	<position x="940" y="100"/>
+	<position x="1280" y="420"/>
 	<column name="id_func" not-null="true">
 		<type name="smallint" length="0"/>
 	</column>
 	<column name="nome">
-		<type name="smallint" length="0"/>
+		<type name="varchar" length="100"/>
 	</column>
-	<column name="nr_func">
-		<type name="smallint" length="0"/>
+	<column name="nacionalidade">
+		<type name="varchar" length="50"/>
+	</column>
+	<column name="naturalidade_cid">
+		<type name="varchar" length="20"/>
+	</column>
+	<column name="naturalidade_estado">
+		<type name="varchar" length="20"/>
+	</column>
+	<column name="data_nasc">
+		<type name="date" length="0"/>
+	</column>
+	<column name="sexo">
+		<type name="varchar" length="8"/>
+	</column>
+	<column name="estado_civil">
+		<type name="varchar" length="5"/>
+	</column>
+	<column name="mae">
+		<type name="varchar" length="50"/>
+	</column>
+	<column name="pai">
+		<type name="varchar" length="50"/>
+	</column>
+	<column name="cor_raca">
+		<type name="varchar" length="10"/>
+	</column>
+	<column name="dependentes">
+		<type name="integer" length="2"/>
 	</column>
 	<constraint name="funcionarios_pk" type="pk-constr" table="public.funcionarios">
 		<columns names="id_func" ref-type="src-columns"/>
@@ -128,7 +155,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="turnover">
 	<schema name="public"/>
 	<role name="postgres"/>
-	<position x="1300" y="200"/>
+	<position x="1300" y="180"/>
 	<column name="id">
 		<type name="smallint" length="0"/>
 	</column>

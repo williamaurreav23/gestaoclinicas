@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<header class="hero is-light">
+    <div class="hero-head">
+    </div>
+</header>
+
+<div class="section">
+    <div class="columns">
+        {% include 'nav.html' %}
+        <main class="column">
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <div class="title">Painel de Gestão do {{ user.username }}</div>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <button type="button" class="button is-small">
+                            Hoje é {% now " D j F Y H:i" %}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h1 class="title is-2">Clientes</h1>
+<!--                        <form method="post" enctype="multipart/form-data">{% csrf_token %}-->
+<!--                            {{ form.as_p }}-->
+<!--                            <input type="submit" value="Save">-->
+<!--                        </form>-->
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="field">
+                    <label for="nome" class="label">Nome</label>
+                    <input class="input" id="nome" type="text" name="nome" maxlength="100" required>
+                </div>
+                <div class="field">
+                    <label for="sobrenome" class="label">Sobrenome</label>
+                    <input class="input" id="sobrenome" type="text" name="sobrenome" maxlength="100" required>
+                </div>
+                <div class="field">
+                    <label for="cnpj" class="label">Cnpj</label>
+                    <input class="input" id="cnpj" type="text" name="cnpj" maxlength="11" required>
+                </div>
+                <div class="field">
+                    <label for="celular" class="label">Celular</label>
+                    <input class="input" id="celular" type="text" name="celular" maxlength="9" required>
+                </div>
+                <div class="field">
+                    <label for="email" class="label">Email</label>
+                    <input class="input" id="email" type="text" name="email" maxlength="100" required>
+                </div>
+                <div class="form-group ">
+                    <label class="col-sm-2 control-label ">Foto</label>
+                    <div class="col-sm-10">
+                        <input class="input" id="foto" name="foto" type="file" value="">
+                    </div>
+                </div>
+                <br>
+                <button class="button is-success" type="submit" value="Salvar">Salvar</button>
+            </form>
+        </main>
+    </div>
+</div>
+{% endblock%}
