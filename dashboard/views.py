@@ -68,13 +68,13 @@ class FuncionarioCreate(CreateView):
     fields = ['id_func', 'nome', 'nacionalidade', 'naturalidade_cid',
               'naturalidade_estado', 'data_nasc', 'sexo', 'estado_civil', 'mae',
               'pai', 'cor_raca', 'dependentes']
-    success_url = reverse_lazy('funcionario')
-
+#    success_url = reverse_lazy('funcionario')
+#return render(request, 'fucionario.html')
 
 class ClienteUpdate(UpdateView):
     model = Clientes
     fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email']
-    success_url = reverse_lazy("list")
+#    success_url = reverse_lazy("list")
 
 
 class ClienteDelete(DeleteView):

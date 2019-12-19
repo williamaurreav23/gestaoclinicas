@@ -1,3 +1,4 @@
+
 """projclinicas URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -30,7 +31,7 @@ router.register(r'passivos', PassivosViewset, base_name='PassivosViewset')
 urlpatterns = [
     path('', include('index.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
-    path(r'dashboard/', include('dashboard.urls')),
+    path(r'dashboard/', include('dashboard.urls', namespace='dashboard')),
     path('chatbot/', include('chatbot.urls')),
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
