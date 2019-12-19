@@ -60,7 +60,6 @@ class ClienteDetail(DetailView):
 class ClienteCreate(CreateView):
     model = Clientes
     fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email', 'foto']
-    success_url = reverse_lazy('list')
 
 
 class FuncionarioCreate(CreateView):
@@ -68,18 +67,15 @@ class FuncionarioCreate(CreateView):
     fields = ['id_func', 'nome', 'nacionalidade', 'naturalidade_cid',
               'naturalidade_estado', 'data_nasc', 'sexo', 'estado_civil', 'mae',
               'pai', 'cor_raca', 'dependentes']
-    success_url = reverse_lazy('funcionario')
 
 
 class ClienteUpdate(UpdateView):
     model = Clientes
     fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email']
-    success_url = reverse_lazy("list")
 
 
 class ClienteDelete(DeleteView):
     model = Clientes
-    success_url = reverse_lazy('list')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -91,20 +87,19 @@ class AtivoCreate(CreateView):
     model = Ativos
     fields = ['id_ativo', 'tipo_ativo',
               'descricao_ativo', 'valor_ativo', 'data_ativo']
-    success_url = reverse_lazy("dashboard")
+
 
 
 class PassivoCreate(CreateView):
     model = Passivos
     fields = ['id_passivo', 'tipo_passivo',
               'descricao_passivo', 'valor_passivo', 'data_passivo']
-    success_url = reverse_lazy("dashboard")
+
 
 
 class GestorCreate(CreateView):
     model = Gestor
     fields = ['gestor_id', 'nome', 'email', 'celular', 'especialidade']
-    success_url = reverse_lazy('list')
 
 # Gráficos
 
