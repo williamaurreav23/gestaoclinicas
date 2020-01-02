@@ -1,22 +1,40 @@
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
-
-<section class="hero index">
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="level"></div>
+<section class='section'>
     <div class="hero-body">
-        <div class="container">
-            <div
-                class="columns is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                <div class="column">
-                    <figure class="image is-4by3">
-                        <img src="/static/imgs/2614794.svg">
-                    </figure>
+        <div class="level"></div>
+        <div class="container ">
+            <div class="columns is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd ">
+                <div class="column ">
+                    <h1 class="title is-1">Use a inteligência a favor do seu negócio.</h1>
+                    <h2 class="title is-3">Soluções criativas e inovadoras para nossos clientes.</h2>
+                    <a href="{% url 'empresa' %} " class="button is-link is-rounded">Saiba mais</a>
                 </div>
                 <div class="column ">
-                    <h1 class="title is-3">NEGÓCIOS INTELIGENTES É COM A BUSINESS DATA CONSULTORIA</h1>
-                    <h2 class="title is-4">Desenvolvemos soluções de gestão para nossos clientes e auxiliamos na
-                        excelência de seus negócios.</h2>
-                    <a href="{% url 'empresa' %}" class="button is-danger is-outlined">Saiba mais</a>
+                    <figure class="image is-4by3 ">
+                        <img src="/static/imgs/21430.svg ">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero is-info is-medium bloco2">
+    <div class="hero-body">
+        <div class="container ">
+            <div class="columns is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd ">
+                <div class="column is-6 ">
+                    <h1 class="title is-3 ">
+                        Negócios inteligentes usam e abusam das informações e faz com que seus serviços e produtos se destaquem no mercado.
+                    </h1>
+                    <h2 class="subtitle ">
+                        <a href="{% url 'empresa' %} " class="button is-rounded ">Saiba mais</a>
+                    </h2>
+                </div>
+                <div class="column is-6">
+                    <p class="bd-notification is-primary ">
+                        <h1 class="title is-1 has-text-centered ">Expertise</h1>
+                    </p>
                 </div>
             </div>
         </div>
@@ -24,85 +42,81 @@
 </section>
 <section class='section'>
     <div class='container'>
-        <div
-            class="row columns is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd ">
-            <div class="column is-one-third">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="/static/imgs/bloco.png" alt="Placeholder image">
+        <div class="row columns is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd ">
+            <div class="column is-one-third ">
+                <div class="card ">
+                    <div class="card-image ">
+                        <figure class="image is-4by3 ">
+                            <img src="/static/imgs/bloco.png " alt="Placeholder image ">
                         </figure>
                     </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">Consultoria Empresarial</p>
-                                <p class="subtitle is-6">@business</p>
+                    <div class="card-content ">
+                        <div class="media ">
+                            <div class="media-content ">
+                                <p class="title is-4 ">Consultoria Empresarial</p>
+                                <p class="subtitle is-6 ">@business</p>
                             </div>
                         </div>
 
-                        <div class="content">
-                            Visa proporcionar à empresa as condições necessárias para o desenvolvimento e aprimoramento
-                            de modo que seu desempenho atinja níveis satisfatórios de eficiência e eficácia
+                        <div class="content ">
+                            Visa proporcionar à empresa as condições necessárias para o desenvolvimento e aprimoramento de modo que seu desempenho atinja níveis satisfatórios de eficiência e eficácia
                             <br>
                             <br>
-                            <a href="{% url 'empresa' %}"><button class="button is-info is-rounded"> Saiba
+                            <a href="{% url 'empresa' %} "><button class="button is-info is-rounded "> Saiba
                                     mais</button></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="column is-one-third">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="/static/imgs/bloco2.png" alt="Placeholder image">
+            <div class="column is-one-third ">
+                <div class="card ">
+                    <div class="card-image ">
+                        <figure class="image is-4by3 ">
+                            <img src="/static/imgs/bloco2.png " alt="Placeholder image ">
                         </figure>
                     </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">Data Science</p>
-                                <p class="subtitle is-6">@data</p>
+                    <div class="card-content ">
+                        <div class="media ">
+                            <div class="media-content ">
+                                <p class="title is-4 ">Data Science</p>
+                                <p class="subtitle is-6 ">@data</p>
                             </div>
                         </div>
 
-                        <div class="content">
-                            Empresas inteligentes usam e abusam do data science. Utilizar as informações de forma sábia,
-                            faz com que a sua empresa se destaque no mercado.
-                            <span class="tag is-info">data</span>.
-                            <a href="#">#dados</a> <a href="#">#datascience</a>
+                        <div class="content ">
+                            Empresas inteligentes usam e abusam do data science. Utilizar as informações de forma sábia, faz com que a sua empresa se destaque no mercado.
+                            <span class="tag is-info ">data</span>.
+                            <a href="# ">#dados</a> <a href="# ">#datascience</a>
                             <br>
                             <br>
                             <div></div>
-                            <a href="{% url 'empresa' %}"><button class="button is-danger is-rounded"> Saiba
+                            <a href="{% url 'empresa' %} "><button class="button is-danger is-rounded "> Saiba
                                     mais</button></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="column is-one-third">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="/static/imgs/bloco4.png" alt="Placeholder image">
+            <div class="column is-one-third ">
+                <div class="card ">
+                    <div class="card-image ">
+                        <figure class="image is-4by3 ">
+                            <img src="/static/imgs/bloco4.png " alt="Placeholder image ">
                         </figure>
                     </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">Marketing Digital</p>
-                                <p class="subtitle is-6">@bdata</p>
+                    <div class="card-content ">
+                        <div class="media ">
+                            <div class="media-content ">
+                                <p class="title is-4 ">Marketing Digital</p>
+                                <p class="subtitle is-6 ">@bdata</p>
                             </div>
                         </div>
-                        <div class="content">
-                            Com o marketing digital sua empresa pode desenvolver um funil de vendas personalizado
-                            atraindo potenciais clientes para seu negócio.
+                        <div class="content ">
+                            Com o marketing digital sua empresa pode desenvolver um funil de vendas personalizado atraindo potenciais clientes para seu negócio.
                             <a>@data</a>.
-                            <a href="#">#marketing</a> <a href="#">#digital</a>
+                            <a href="# ">#marketing</a> <a href="# ">#digital</a>
                             <br>
                             <br>
-                            <a href="{% url 'empresa' %}"><button class="button is-success is-rounded"> Saiba
+                            <a href="{% url 'empresa' %} "><button class="button is-success is-rounded "> Saiba
                                     mais</button></a>
                         </div>
                     </div>
@@ -111,123 +125,19 @@
         </div>
     </div>
 </section>
-<section class="section has-background-white-ter">
-    <div class="container">
-        <div class="columns is-multiline">
-            <div class="column is-one-third">
-                <div class='has-text-centered'>
-                    <img src="/static/imgs/diagram.svg" width="100" height="100"></img>
-                    <div class="media-content has-text-centered">
-                        <h3 class="title"><a href="/" class="has-text-dark" title="">Gestão Empresarial</a></h3>
-                        <p class="title is-5 has-text-weight-bold">O poder da <strong>gestão</strong> aplicado a sua
-                            empresa.</p>
-                        <div><a class="button is-info is-outlined" href="{% url 'gestao' %}">Saiba mais</a></div>
-                    </div>
+<section class="hero is-info is-large">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd ">
+                <div class="column is-6 ">
+                    <h1 class="title has-text-black">Como o marketing digital da sua empresa pode desenvolver um funil de vendas personalizado atraindo potenciais clientes para seu negócio. </h1>
                 </div>
-            </div>
-            <div class="column is-one-third">
-                <div class='has-text-centered'>
-                    <img src="/static/imgs/target.svg" width="100" height="100"></img>
-                    <div class="media-content has-text-centered">
-                        <h3 class="title"><a href="/" class="has-text-dark" title="">Top of Mind</a></h3>
-                        <p class="title is-5 has-text-weight-bold"> A <strong>marca</strong> da sua empresa na cabeça
-                            das pessoas.</p>
+                <div>
+                    <h2 class="subtitle">
 
-                        <div><a class="button is-info is-outlined" href="{% url 'top' %}">Saiba mais</a></div>
-                    </div>
+                    </h2>
                 </div>
-            </div>
-            <div class="column is-one-third">
-                <div class='has-text-centered'>
-                    <img src="/static/imgs/startup.svg" width="100" height="100"></img>
-                    <div class="media-content has-text-centered">
-                        <h3 class="title"><a href="/" class="has-text-dark" title="">Marketing Digital</a></h3>
-                        <p class="title is-5 has-text-weight-bold"> Criação de um <strong>funil</strong> de vendas para
-                            sua empresa.</p>
 
-                        <div><a class="button is-info is-outlined" href="{% url 'marketing' %}">Saiba mais</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class='has-text-centered'>
-                    <img src="/static/imgs/puzzle.svg" width="100" height="100"></img>
-                    <div class="media-content has-text-centered">
-                        <h3 class="title"><a href="/" class="has-text-dark" title="">Planejamento Estratégico</a></h3>
-                        <p class="title is-5 has-text-weight-bold">Criar um <strong>plano</strong> para fazer sua
-                            empresa expandir.</p>
-
-                        <div><a class="button is-info is-outlined" href="{% url 'planejamento' %}">Saiba mais</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class='has-text-centered'>
-                    <img src="/static/imgs/pantone.svg" width="100" height="100"></img>
-                    <div class="media-content has-text-centered">
-                        <h3 class="title"><a href="/" class="has-text-dark" title="">Design Instrucional</a></h3>
-                        <p class="title is-5 has-text-weight-bold">Desenhamos um <strong>curso</strong> de acordo com a
-                            necessidade da sua empresa.</p>
-
-                        <div><a class="button is-info is-outlined" href="{% url 'design' %}">Saiba mais</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class='has-text-centered'>
-                    <img src="/static/imgs/database.svg" width="100" height="100"></img>
-                    <div class="media-content has-text-centered">
-                        <h3 class="title"><a href="/" class="has-text-dark" title="">Data Science</a></h3>
-                        <p class="title is-5 has-text-weight-bold">Transformamos seus dados em
-                            <strong>informação</strong> para auxiliar nas decisões da empresa.</p>
-                        <div><a class="button is-info is-outlined" href="{% url 'data' %}">Saiba mais</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <div class="columns">
-            <div class="column">
-                <h1 class="title is-2">Solicite um orçamento</h1>
-                <form action="{% url 'new' %}" method="post">
-                    {% csrf_token %}
-                    <div class="field">
-                        <label for="nome" class="label">Nome</label>
-                        <input class="input" id="nome" type="text" name="nome" maxlength="100" required>
-                    </div>
-                    <div class="field">
-                        <label for="sobrenome" class="label">Sobrenome</label>
-                        <input class="input" id="sobrenome" type="text" name="sobrenome" maxlength="100" required>
-                    </div>
-                    <div class="field">
-                        <label for="cnpj" class="label">CNPJ</label>
-                        <input class="input" id="cnpj" type="text" name="cnpj" maxlength="11" required>
-                    </div>
-                    <div class="field">
-                        <label for="celular" class="label">Celular</label>
-                        <input class="input" id="celular" type="text" name="celular" maxlength="9" required>
-                    </div>
-                    <div class="field">
-                        <label for="email" class="label">Email</label>
-                        <input class="input" id="email" type="text" name="email" maxlength="100" required>
-                    </div>
-                    <button class="button is-success" type="submit" value="Salvar">Salvar</button>
-                </form>
-                <br />
-                <div class="is-divider"></div>
-            </div>
-            <div class="column">
-                <figure class="image is-5by4 is-480x480">
-                    <img src="/static/imgs/2795146.svg">
-                </figure>
-                <p class="is-larger has-text-centered">
-                    <span class="tag is-danger">Atenção</span> Não somos fãs de spam, seu e-mail estará seguro
-                    conosco pois só vamos usar para entrar em contato ou lhe informar sobre as novidades.
-                </p>
             </div>
         </div>
     </div>
