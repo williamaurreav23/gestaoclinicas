@@ -1,9 +1,8 @@
-{% load static %}
-{% block sidebar %}
-<div class="hero-head">
-    <br>
-    <div class='container .navbar'>
-        <nav class="navbar">
+{% load static %} {% block sidebar %}
+
+<div class="container is-widescreen">
+    <nav class="navbar is-fixed-top is-light">
+        <div class="container">
             <div class="navbar-brand">
                 <figure class="image is-96x96">
                     <a href="{% url 'index' %}">
@@ -11,8 +10,7 @@
                     </a>
                 </figure>
 
-                <div class="navbar-burger burger"
-                     onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                <div class="navbar-burger burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -20,40 +18,50 @@
             </div>
             <div class="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item is-active has-text-link" href="{% url 'index' %}">
+                    <!-- <a class="navbar-item is-active has-text-link" href="{% url 'index' %}">
                         Home
+                    </a> -->
+                    <!-- <a class="navbar-item" href="{% url 'empresa' %}">A empresa</a>
+                    <a class="navbar-item" href="{% url 'equipe' %}">A equipe</a> -->
+                    <a class="navbar-item" href="{% url 'servicos' %}">
+                        <h1 class="title is-4">Serviços</h1>
                     </a>
-                    <a class="navbar-item" href="{% url 'empresa' %}">A empresa</a>
-                    <a class="navbar-item" href="{% url 'equipe' %}">A equipe</a>
-                    <a class="navbar-item" href="{% url 'servicos' %}">Serviços</a>
-                    <a class="navbar-item" href="{% url 'clientes' %}">Clientes</a>
-                    <a class="navbar-item" href="{% url 'parceiros' %}">Parceiros</a>
+                    <a class="navbar-item" href="{% url 'clientes' %}">
+                        <h1 class="title is-4">Ajuda</h1>
+                    </a>
+                    <a class="navbar-item" href="{% url 'parceiros' %}">
+                        <h1 class="title is-4">Entrar</h1>
+                    </a>
                     <!-- <a class="navbar-item" href="{% url 'blog' %}">Blog</a> -->
-                    <span class="navbar-item">
+                    <!-- <span class="navbar-item">
                         <a class="navbar-item" href="/accounts/login"><button
                                 class="button is-success is-rounded">Login</button></a>
-                    </span>
-                    {% if user.is_authenticated %}
+                    </span> {% if user.is_authenticated %}
                     <span class="navbar-item">
                         <a class="navbar-item" href="/accounts/logout"><button
                                 class="button is-danger is-rounded">Sair</button></a>
-                    </span>
-                    {% endif %}
+                    </span> {% endif %}
                     <!-- <a class="navbar-item" href="{% url 'list' %}">Clienteslist</a> -->
-                    <span class="navbar-item">
+                    <!-- <span class="navbar-item">
                         <a href="https://www.instagram.com/businessdataconsultoria/">
                         <img class="icon is-medium" src="{% static 'imgs/instagram.svg' %}"></a>
                     </span>
                     <span class="navbar-item">
                        <img class="icon is-medium" src="{% static 'imgs/whatsapp.svg' %}">
-                    </span>
+                    </span> -->
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
+</div>
+<!-- <div class="hero-head">
+    <br>
+    <div class='container .navbar'>
+
         <br>
 
     </div>
-</div>
+</div> -->
 
 {% endblock %}
 <br>
