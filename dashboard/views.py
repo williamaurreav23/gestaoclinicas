@@ -67,20 +67,16 @@ class FuncionarioCreate(CreateView):
     fields = ['id_func', 'nome', 'nacionalidade', 'naturalidade_cid',
               'naturalidade_estado', 'data_nasc', 'sexo', 'estado_civil', 'mae',
               'pai', 'cor_raca', 'dependentes']
-<<<<<<< HEAD
 #    success_url = reverse_lazy('funcionario')
 #return render(request, 'fucionario.html')
-=======
 
->>>>>>> 95ff0bbf5d02e90da37e290b21e3d96cff92bbea
 
 class ClienteUpdate(UpdateView):
     model = Clientes
     fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email']
-<<<<<<< HEAD
+
 #    success_url = reverse_lazy("list")
-=======
->>>>>>> 95ff0bbf5d02e90da37e290b21e3d96cff92bbea
+
 
 
 class ClienteDelete(DeleteView):
@@ -117,3 +113,4 @@ class AtivosView(DetailView):
     model = Ativos
     template_name = 'dashboard.html'
     query_pk_and_slug = 'id_ativo=1'
+
