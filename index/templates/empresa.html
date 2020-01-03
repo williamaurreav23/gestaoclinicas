@@ -1,34 +1,240 @@
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
-<section class="heroempresa is-primary is-medium">
-        <div class="hero-body">
-                <div class="container">
-                        <h1 class="title">
-                                <br>
-                        </h1>
-                        <h2 class="subtitle">
-                                <br>
-                        </h2>
-                </div>
-        </div>
-</section>
-
-<section class="section">
+{% extends "base.html" %} {% load static %} {% block content %}
+<section class="hero is-medium is-bold">
+    <div class="hero-body">
         <div class="container">
+            <div class="columns is-multiline is-centered cards-conytainer" id="sectioncontainer">
                 <div class="columns">
-                        <div class="column is-one-quarter">
-                                <figure><img src="{% static 'imgs/logo.svg' %}" width="200px"></figure>
+                    <div class="column">
+                        <div class="column is-narrow">
+                            <h1 class="title is-2">
+                                Sobre Nós
+                            </h1>
+                            <h1 class="title is-3">A Business Data Consultoria LTDA é uma consultoria focada em inteligências para Gestão empresarial. Procuramos desenvolver ferramentas inovadoras e criativas para os negócios dos nossos clientes. Nossa visão é desenvolver soluções
+                                de gestão para nossos clientes e auxiliá-los em alcançar a excelência em seus negócios. Nossa missão é dar força e compartilhar a imaginação, o conhecimento e os momentos importantes com nossos clientes.
+                            </h1>
                         </div>
-                        <div class="column is-two-thirds">
-                                <h1 class="title">Business Data Consultoria LTDA.</h1>
-                                <h2 class="subtitle">Gestão empresarial Inovadora e Criativa.</h2>
-                                <title> Visão da Empresa</title>
-                                <h1 class="title">Visão da Empresa</h1>
-                                <h2 class="subtitle">Desenvolver soluções de gestão para nossos clientes e auxiliar na
-                                        excelência em seus negócios.</h2>
+                    </div>
+                    <div class="column">
+                        <div class="column is-narrow">
+                            <figure class="image is-3by2">
+                                <img src="/static/imgs/logo.svg" alt="">
+                            </figure>
                         </div>
+                    </div>
                 </div>
+            </div>
         </div>
+    </div>
+</section>
+<section class="hero is-medium is-blue">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-1 has-text-centered has-text-white">
+                Equipe
+            </h1>
+            <div class="row columns">
+                <div class="column is-one-third">
+                    <div class="card large">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="/static/imgs/heroimg.jpg" alt="Image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-64x64">
+                                        <img src="/static/imgs/ene.png" alt="Image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4 no-padding">Eneylton Barros</p>
+                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
+                                    <p class="subtitle is-6">Desenvolvedor</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Analista de Sistemas formado pela Universidade Uniceuma. Atua em projetos de grande porte como desenvolvedor full stack utilizando as linguagem de programação Java / PHP-7 no BACK-END Vasto colhecimento em Bancos de Dados Relacionais.
+                                <div class="background-icon"><span class="icon-facebook"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="card large">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="/static/imgs/back.jpg" alt="Image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-64x64">
+                                        <img src="/static/imgs/evans.png" alt="Image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4 no-padding">Evanildo de Jesus</p>
+                                    <p><span class="title is-6"><a href="http://twitter.com/#">@evanildobarros</a></span></p>
+                                    <p class="subtitle is-6">Data Science/CEO</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Administrador formado pela Universidade Estadual do Maranhão, 2000. Pós-graduador em Metodologia do Ensino Superior e Design Instrucional. Tecnólogo em Análise de Sistemas e Programador por paixão e um entusiasta no empreendedorismo. Portfólio. xxxxx
+                                <div class="background-icon"><span class="icon-facebook"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero is-medium is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <div class="container has-text-centered">
+                <h2 class="title">Nossos Clientes</h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="/static/imgs/assembleia.jpg">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="/static/imgs/assembleia.jpg">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Escola do Legislativo do Maranhão</p>
+                                        <p class="subtitle is-6">http://moodle.al.ma.leg.br/</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Design Instrucional dos cursos abertos da ALEMA. Projeto realizado em 2013. <a>@AL_Maranhao</a>.
+                                    <a href="https://twitter.com/AL_Maranhao">Assembleia Legislativa do Maranhão</a> <a href="#">#moodle</a>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="/static/imgs/ineuron.png" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="/static/imgs/ineuron.png" alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Consultoria Empresarial</p>
+                                        <p class="subtitle is-6">@businessdata</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Realizada consultoria empresarial da empresa. Relatório Diagnóstico Organizacional e Planejamento Estratégico <a>@Ineuron</a>.
+                                    <a href="#">#consultoria</a> <a href="#">#ineuron</a>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+
+                    </div>
+                    <div class="column">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero is-medium is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <div class="container has-text-centered">
+                <h2 class="title">Nossos Parceiros</h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by2">
+                                    <img src="/static/imgs/jara.png">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="/static/imgs/jara.png">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Jara Saúde e Bem Estar</p>
+                                        <p class="subtitle is-6">@jarasaude</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Localizado no Jaracaty Shopping. <a>@bulmaio</a>.
+                                    <a href="#">#css</a> <a href="#">#responsive</a>
+                                    <br>
+                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="/static/imgs/louyt.jpg" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="/static/imgs/louyt.jpg" alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Louyt Mobile</p>
+                                        <p class="subtitle is-6">@louyt</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Localizado no Jaracaty Shopping. <a>@bulmaio</a>.
+                                    <a href="#">#css</a> <a href="#">#responsive</a>
+                                    <br>
+                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 {% endblock %}

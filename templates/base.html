@@ -43,22 +43,25 @@
     <meta name="google-site-verification" content="mtJHw2AmDzx52pRLRD0IqVydq3lF-Mc4XjDkMjJMbuU" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/static/styles/bulma/css/bulma.css">
-    <!-- <link rel="stylesheet" href="/static/styles/bulma/mystyles.scss" /> -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <!--    <link rel="stylesheet" href="{% static '/styles/debug.css' %}" />-->
+    <link rel="stylesheet" href="/static/styles/bulma/css/main.css">
 
 </head>
 
 <body>
-    <div class="container is-8-desktop">
+    <div class="container is-9-desktop">
         {% include "menu.html" %}
     </div>
-    {% block content %} {% endblock %} {% include "footer.html" %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <div class="level"></div>
+    <section>
+
+        {% block content %} {% endblock %} {% include "footer.html" %}
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js "></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js "></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W7FQGS35QC"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W7FQGS35QC "></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -68,10 +71,10 @@
         gtag('js', new Date());
         gtag('config', 'G-W7FQG>S35QC');
     </script>
-    <script src="/static/js/node_modules/chart.js/dist/Chart.js"></script>
+    <script src="/static/js/node_modules/chart.js/dist/Chart.js "></script>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8C5BBR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8C5BBR "
+height="0 " width="0 " style="display:none;visibility:hidden "></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 </body>
 

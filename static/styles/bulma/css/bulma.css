@@ -1,23 +1,13 @@
+@charset "UTF-8";
+
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 
-@-webkit-keyframes spinAround {
-    from {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
-}
-
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @keyframes spinAround {
     from {
-        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
     to {
-        -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
     }
 }
@@ -53,9 +43,7 @@
     pointer-events: none;
     position: absolute;
     top: 50%;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    -webkit-transform-origin: center;
     transform-origin: center;
     width: 0.625em;
 }
@@ -112,9 +100,7 @@
     left: 50%;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
     transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    -webkit-transform-origin: center center;
     transform-origin: center center;
 }
 
@@ -176,7 +162,6 @@
 .loader,
 .select.is-loading::after,
 .control.is-loading::after {
-    -webkit-animation: spinAround 500ms infinite linear;
     animation: spinAround 500ms infinite linear;
     border: 2px solid #dbdbdb;
     border-radius: 290486px;
@@ -304,16 +289,16 @@
     outline: none;
 }
 
-.button[disabled],
-.input[disabled],
-.textarea[disabled],
+[disabled].button,
+[disabled].input,
+[disabled].textarea,
 .select select[disabled],
-.file-cta[disabled],
-.file-name[disabled],
-.pagination-previous[disabled],
-.pagination-next[disabled],
-.pagination-link[disabled],
-.pagination-ellipsis[disabled],
+[disabled].file-cta,
+[disabled].file-name,
+[disabled].pagination-previous,
+[disabled].pagination-next,
+[disabled].pagination-link,
+[disabled].pagination-ellipsis,
 fieldset[disabled] .button,
 fieldset[disabled] .input,
 fieldset[disabled] .textarea,
@@ -430,9 +415,6 @@ html {
     overflow-x: hidden;
     overflow-y: scroll;
     text-rendering: optimizeLegibility;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
 }
 
@@ -451,7 +433,7 @@ button,
 input,
 select,
 textarea {
-    font-family: 'Nunito', sans-serif;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 code,
@@ -3874,13 +3856,9 @@ fieldset[disabled] .button {
 }
 
 .progress:indeterminate {
-    -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    -webkit-animation-name: moveIndeterminate;
     animation-name: moveIndeterminate;
-    -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
     background-color: #dbdbdb;
     background-image: linear-gradient(to right, #4a4a4a 30%, #dbdbdb 30%);
@@ -3907,15 +3885,6 @@ fieldset[disabled] .button {
 
 .progress.is-large {
     height: 1.5rem;
-}
-
-@-webkit-keyframes moveIndeterminate {
-    from {
-        background-position: 200% 0;
-    }
-    to {
-        background-position: -200% 0;
-    }
 }
 
 @keyframes moveIndeterminate {
@@ -4303,9 +4272,7 @@ fieldset[disabled] .button {
     left: 50%;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
     transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    -webkit-transform-origin: center center;
     transform-origin: center center;
 }
 
@@ -4384,19 +4351,19 @@ a.tag:hover {
 }
 
 .title.is-1 {
-    font-size: 4rem;
+    font-size: 1.25rem;
 }
 
 .title.is-2 {
-    font-size: 2.5rem;
+    font-size: 1.25rem;
 }
 
 .title.is-3 {
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 .title.is-4 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .title.is-5 {
@@ -4404,11 +4371,11 @@ a.tag:hover {
 }
 
 .title.is-6 {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .title.is-7 {
-    font-size: 0.75rem;
+    font-size: 1.25rem;
 }
 
 .subtitle {
@@ -4548,8 +4515,8 @@ a.tag:hover {
     box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
 }
 
-.input[disabled],
-.textarea[disabled],
+[disabled].input,
+[disabled].textarea,
 .select select[disabled],
 fieldset[disabled] .input,
 fieldset[disabled] .textarea,
@@ -4561,8 +4528,8 @@ fieldset[disabled] .select select,
     color: #7a7a7a;
 }
 
-.input[disabled]::-moz-placeholder,
-.textarea[disabled]::-moz-placeholder,
+[disabled].input::-moz-placeholder,
+[disabled].textarea::-moz-placeholder,
 .select select[disabled]::-moz-placeholder,
 fieldset[disabled] .input::-moz-placeholder,
 fieldset[disabled] .textarea::-moz-placeholder,
@@ -4571,8 +4538,8 @@ fieldset[disabled] .select select::-moz-placeholder,
     color: rgba(122, 122, 122, 0.3);
 }
 
-.input[disabled]::-webkit-input-placeholder,
-.textarea[disabled]::-webkit-input-placeholder,
+[disabled].input::-webkit-input-placeholder,
+[disabled].textarea::-webkit-input-placeholder,
 .select select[disabled]::-webkit-input-placeholder,
 fieldset[disabled] .input::-webkit-input-placeholder,
 fieldset[disabled] .textarea::-webkit-input-placeholder,
@@ -4581,8 +4548,8 @@ fieldset[disabled] .select select::-webkit-input-placeholder,
     color: rgba(122, 122, 122, 0.3);
 }
 
-.input[disabled]:-moz-placeholder,
-.textarea[disabled]:-moz-placeholder,
+[disabled].input:-moz-placeholder,
+[disabled].textarea:-moz-placeholder,
 .select select[disabled]:-moz-placeholder,
 fieldset[disabled] .input:-moz-placeholder,
 fieldset[disabled] .textarea:-moz-placeholder,
@@ -4591,8 +4558,8 @@ fieldset[disabled] .select select:-moz-placeholder,
     color: rgba(122, 122, 122, 0.3);
 }
 
-.input[disabled]:-ms-input-placeholder,
-.textarea[disabled]:-ms-input-placeholder,
+[disabled].input:-ms-input-placeholder,
+[disabled].textarea:-ms-input-placeholder,
 .select select[disabled]:-ms-input-placeholder,
 fieldset[disabled] .input:-ms-input-placeholder,
 fieldset[disabled] .textarea:-ms-input-placeholder,
@@ -4608,8 +4575,8 @@ fieldset[disabled] .select select:-ms-input-placeholder,
     width: 100%;
 }
 
-.input[readonly],
-.textarea[readonly] {
+[readonly].input,
+[readonly].textarea {
     box-shadow: none;
 }
 
@@ -4798,7 +4765,6 @@ fieldset[disabled] .select select:-ms-input-placeholder,
 .is-inline.input,
 .is-inline.textarea {
     display: inline;
-    width: auto;
 }
 
 .input.is-rounded {
@@ -4854,8 +4820,8 @@ fieldset[disabled] .select select:-ms-input-placeholder,
     color: #363636;
 }
 
-.checkbox[disabled],
-.radio[disabled],
+[disabled].checkbox,
+[disabled].radio,
 fieldset[disabled] .checkbox,
 fieldset[disabled] .radio {
     color: #7a7a7a;
@@ -5152,7 +5118,6 @@ fieldset[disabled] .select select:hover {
     position: absolute;
     right: 0.625em;
     top: 0.625em;
-    -webkit-transform: none;
     transform: none;
 }
 
@@ -6020,7 +5985,7 @@ print {
 
 .breadcrumb li+li::before {
     color: #b5b5b5;
-    content: "\0002f";
+    content: "/";
 }
 
 .breadcrumb ul,
@@ -6062,19 +6027,19 @@ print {
 }
 
 .breadcrumb.has-arrow-separator li+li::before {
-    content: "\02192";
+    content: "→";
 }
 
 .breadcrumb.has-bullet-separator li+li::before {
-    content: "\02022";
+    content: "•";
 }
 
 .breadcrumb.has-dot-separator li+li::before {
-    content: "\000b7";
+    content: "·";
 }
 
 .breadcrumb.has-succeeds-separator li+li::before {
-    content: "\0227B";
+    content: "≻";
 }
 
 .card {
@@ -6559,7 +6524,7 @@ a.list-item {
 
 .message.is-black .message-body {
     border-color: #0a0a0a;
-    color: #090909;
+    color: #0a0a0a;
 }
 
 .message.is-light {
@@ -6573,7 +6538,7 @@ a.list-item {
 
 .message.is-light .message-body {
     border-color: whitesmoke;
-    color: #505050;
+    color: #4f4f4f;
 }
 
 .message.is-dark {
@@ -6643,7 +6608,7 @@ a.list-item {
 
 .message.is-success .message-body {
     border-color: #23d160;
-    color: #0e301a;
+    color: #0e311a;
 }
 
 .message.is-warning {
@@ -6657,7 +6622,7 @@ a.list-item {
 
 .message.is-warning .message-body {
     border-color: #ffdd57;
-    color: #3b3108;
+    color: #3c3108;
 }
 
 .message.is-danger {
@@ -6768,7 +6733,6 @@ print {
     flex-direction: column;
     max-height: calc(100vh - 40px);
     overflow: hidden;
-    -ms-overflow-y: visible;
 }
 
 .modal-card-head,
@@ -7559,12 +7523,9 @@ body.has-navbar-fixed-bottom {
     height: 1px;
     left: calc(50% - 8px);
     position: absolute;
-    -webkit-transform-origin: center;
     transform-origin: center;
     transition-duration: 86ms;
-    transition-property: background-color, opacity, -webkit-transform;
     transition-property: background-color, opacity, transform;
-    transition-property: background-color, opacity, transform, -webkit-transform;
     transition-timing-function: ease-out;
     width: 16px;
 }
@@ -7586,7 +7547,6 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger.is-active span:nth-child(1) {
-    -webkit-transform: translateY(5px) rotate(45deg);
     transform: translateY(5px) rotate(45deg);
 }
 
@@ -7595,7 +7555,6 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger.is-active span:nth-child(3) {
-    -webkit-transform: translateY(-5px) rotate(-45deg);
     transform: translateY(-5px) rotate(-45deg);
 }
 
@@ -7821,7 +7780,6 @@ a.navbar-item.is-active,
         align-items: stretch;
     }
     .navbar-item.has-dropdown-up .navbar-link::after {
-        -webkit-transform: rotate(135deg) translate(0.25em, -0.25em);
         transform: rotate(135deg) translate(0.25em, -0.25em);
     }
     .navbar-item.has-dropdown-up .navbar-dropdown {
@@ -7848,7 +7806,6 @@ a.navbar-item.is-active,
     .navbar-item.is-hoverable:hover .navbar-dropdown.is-boxed {
         opacity: 1;
         pointer-events: auto;
-        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
     .navbar-menu {
@@ -7902,12 +7859,9 @@ a.navbar-item.is-active,
         opacity: 0;
         pointer-events: none;
         top: calc(100% + (-4px));
-        -webkit-transform: translateY(-5px);
         transform: translateY(-5px);
         transition-duration: 86ms;
-        transition-property: opacity, -webkit-transform;
         transition-property: opacity, transform;
-        transition-property: opacity, transform, -webkit-transform;
     }
     .navbar-dropdown.is-right {
         left: auto;
@@ -7918,11 +7872,11 @@ a.navbar-item.is-active,
     }
     .navbar>.container .navbar-brand,
     .container>.navbar .navbar-brand {
-        margin-left: -.75rem;
+        margin-left: -0.75rem;
     }
     .navbar>.container .navbar-menu,
     .container>.navbar .navbar-menu {
-        margin-right: -.75rem;
+        margin-right: -0.75rem;
     }
     .navbar.is-fixed-bottom-desktop,
     .navbar.is-fixed-top-desktop {
@@ -8524,20 +8478,20 @@ label.panel-block:hover {
 
 .columns.is-mobile>.column.is-1 {
     flex: none;
-    width: 8.33333%;
+    width: 8.3333333333%;
 }
 
 .columns.is-mobile>.column.is-offset-1 {
-    margin-left: 8.33333%;
+    margin-left: 8.3333333333%;
 }
 
 .columns.is-mobile>.column.is-2 {
     flex: none;
-    width: 16.66667%;
+    width: 16.6666666667%;
 }
 
 .columns.is-mobile>.column.is-offset-2 {
-    margin-left: 16.66667%;
+    margin-left: 16.6666666667%;
 }
 
 .columns.is-mobile>.column.is-3 {
@@ -8551,20 +8505,20 @@ label.panel-block:hover {
 
 .columns.is-mobile>.column.is-4 {
     flex: none;
-    width: 33.33333%;
+    width: 33.3333333333%;
 }
 
 .columns.is-mobile>.column.is-offset-4 {
-    margin-left: 33.33333%;
+    margin-left: 33.3333333333%;
 }
 
 .columns.is-mobile>.column.is-5 {
     flex: none;
-    width: 41.66667%;
+    width: 41.6666666667%;
 }
 
 .columns.is-mobile>.column.is-offset-5 {
-    margin-left: 41.66667%;
+    margin-left: 41.6666666667%;
 }
 
 .columns.is-mobile>.column.is-6 {
@@ -8578,20 +8532,20 @@ label.panel-block:hover {
 
 .columns.is-mobile>.column.is-7 {
     flex: none;
-    width: 58.33333%;
+    width: 58.3333333333%;
 }
 
 .columns.is-mobile>.column.is-offset-7 {
-    margin-left: 58.33333%;
+    margin-left: 58.3333333333%;
 }
 
 .columns.is-mobile>.column.is-8 {
     flex: none;
-    width: 66.66667%;
+    width: 66.6666666667%;
 }
 
 .columns.is-mobile>.column.is-offset-8 {
-    margin-left: 66.66667%;
+    margin-left: 66.6666666667%;
 }
 
 .columns.is-mobile>.column.is-9 {
@@ -8605,20 +8559,20 @@ label.panel-block:hover {
 
 .columns.is-mobile>.column.is-10 {
     flex: none;
-    width: 83.33333%;
+    width: 83.3333333333%;
 }
 
 .columns.is-mobile>.column.is-offset-10 {
-    margin-left: 83.33333%;
+    margin-left: 83.3333333333%;
 }
 
 .columns.is-mobile>.column.is-11 {
     flex: none;
-    width: 91.66667%;
+    width: 91.6666666667%;
 }
 
 .columns.is-mobile>.column.is-offset-11 {
-    margin-left: 91.66667%;
+    margin-left: 91.6666666667%;
 }
 
 .columns.is-mobile>.column.is-12 {
@@ -8710,17 +8664,17 @@ label.panel-block:hover {
     }
     .column.is-1-mobile {
         flex: none;
-        width: 8.33333%;
+        width: 8.3333333333%;
     }
     .column.is-offset-1-mobile {
-        margin-left: 8.33333%;
+        margin-left: 8.3333333333%;
     }
     .column.is-2-mobile {
         flex: none;
-        width: 16.66667%;
+        width: 16.6666666667%;
     }
     .column.is-offset-2-mobile {
-        margin-left: 16.66667%;
+        margin-left: 16.6666666667%;
     }
     .column.is-3-mobile {
         flex: none;
@@ -8731,17 +8685,17 @@ label.panel-block:hover {
     }
     .column.is-4-mobile {
         flex: none;
-        width: 33.33333%;
+        width: 33.3333333333%;
     }
     .column.is-offset-4-mobile {
-        margin-left: 33.33333%;
+        margin-left: 33.3333333333%;
     }
     .column.is-5-mobile {
         flex: none;
-        width: 41.66667%;
+        width: 41.6666666667%;
     }
     .column.is-offset-5-mobile {
-        margin-left: 41.66667%;
+        margin-left: 41.6666666667%;
     }
     .column.is-6-mobile {
         flex: none;
@@ -8752,17 +8706,17 @@ label.panel-block:hover {
     }
     .column.is-7-mobile {
         flex: none;
-        width: 58.33333%;
+        width: 58.3333333333%;
     }
     .column.is-offset-7-mobile {
-        margin-left: 58.33333%;
+        margin-left: 58.3333333333%;
     }
     .column.is-8-mobile {
         flex: none;
-        width: 66.66667%;
+        width: 66.6666666667%;
     }
     .column.is-offset-8-mobile {
-        margin-left: 66.66667%;
+        margin-left: 66.6666666667%;
     }
     .column.is-9-mobile {
         flex: none;
@@ -8773,17 +8727,17 @@ label.panel-block:hover {
     }
     .column.is-10-mobile {
         flex: none;
-        width: 83.33333%;
+        width: 83.3333333333%;
     }
     .column.is-offset-10-mobile {
-        margin-left: 83.33333%;
+        margin-left: 83.3333333333%;
     }
     .column.is-11-mobile {
         flex: none;
-        width: 91.66667%;
+        width: 91.6666666667%;
     }
     .column.is-offset-11-mobile {
-        margin-left: 91.66667%;
+        margin-left: 91.6666666667%;
     }
     .column.is-12-mobile {
         flex: none;
@@ -8898,20 +8852,20 @@ print {
     .column.is-1,
     .column.is-1-tablet {
         flex: none;
-        width: 8.33333%;
+        width: 8.3333333333%;
     }
     .column.is-offset-1,
     .column.is-offset-1-tablet {
-        margin-left: 8.33333%;
+        margin-left: 8.3333333333%;
     }
     .column.is-2,
     .column.is-2-tablet {
         flex: none;
-        width: 16.66667%;
+        width: 16.6666666667%;
     }
     .column.is-offset-2,
     .column.is-offset-2-tablet {
-        margin-left: 16.66667%;
+        margin-left: 16.6666666667%;
     }
     .column.is-3,
     .column.is-3-tablet {
@@ -8925,20 +8879,20 @@ print {
     .column.is-4,
     .column.is-4-tablet {
         flex: none;
-        width: 33.33333%;
+        width: 33.3333333333%;
     }
     .column.is-offset-4,
     .column.is-offset-4-tablet {
-        margin-left: 33.33333%;
+        margin-left: 33.3333333333%;
     }
     .column.is-5,
     .column.is-5-tablet {
         flex: none;
-        width: 41.66667%;
+        width: 41.6666666667%;
     }
     .column.is-offset-5,
     .column.is-offset-5-tablet {
-        margin-left: 41.66667%;
+        margin-left: 41.6666666667%;
     }
     .column.is-6,
     .column.is-6-tablet {
@@ -8952,20 +8906,20 @@ print {
     .column.is-7,
     .column.is-7-tablet {
         flex: none;
-        width: 58.33333%;
+        width: 58.3333333333%;
     }
     .column.is-offset-7,
     .column.is-offset-7-tablet {
-        margin-left: 58.33333%;
+        margin-left: 58.3333333333%;
     }
     .column.is-8,
     .column.is-8-tablet {
         flex: none;
-        width: 66.66667%;
+        width: 66.6666666667%;
     }
     .column.is-offset-8,
     .column.is-offset-8-tablet {
-        margin-left: 66.66667%;
+        margin-left: 66.6666666667%;
     }
     .column.is-9,
     .column.is-9-tablet {
@@ -8979,20 +8933,20 @@ print {
     .column.is-10,
     .column.is-10-tablet {
         flex: none;
-        width: 83.33333%;
+        width: 83.3333333333%;
     }
     .column.is-offset-10,
     .column.is-offset-10-tablet {
-        margin-left: 83.33333%;
+        margin-left: 83.3333333333%;
     }
     .column.is-11,
     .column.is-11-tablet {
         flex: none;
-        width: 91.66667%;
+        width: 91.6666666667%;
     }
     .column.is-offset-11,
     .column.is-offset-11-tablet {
-        margin-left: 91.66667%;
+        margin-left: 91.6666666667%;
     }
     .column.is-12,
     .column.is-12-tablet {
@@ -9085,17 +9039,17 @@ print {
     }
     .column.is-1-touch {
         flex: none;
-        width: 8.33333%;
+        width: 8.3333333333%;
     }
     .column.is-offset-1-touch {
-        margin-left: 8.33333%;
+        margin-left: 8.3333333333%;
     }
     .column.is-2-touch {
         flex: none;
-        width: 16.66667%;
+        width: 16.6666666667%;
     }
     .column.is-offset-2-touch {
-        margin-left: 16.66667%;
+        margin-left: 16.6666666667%;
     }
     .column.is-3-touch {
         flex: none;
@@ -9106,17 +9060,17 @@ print {
     }
     .column.is-4-touch {
         flex: none;
-        width: 33.33333%;
+        width: 33.3333333333%;
     }
     .column.is-offset-4-touch {
-        margin-left: 33.33333%;
+        margin-left: 33.3333333333%;
     }
     .column.is-5-touch {
         flex: none;
-        width: 41.66667%;
+        width: 41.6666666667%;
     }
     .column.is-offset-5-touch {
-        margin-left: 41.66667%;
+        margin-left: 41.6666666667%;
     }
     .column.is-6-touch {
         flex: none;
@@ -9127,17 +9081,17 @@ print {
     }
     .column.is-7-touch {
         flex: none;
-        width: 58.33333%;
+        width: 58.3333333333%;
     }
     .column.is-offset-7-touch {
-        margin-left: 58.33333%;
+        margin-left: 58.3333333333%;
     }
     .column.is-8-touch {
         flex: none;
-        width: 66.66667%;
+        width: 66.6666666667%;
     }
     .column.is-offset-8-touch {
-        margin-left: 66.66667%;
+        margin-left: 66.6666666667%;
     }
     .column.is-9-touch {
         flex: none;
@@ -9148,17 +9102,17 @@ print {
     }
     .column.is-10-touch {
         flex: none;
-        width: 83.33333%;
+        width: 83.3333333333%;
     }
     .column.is-offset-10-touch {
-        margin-left: 83.33333%;
+        margin-left: 83.3333333333%;
     }
     .column.is-11-touch {
         flex: none;
-        width: 91.66667%;
+        width: 91.6666666667%;
     }
     .column.is-offset-11-touch {
-        margin-left: 91.66667%;
+        margin-left: 91.6666666667%;
     }
     .column.is-12-touch {
         flex: none;
@@ -9249,17 +9203,17 @@ print {
     }
     .column.is-1-desktop {
         flex: none;
-        width: 8.33333%;
+        width: 8.3333333333%;
     }
     .column.is-offset-1-desktop {
-        margin-left: 8.33333%;
+        margin-left: 8.3333333333%;
     }
     .column.is-2-desktop {
         flex: none;
-        width: 16.66667%;
+        width: 16.6666666667%;
     }
     .column.is-offset-2-desktop {
-        margin-left: 16.66667%;
+        margin-left: 16.6666666667%;
     }
     .column.is-3-desktop {
         flex: none;
@@ -9270,17 +9224,17 @@ print {
     }
     .column.is-4-desktop {
         flex: none;
-        width: 33.33333%;
+        width: 33.3333333333%;
     }
     .column.is-offset-4-desktop {
-        margin-left: 33.33333%;
+        margin-left: 33.3333333333%;
     }
     .column.is-5-desktop {
         flex: none;
-        width: 41.66667%;
+        width: 41.6666666667%;
     }
     .column.is-offset-5-desktop {
-        margin-left: 41.66667%;
+        margin-left: 41.6666666667%;
     }
     .column.is-6-desktop {
         flex: none;
@@ -9291,17 +9245,17 @@ print {
     }
     .column.is-7-desktop {
         flex: none;
-        width: 58.33333%;
+        width: 58.3333333333%;
     }
     .column.is-offset-7-desktop {
-        margin-left: 58.33333%;
+        margin-left: 58.3333333333%;
     }
     .column.is-8-desktop {
         flex: none;
-        width: 66.66667%;
+        width: 66.6666666667%;
     }
     .column.is-offset-8-desktop {
-        margin-left: 66.66667%;
+        margin-left: 66.6666666667%;
     }
     .column.is-9-desktop {
         flex: none;
@@ -9312,17 +9266,17 @@ print {
     }
     .column.is-10-desktop {
         flex: none;
-        width: 83.33333%;
+        width: 83.3333333333%;
     }
     .column.is-offset-10-desktop {
-        margin-left: 83.33333%;
+        margin-left: 83.3333333333%;
     }
     .column.is-11-desktop {
         flex: none;
-        width: 91.66667%;
+        width: 91.6666666667%;
     }
     .column.is-offset-11-desktop {
-        margin-left: 91.66667%;
+        margin-left: 91.6666666667%;
     }
     .column.is-12-desktop {
         flex: none;
@@ -9413,17 +9367,17 @@ print {
     }
     .column.is-1-widescreen {
         flex: none;
-        width: 8.33333%;
+        width: 8.3333333333%;
     }
     .column.is-offset-1-widescreen {
-        margin-left: 8.33333%;
+        margin-left: 8.3333333333%;
     }
     .column.is-2-widescreen {
         flex: none;
-        width: 16.66667%;
+        width: 16.6666666667%;
     }
     .column.is-offset-2-widescreen {
-        margin-left: 16.66667%;
+        margin-left: 16.6666666667%;
     }
     .column.is-3-widescreen {
         flex: none;
@@ -9434,17 +9388,17 @@ print {
     }
     .column.is-4-widescreen {
         flex: none;
-        width: 33.33333%;
+        width: 33.3333333333%;
     }
     .column.is-offset-4-widescreen {
-        margin-left: 33.33333%;
+        margin-left: 33.3333333333%;
     }
     .column.is-5-widescreen {
         flex: none;
-        width: 41.66667%;
+        width: 41.6666666667%;
     }
     .column.is-offset-5-widescreen {
-        margin-left: 41.66667%;
+        margin-left: 41.6666666667%;
     }
     .column.is-6-widescreen {
         flex: none;
@@ -9455,17 +9409,17 @@ print {
     }
     .column.is-7-widescreen {
         flex: none;
-        width: 58.33333%;
+        width: 58.3333333333%;
     }
     .column.is-offset-7-widescreen {
-        margin-left: 58.33333%;
+        margin-left: 58.3333333333%;
     }
     .column.is-8-widescreen {
         flex: none;
-        width: 66.66667%;
+        width: 66.6666666667%;
     }
     .column.is-offset-8-widescreen {
-        margin-left: 66.66667%;
+        margin-left: 66.6666666667%;
     }
     .column.is-9-widescreen {
         flex: none;
@@ -9476,17 +9430,17 @@ print {
     }
     .column.is-10-widescreen {
         flex: none;
-        width: 83.33333%;
+        width: 83.3333333333%;
     }
     .column.is-offset-10-widescreen {
-        margin-left: 83.33333%;
+        margin-left: 83.3333333333%;
     }
     .column.is-11-widescreen {
         flex: none;
-        width: 91.66667%;
+        width: 91.6666666667%;
     }
     .column.is-offset-11-widescreen {
-        margin-left: 91.66667%;
+        margin-left: 91.6666666667%;
     }
     .column.is-12-widescreen {
         flex: none;
@@ -9577,17 +9531,17 @@ print {
     }
     .column.is-1-fullhd {
         flex: none;
-        width: 8.33333%;
+        width: 8.3333333333%;
     }
     .column.is-offset-1-fullhd {
-        margin-left: 8.33333%;
+        margin-left: 8.3333333333%;
     }
     .column.is-2-fullhd {
         flex: none;
-        width: 16.66667%;
+        width: 16.6666666667%;
     }
     .column.is-offset-2-fullhd {
-        margin-left: 16.66667%;
+        margin-left: 16.6666666667%;
     }
     .column.is-3-fullhd {
         flex: none;
@@ -9598,17 +9552,17 @@ print {
     }
     .column.is-4-fullhd {
         flex: none;
-        width: 33.33333%;
+        width: 33.3333333333%;
     }
     .column.is-offset-4-fullhd {
-        margin-left: 33.33333%;
+        margin-left: 33.3333333333%;
     }
     .column.is-5-fullhd {
         flex: none;
-        width: 41.66667%;
+        width: 41.6666666667%;
     }
     .column.is-offset-5-fullhd {
-        margin-left: 41.66667%;
+        margin-left: 41.6666666667%;
     }
     .column.is-6-fullhd {
         flex: none;
@@ -9619,17 +9573,17 @@ print {
     }
     .column.is-7-fullhd {
         flex: none;
-        width: 58.33333%;
+        width: 58.3333333333%;
     }
     .column.is-offset-7-fullhd {
-        margin-left: 58.33333%;
+        margin-left: 58.3333333333%;
     }
     .column.is-8-fullhd {
         flex: none;
-        width: 66.66667%;
+        width: 66.6666666667%;
     }
     .column.is-offset-8-fullhd {
-        margin-left: 66.66667%;
+        margin-left: 66.6666666667%;
     }
     .column.is-9-fullhd {
         flex: none;
@@ -9640,17 +9594,17 @@ print {
     }
     .column.is-10-fullhd {
         flex: none;
-        width: 83.33333%;
+        width: 83.3333333333%;
     }
     .column.is-offset-10-fullhd {
-        margin-left: 83.33333%;
+        margin-left: 83.3333333333%;
     }
     .column.is-11-fullhd {
         flex: none;
-        width: 91.66667%;
+        width: 91.6666666667%;
     }
     .column.is-offset-11-fullhd {
-        margin-left: 91.66667%;
+        margin-left: 91.6666666667%;
     }
     .column.is-12-fullhd {
         flex: none;
@@ -10271,8 +10225,6 @@ print {
     flex-basis: 0;
     flex-grow: 1;
     flex-shrink: 1;
-    min-height: -webkit-min-content;
-    min-height: -moz-min-content;
     min-height: min-content;
 }
 
@@ -10313,11 +10265,11 @@ print {
     }
     .tile.is-1 {
         flex: none;
-        width: 8.33333%;
+        width: 8.3333333333%;
     }
     .tile.is-2 {
         flex: none;
-        width: 16.66667%;
+        width: 16.6666666667%;
     }
     .tile.is-3 {
         flex: none;
@@ -10325,11 +10277,11 @@ print {
     }
     .tile.is-4 {
         flex: none;
-        width: 33.33333%;
+        width: 33.3333333333%;
     }
     .tile.is-5 {
         flex: none;
-        width: 41.66667%;
+        width: 41.6666666667%;
     }
     .tile.is-6 {
         flex: none;
@@ -10337,11 +10289,11 @@ print {
     }
     .tile.is-7 {
         flex: none;
-        width: 58.33333%;
+        width: 58.3333333333%;
     }
     .tile.is-8 {
         flex: none;
-        width: 66.66667%;
+        width: 66.6666666667%;
     }
     .tile.is-9 {
         flex: none;
@@ -10349,11 +10301,11 @@ print {
     }
     .tile.is-10 {
         flex: none;
-        width: 83.33333%;
+        width: 83.3333333333%;
     }
     .tile.is-11 {
         flex: none;
-        width: 91.66667%;
+        width: 91.6666666667%;
     }
     .tile.is-12 {
         flex: none;
@@ -10451,12 +10403,12 @@ print {
 }
 
 .hero.is-white.is-bold {
-    background-image: linear-gradient(141deg, #e6e6e6 0%, white 71%, white 100%);
+    background-image: linear-gradient(141deg, #e8e3e4 0%, white 71%, white 100%);
 }
 
 @media screen and (max-width: 768px) {
     .hero.is-white.is-bold .navbar-menu {
-        background-image: linear-gradient(141deg, #e6e6e6 0%, white 71%, white 100%);
+        background-image: linear-gradient(141deg, #e8e3e4 0%, white 71%, white 100%);
     }
 }
 
@@ -11269,7 +11221,6 @@ print {
     min-width: 100%;
     position: absolute;
     top: 50%;
-    -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
 }
 
@@ -11333,15 +11284,6 @@ print {
 }
 
 .footer {
-    background-color: #f3f3f3;
+    background-color: #fafafa;
     padding: 3rem 1.5rem 6rem;
-}
-
-
-/*# sourceMappingURL=bulma.css.map */
-
-.bloco2 {
-    background-image: url(/static/imgs/bloco2.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
