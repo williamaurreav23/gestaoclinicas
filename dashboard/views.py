@@ -10,26 +10,6 @@ from .forms import AtivosForm
 import pandas as pd
 from django.views import View
 
-
-
-def get_name(request):
-    # if this is a POST request we need to process the form data
-    if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
-        form = AtivosForm(request.POST)
-        # check whether it's valid:
-        if form.is_valid():
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
-            return HttpResponseRedirect('/dashboard/')
-
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = AtivosForm()
-
-    return render(request, "ativos_form.html", {'form': form})
-
 # Login
 
 
@@ -60,7 +40,7 @@ class ClienteDetail(DetailView):
 class ClienteCreate(CreateView):
     model = Clientes
     fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email', 'foto']
-
+    success_url = reverse_lazy('index')
 
 class FuncionarioCreate(CreateView):
     model = Funcionario
@@ -114,3 +94,24 @@ class AtivosView(DetailView):
     template_name = 'dashboard.html'
     query_pk_and_slug = 'id_ativo=1'
 
+<<<<<<< HEAD
+=======
+
+def get_name(request):
+    # if this is a POST request we need to process the form data
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        form = AtivosForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
+            # process the data in form.cleaned_data as required
+            # ...
+            # redirect to a new URL:
+            return HttpResponseRedirect('/dashboard/')
+
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = AtivosForm()
+
+    return render(request, "ativos_form.html", {'form': form})
+>>>>>>> ee9eead58beb411710f65a85de28178d5b758bc6

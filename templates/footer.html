@@ -1,5 +1,4 @@
 {% load static %}
-
 <footer class="footer">
     <div class="container">
         <div class="columns">
@@ -10,10 +9,10 @@
                     </div>
                     <ul class="link-list">
                         <li><a href="{% url 'empresa' %}">A empresa </a></li>
-                        <li><a href="{% url 'equipe' %}">A equipe </a></li>
+                        <!-- <li><a href="{% url 'equipe' %}">A equipe </a></li> -->
                         <li><a href="{% url 'servicos' %}">Serviços </a></li>
-                        <li><a href="{% url 'clientes' %}">Clientes </a></li>
-                        <li><a href="{% url 'parceiros' %}">Parceiros </a></li>
+                        <li><a href="{% url 'new' %}">Clientes </a></li>
+                        <!-- <li><a href="{% url 'parceiros' %}">Parceiros </a></li> -->
                         <li><a href="{% url 'main' %}">ChatBot </a></li>
 
                     </ul>
@@ -44,20 +43,17 @@
                                 Fale Conosco </a>
                         </li>
                         <li>
-                            <img class="icon" src="{% static 'imgs/whatsapp.svg' %}">
-                            <a class="has-text-dark" href="mailto:info@ftwcoin.io">(98)98707-3106</a>
+                            <a href="https://wa.me/+5598987073106"><i class="fs fab fa-whatsapp fa-2x"></i> (98)98707-3106</a>
                         </li>
                         <li>
-                            <img class="icon" src="{% static 'imgs/instagram.svg' %}">
-                            <a class="has-text-dark" href="mailto:info@ftwcoin.io">@businessdata</a>
+                            <a href="https://www.instagram.com/b.dataconsultoria/"><i class="fs fab fa-instagram fa-2x"></i> @businessdata</a>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
         <div class="copyright">
-            <span class="moto light-text">© 2019 Data Business Consultoria LTDA.</span>
+            <span class="moto light-text">© {% now " Y " %} Data Business Consultoria LTDA.</span>
         </div>
 
         <div class="content has-text-centered">
