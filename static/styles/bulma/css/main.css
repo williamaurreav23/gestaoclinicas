@@ -6807,27 +6807,25 @@ label.panel-block {
 body {
   font-family: Nunito; }
 
-.title.is-1 {
-  font-size: 3.25rem; }
-
-.title.is-2 {
-  font-size: 2.25rem; }
-
-.title.is-3 {
-  font-size: 2.00rem; }
+.button.is-primary {
+  background-color: #03104d;
+  background: #03104d; }
+  .button.is-primary:hover {
+    background-color: #03104d; }
 
 .bloco2 {
-  background-image: url(/static/imgs/bloco2.svg);
+  display: block;
+  background: url(/static/imgs/bloco2.svg);
   background-repeat: no-repeat;
   background-position: center; }
 
-.button.is-link {
-  background-color: #040953;
+.is-link {
+  background-color: #800d70;
   border-color: transparent;
   color: #fff; }
 
 .navbar.is-light {
-  background-color: whitesmoke;
+  background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .hero.is-purple {
@@ -6842,5 +6840,29 @@ body {
 .hero.is-data {
   background-image: url(/static/imgs/back.svg);
   background-position: center; }
+
+#bola1 {
+  animation: bola 1s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+@keyframes bola {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(360deg); } }
+.title.is-1 {
+  font-size: 3.25rem; }
+
+.title.is-2 {
+  font-size: 2.25rem; }
+
+.title.is-3 {
+  font-size: 1.25rem; }
+
+a {
+  color: #03104d;
+  cursor: pointer;
+  text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

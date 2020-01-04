@@ -1,6 +1,4 @@
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
 <header class="hero is-light">
     <div class="hero-head">
@@ -26,11 +24,12 @@
                 </div>
             </div>
             <h1 class="title is-2">Clientes</h1>
-<!--                        <form method="post" enctype="multipart/form-data">{% csrf_token %}-->
-<!--                            {{ form.as_p }}-->
-<!--                            <input type="submit" value="Save">-->
-<!--                        </form>-->
-            <form action="" method="post" enctype="multipart/form-data">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %} {{ form.as_p }}
+                <input type="submit" value="Save">
+            </form>
+
+            <!-- <form action="" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="field">
                     <label for="nome" class="label">Nome</label>
@@ -60,7 +59,7 @@
                 </div>
                 <br>
                 <button class="button is-success" type="submit" value="Salvar">Salvar</button>
-            </form>
+            </form> -->
         </main>
     </div>
 </div>
