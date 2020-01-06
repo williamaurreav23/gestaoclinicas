@@ -93,9 +93,6 @@ class AtivosView(DetailView):
     template_name = 'dashboard.html'
     query_pk_and_slug = 'id_ativo=1'
 
-<<<<<<< HEAD
-=======
-
 def get_name(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
@@ -113,4 +110,3 @@ def get_name(request):
         form = AtivosForm()
 
     return render(request, "ativos_form.html", {'form': form})
->>>>>>> ee9eead58beb411710f65a85de28178d5b758bc6
