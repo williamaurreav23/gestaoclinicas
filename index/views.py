@@ -1,11 +1,22 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
+from .models import Land
+from django.urls import reverse_lazy
+
+
+class Landing(CreateView):
+    model = Land
+    fields = ['nome_empresa', 'nome_contato',
+              'celular', 'email', 'interesse']
+    success_url = reverse_lazy('index')
 
 
 def index(request):
     return render(request, 'index.html')
 
+
 def land(request):
-    return render(request, 'landing.html')
+    return render(request, 'land_form.html')
 
 
 def gestao(request):

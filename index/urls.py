@@ -1,10 +1,10 @@
 from django.urls import path
 from index import views
-
+from .views import Landing
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('landing.html', views.land, name='land'),
+    path('land_form.html', Landing.as_view(), name='land'),
     path('gestao.html', views.gestao, name='gestao'),
     path('top.html', views.top, name='top'),
     path('planejamento.html', views.planejamento, name='planejamento'),

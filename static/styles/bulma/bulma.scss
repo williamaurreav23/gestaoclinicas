@@ -1,12 +1,19 @@
 @charset "utf-8";
 @import "../bulma/bulma.sass";
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+//variaveis
+$size-1: 3rem;
+$size-2: 2.5rem;
+$size-3: 2rem;
+$size-4: 1.5rem;
+$blue: #03104d;
+$primary: $blue;
+$hero-body-padding-medium: 8rem 1.5rem;
+//elementos
 body {
     font-family: Nunito;
 }
 
-$blue: #03104d;
-$primary: $blue;
 .button.is-primary {
     background-color: $primary;
     background: $primary;
@@ -21,6 +28,18 @@ a {
     text-decoration: none;
 }
 
+.title.is-1 {
+    font-size: $size-1;
+}
+
+.title.is-2 {
+    font-size: $size-2;
+}
+
+.title.is-3 {
+    font-size: $size-3;
+}
+
 .bloco2 {
     display: block;
     background: url(/static/imgs/bloco2.svg);
@@ -32,6 +51,11 @@ a {
     background-color: rgb(128, 13, 112);
     border-color: transparent;
     color: #fff;
+}
+
+.navbar {
+    background-color: $white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navbar.is-light {
@@ -56,6 +80,7 @@ a {
     background-position: center;
 }
 
+//animations
 #bola1 {
     animation: bola 1s ease infinite;
     transform-origin: center;
@@ -71,14 +96,17 @@ a {
     }
 }
 
-.title.is-1 {
-    font-size: 3.25rem;
+#grafico {
+    animation: barra 15s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
 }
 
-.title.is-2 {
-    font-size: 2.25rem;
-}
-
-.title.is-3 {
-    font-size: 1.25rem;
+@keyframes barra {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
 }
