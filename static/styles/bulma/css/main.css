@@ -6813,6 +6813,20 @@ body {
   .button.is-primary:hover {
     background-color: #03104d; }
 
+a {
+  color: #03104d;
+  cursor: pointer;
+  text-decoration: none; }
+
+.title.is-1 {
+  font-size: 3rem; }
+
+.title.is-2 {
+  font-size: 2.5rem; }
+
+.title.is-3 {
+  font-size: 2rem; }
+
 .bloco2 {
   display: block;
   background: url(/static/imgs/bloco2.svg);
@@ -6823,6 +6837,10 @@ body {
   background-color: #800d70;
   border-color: transparent;
   color: #fff; }
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .navbar.is-light {
   background-color: white;
@@ -6851,18 +6869,15 @@ body {
     transform: rotateZ(0deg); }
   to {
     transform: rotateZ(360deg); } }
-.title.is-1 {
-  font-size: 3.25rem; }
+#grafico {
+  animation: barra 15s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box; }
 
-.title.is-2 {
-  font-size: 2.25rem; }
-
-.title.is-3 {
-  font-size: 1.25rem; }
-
-a {
-  color: #03104d;
-  cursor: pointer;
-  text-decoration: none; }
+@keyframes barra {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(360deg); } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,37 +1,71 @@
-{% extends "base.html" %}
-{% load crispy_forms_tags %}
-{% block content %}
-{% load static %}
+{% extends "base.html" %} {% block content %} {% load static %}
 
-<section class="hero index">
+<section class="hero is-medium">
     <div class="hero-body">
         <div class="container">
             <div class="container has-text-centered">
                 <div class="column is-4 is-offset-4">
-                    <h3 class="title has-text-black">Login</h3>
-                    <hr class="login-hr">
-                    <p class="subtitle has-text-black">Área restrita para clientes.</p>
                     <div class="box">
                         <figure class="avatar">
-                      <img src="/static/imgs/logo.svg">
-                    </figure>
-                        <form action="" method="post">
+                            <img src="/static/imgs/logo.svg">
+                        </figure>
+                        <!-- <form action="" method="post">
                             {% csrf_token %}
-                            <input type="hidden" name="next" value="{{ next }}">
-                            {{ form|crispy }}
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                Lembrar
-                            </label>
-                            <button class="button is-block is-info is-large is-fullwidth">Login <i class="fas fa-sign-in-alt"></i>
-                            </button>
+                            <div class="field">
+                                <p class="control has-icons-left has-icons-right">
+                                    <input class="input" type="text" value="{{ next }}" placeholder="Usuário">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <p class="control has-icons-left">
+                                    <input class="input" type="password" placeholder="Senha">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <p class="control">
+                                    <button class="button is-success">
+                                        Login
+                                    </button>
+                                </p>
+                            </div>
+                        </form> -->
+                        {% if form.errors %}
+                        <p>Seu nome de usuário e senha não coincidem. Por favor, tente novamente.</p>
+                        {% endif %} {% if next %} {% if user.is_authenticated %}
+                        <p>Sua conta não tem acesso a esta página. Para continuar, faça login com uma conta que tenha acesso.
+                        </p>
+                        {% else %}
+                        <p>Área restrita para clientes.</p>
+                        {% endif %} {% endif %}
+
+                        <form method="post" action="{% url 'login' %}">
+                            {% csrf_token %}
+                            <table class="table">
+                                <tr>
+                                    <td>{{ form.username.label_tag }}</td>
+                                    <td>{{ form.username }}</td>
+                                </tr>
+                                <tr>
+                                    <td>{{ form.password.label_tag }}</td>
+                                    <td>{{ form.password }}</td>
+                                </tr>
+                            </table>
+                            <div class="field">
+                                <p class="control">
+                                    <input class="button is-success" type="submit" value="login">
+                                    <input class="button is-success" type="hidden" name="next" value="{{ next }}">
+                                </p>
+                            </div>
+                            {# Assumes you setup the password_reset view in your URLconf #}
+                            <p><a href="{% url 'password_reset' %}">Lost password?</a></p>
                         </form>
                     </div>
-                    <p class="has-text-grey">
-<!--                        <a href="../">Sign Up</a> &nbsp;·&nbsp;-->
-<!--                        <a href="../">Forgot Password</a> &nbsp;·&nbsp;-->
-<!--                        <a href="../">Need Help?</a>-->
-                    </p>
                 </div>
             </div>
         </div>

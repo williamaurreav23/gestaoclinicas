@@ -14,7 +14,7 @@ from django.views import View
 
 
 @login_required
-def dashboard(request, id_ativo=2):
+def dashboard(request):
     return render(request, 'dashboard.html')
 
 
@@ -41,6 +41,7 @@ class ClienteCreate(CreateView):
     model = Clientes
     fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email', 'foto']
     success_url = reverse_lazy('index')
+
 
 class FuncionarioCreate(CreateView):
     model = Funcionario
@@ -69,12 +70,10 @@ class AtivoCreate(CreateView):
               'descricao_ativo', 'valor_ativo', 'data_ativo']
 
 
-
 class PassivoCreate(CreateView):
     model = Passivos
     fields = ['id_passivo', 'tipo_passivo',
               'descricao_passivo', 'valor_passivo', 'data_passivo']
-
 
 
 class GestorCreate(CreateView):

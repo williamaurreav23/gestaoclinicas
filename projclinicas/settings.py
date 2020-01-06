@@ -25,8 +25,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'chatterbot.ext.django_chatterbot',
     'rest_framework',
-    'crispy_forms',
-    'django_crispy_bulma',
     'login',
     'chatbot',
     'index',
@@ -103,31 +101,16 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'pt-BR'
+LANGUAGES = (
+    ('pt-br', 'Português'),
+)
 
 TIME_ZONE = 'America/Fortaleza'
-
-USE_I18N = True
-
-USE_L10N = True
-
-USE_TZ = True
 
 CHATTERBOT = {
     'name': 'Bdatarobo',
     'django_app_name': 'django_chatterbot'
 }
-
-# crispy
-CRISPY_ALLOWED_TEMPLATE_PACKS = (
-    "bootstrap",
-    "uni_form",
-    "bootstrap3",
-    "bootstrap4",
-    "bulma",
-)
-
-CRISPY_TEMPLATE_PACK = "bulma"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/

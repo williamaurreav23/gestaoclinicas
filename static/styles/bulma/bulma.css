@@ -11615,6 +11615,18 @@ a {
   text-decoration: none;
 }
 
+.title.is-1 {
+  font-size: 3rem;
+}
+
+.title.is-2 {
+  font-size: 2.5rem;
+}
+
+.title.is-3 {
+  font-size: 2rem;
+}
+
 .bloco2 {
   display: block;
   background: url(/static/imgs/bloco2.svg);
@@ -11626,6 +11638,12 @@ a {
   background-color: #800d70;
   border-color: transparent;
   color: #fff;
+}
+
+.navbar {
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navbar.is-light {
@@ -11681,15 +11699,33 @@ a {
   }
 }
 
-.title.is-1 {
-  font-size: 3.25rem;
+#grafico {
+  -webkit-animation: barra 15s ease infinite;
+          animation: barra 15s ease infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
 }
 
-.title.is-2 {
-  font-size: 2.25rem;
+@-webkit-keyframes barra {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
 }
 
-.title.is-3 {
-  font-size: 1.25rem;
+@keyframes barra {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
 }
 /*# sourceMappingURL=bulma.css.map */
