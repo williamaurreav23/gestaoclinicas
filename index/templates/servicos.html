@@ -1,14 +1,16 @@
 {% extends "base.html" %} {% load static %} {% block content %}
-<section class="section">
+<section class="hero is-medium">
     <div class="hero-body">
         <div class="container">
             <div class="columns is-multiline is-centered">
                 <div class="column">
                     <div class="column is-narrow">
-                        <h1 class="title is-3">
-                            Gestão Empresarial
-                        </h1>
-                        <h1 class="title is-3">Ser estratégico é se preparar para enfrentar e vencer desafios, enxergar ameaças e as oportunidades que ainda não existem. Ter uma visão a longo prazo da organização deve ser o melhor caminho para alcançar a excelência. </h1>
+                        <div class="content">
+                            <h1 class="title is-2">
+                                Gestão Empresarial
+                            </h1>
+                            <h1 class="subtitle">Ser estratégico é se preparar para enfrentar e vencer desafios, enxergar ameaças e as oportunidades que ainda não existem. Ter uma visão a longo prazo da organização deve ser o melhor caminho para alcançar a excelência. </h1>
+                        </div>
                         <br>
                         <a href="{% url 'land' %} " class="button is-primary is-rounded ">Saiba mais</a>
                     </div>
@@ -130,7 +132,7 @@
             <div class="columns is-multiline is-centered">
                 <div class="column">
                     <div class="column is-narrow">
-                        <figure class="image is-5by2" style="width: 450px;">
+                        <figure class="image is-5by2">
                             <img src="/static/imgs/45240.svg "> </figure>
                     </div>
                 </div>

@@ -9,32 +9,6 @@
                         <figure class="avatar">
                             <img src="/static/imgs/logo.svg">
                         </figure>
-                        <!-- <form action="" method="post">
-                            {% csrf_token %}
-                            <div class="field">
-                                <p class="control has-icons-left has-icons-right">
-                                    <input class="input" type="text" value="{{ next }}" placeholder="Usuário">
-                                    <span class="icon is-small is-left">
-                                        <i class="fas fa-envelope"></i>
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="field">
-                                <p class="control has-icons-left">
-                                    <input class="input" type="password" placeholder="Senha">
-                                    <span class="icon is-small is-left">
-                                        <i class="fas fa-lock"></i>
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="field">
-                                <p class="control">
-                                    <button class="button is-success">
-                                        Login
-                                    </button>
-                                </p>
-                            </div>
-                        </form> -->
                         {% if form.errors %}
                         <p>Seu nome de usuário e senha não coincidem. Por favor, tente novamente.</p>
                         {% endif %} {% if next %} {% if user.is_authenticated %}
@@ -46,24 +20,26 @@
 
                         <form method="post" action="{% url 'login' %}">
                             {% csrf_token %}
-                            <table class="table">
+                            <table class="table-container">
                                 <tr>
                                     <td>{{ form.username.label_tag }}</td>
                                     <td>{{ form.username }}</td>
                                 </tr>
+                                <br>
                                 <tr>
                                     <td>{{ form.password.label_tag }}</td>
                                     <td>{{ form.password }}</td>
                                 </tr>
+                                <br>
                             </table>
                             <div class="field">
-                                <p class="control">
+                                <p class="is-centered">
                                     <input class="button is-success" type="submit" value="login">
                                     <input class="button is-success" type="hidden" name="next" value="{{ next }}">
                                 </p>
                             </div>
                             {# Assumes you setup the password_reset view in your URLconf #}
-                            <p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+                            <p><a href="{% url 'password_reset' %}">Esqueceu a senha?</a></p>
                         </form>
                     </div>
                 </div>
