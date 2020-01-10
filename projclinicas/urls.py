@@ -24,7 +24,8 @@ from django.conf.urls.static import static
 
 router = DefaultRouter()
 router.register(r'bdclientes', ClientesViewset, base_name='ClientesViewset')
-router.register(r'funcionario', FuncionarioViewset, base_name='FuncionarioViewset')
+router.register(r'funcionario', FuncionarioViewset,
+                base_name='FuncionarioViewset')
 router.register(r'ativos', AtivosViewset, base_name='AtivosViewset')
 router.register(r'passivos', PassivosViewset, base_name='PassivosViewset')
 
@@ -35,5 +36,5 @@ urlpatterns = [
     path('chatbot/', include('chatbot.urls')),
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
-  ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
+    path('django_plotly_dash/', include('django_plotly_dash.urls')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

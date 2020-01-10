@@ -12,7 +12,7 @@ SECRET_KEY = 'ca*an(wv#cx^*c5x#=^8v2_!v-n!jpo32%)d$=1oqy*49l$(yq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['businessdata.com.br']
+ALLOWED_HOSTS = ['businessdata.com.br', '127.0.0.1', '192.168.100.2']
 
 # Application definition
 
@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chatterbot.ext.django_chatterbot',
+    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
     'rest_framework',
     'login',
     'chatbot',

@@ -1,3 +1,8 @@
+import dash
+from django_plotly_dash import DjangoDash
+import dash_html_components as html
+import dash_core_components as dcc
+from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.views.generic import ListView, DetailView
@@ -23,7 +28,6 @@ def dashboard(request):
 class ListClientes(ListView):
     model = Clientes
     template_name = "clientes_list.html"
-    queryset = Clientes.objects.all()
 
 
 class ClienteDetail(DetailView):
@@ -49,7 +53,7 @@ class FuncionarioCreate(CreateView):
               'naturalidade_estado', 'data_nasc', 'sexo', 'estado_civil', 'mae',
               'pai', 'cor_raca', 'dependentes']
 #    success_url = reverse_lazy('funcionario')
-#return render(request, 'fucionario.html')
+# return render(request, 'fucionario.html')
 
 
 class ClienteUpdate(UpdateView):
@@ -57,7 +61,6 @@ class ClienteUpdate(UpdateView):
     fields = ['nome', 'sobrenome', 'cnpj', 'celular', 'email']
 
 #    success_url = reverse_lazy("list")
-
 
 
 class ClienteDelete(DeleteView):
@@ -93,6 +96,7 @@ class AtivosView(DetailView):
     template_name = 'dashboard.html'
     query_pk_and_slug = 'id_ativo=1'
 
+
 def get_name(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
@@ -110,3 +114,30 @@ def get_name(request):
         form = AtivosForm()
 
     return render(request, "ativos_form.html", {'form': form})
+
+
+app = DjangoDash('SimpleExample')
+
+app.layout = html.Div(children=[
+    html.H1(children='Hello Dash'),
+
+    html.Div(children='''
+        Dash: A web application framework for Python.
+    '''),
+
+    dcc.Graph(
+        figure={
+            'data': [
+                {'x': [1, 2, 3], 'y': [4, 1, 2], 'type': 'bar', 'name': 'SF'},
+                {'x': [1, 2, 3], 'y': [2, 4, 5],
+                    'type': 'bar', 'name': u'Montréal'},
+            ],
+            'layout': {
+                'title': 'Dash Data Visualization'
+            }
+        }
+    )
+])
+
+if __name__ == '__main__':
+    app.run_server(debug=True)
