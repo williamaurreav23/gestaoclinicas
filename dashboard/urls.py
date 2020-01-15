@@ -4,6 +4,7 @@ from .views import ClienteDetail, ClienteCreate, ListClientes, ClienteUpdate, Cl
 from .views import GestorCreate, FuncionarioCreate
 from .views import AtivoCreate, PassivoCreate
 from .views import AtivosView
+# from dashboard.dash_apps import example
 
 urlpatterns = [
     path('', views.dashboard, name='dashboard'),

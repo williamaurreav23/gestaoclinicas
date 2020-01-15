@@ -31,7 +31,7 @@
             </section>
             <div class="level"></div>
             <section class="info-tiles">
-                {% include 'dashboard/widgets.html' %} {% include 'dashboard/graficos.html' %} {% include 'dashboard/chars.html' %}
+                {% include 'dashboard/widgets.html' %} {% include 'dashboard/graficos.html' %}
             </section>
             <div class="columns">
                 <div class="column is-6">
@@ -160,3 +160,25 @@
         </div>
     </div>
 </div>
+
+<script>
+    var trace1 = {
+        x: [1, 2, 3, 4],
+        y: [10, 11, 12, 13],
+        mode: 'markers',
+        marker: {
+            size: [40, 60, 80, 100]
+        }
+    };
+
+    var data = [trace1];
+
+    var layout = {
+        title: 'Marker Size',
+        showlegend: false,
+        height: 600,
+        width: 600
+    };
+
+    Plotly.newPlot('grafico1', data, layout);
+</script>

@@ -1,4 +1,5 @@
 {% load static %} {% block content %} {% load l10n %}
+{% load plotly_dash %}
 
 <!DOCTYPE html>
 <html lang="pt_br">
@@ -15,7 +16,13 @@
     <header class="hero">
         <div class="hero-head">{% include "menu_dash.html" %}</div>
     </header>
-    <div class="hero-head">{% include "indicadores.html" %}</div>
+    <div class="hero-head">{% include "dashboard/indicadores.html" %}</div>
+    <div class="{% plotly_class name='example' %} card" style="height: 100%; width: 100%">
+    {% plotly_app name='example' ratio=0.45 %}
+    </div>
+</br>
+
+{{ plot1 | safe }}
 
 </body>
 
