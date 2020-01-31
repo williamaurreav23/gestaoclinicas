@@ -1,10 +1,4 @@
-'''Dash demonstration application
 
-TODO attribution here
-'''
-
-# The linter doesn't like the members of the html and dcc imports (as they are dynamic?)
-#pylint: disable=no-member
 
 import dash
 import dash_core_components as dcc
@@ -21,7 +15,7 @@ dashboard_name1 = 'dash_example_1'
 dash_example1 = DjangoDash(name=dashboard_name1,
                            serve_locally=True,
                            app_name=app_name
-                          )
+                           )
 
 # Below is a random Dash app.
 # I encountered no major problems in using Dash this way. I did encounter problems but it was because
@@ -30,21 +24,25 @@ dash_example1.layout = html.Div(id='main',
                                 children=[
                                     html.Div([dcc.Dropdown(id='my-dropdown1',
                                                            options=[{'label': 'New York City', 'value': 'NYC'},
-                                                                    {'label': 'Montreal', 'value': 'MTL'},
-                                                                    {'label': 'San Francisco', 'value': 'SF'}
-                                                                   ],
+                                                                    {'label': 'Montreal',
+                                                                        'value': 'MTL'},
+                                                                    {'label': 'San Francisco',
+                                                                        'value': 'SF'}
+                                                                    ],
                                                            value='NYC',
                                                            className='col-md-12',
-                                                          ),
+                                                           ),
                                               html.Div(id='test-output-div')
-                                             ]),
+                                              ]),
 
                                     dcc.Dropdown(
                                         id='my-dropdown2',
                                         options=[
-                                            {'label': 'Oranges', 'value': 'Oranges'},
+                                            {'label': 'Oranges',
+                                                'value': 'Oranges'},
                                             {'label': 'Plums', 'value': 'Plums'},
-                                            {'label': 'Peaches', 'value': 'Peaches'}
+                                            {'label': 'Peaches',
+                                                'value': 'Peaches'}
                                         ],
                                         value='Oranges',
                                         className='col-md-12',
@@ -52,12 +50,13 @@ dash_example1.layout = html.Div(id='main',
 
                                     html.Div(id='test-output-div2')
 
-                                    ]) # end of 'main'
+                                ])  # end of 'main'
+
 
 @dash_example1.expanded_callback(
     dash.dependencies.Output('test-output-div', 'children'),
     [dash.dependencies.Input('my-dropdown1', 'value')])
-def callback_test(*args, **kwargs): #pylint: disable=unused-argument
+def callback_test(*args, **kwargs):  # pylint: disable=unused-argument
     'Callback to generate test data on each change of the dropdown'
 
     # Creating a random Graph from a Plotly example:
@@ -76,12 +75,11 @@ def callback_test(*args, **kwargs): #pylint: disable=unused-argument
                   xaxis=dict(zeroline=False, title='Date', tickangle=0),
                   margin=dict(t=20, b=50, l=50, r=40),
                   height=350,
-                 )
-
+                  )
 
     fig = dict(data=data, layout=layout)
-    line_graph = dcc.Graph(id='line-area-graph2', figure=fig, style={'display':'inline-block', 'width':'100%',
-                                                                     'height':'100%;'})
+    line_graph = dcc.Graph(id='line-area-graph2', figure=fig, style={'display': 'inline-block', 'width': '100%',
+                                                                     'height': '100%;'})
     children = [line_graph]
 
     return children
@@ -96,7 +94,7 @@ def callback_test2(*args, **kwargs):
     print(args)
     print(kwargs)
 
-    children = [html.Div(["You have selected %s." %(args[0])]),
-                html.Div(["The session context message is '%s'" %(kwargs['session_state']['django_to_dash_context'])])]
+    children = [html.Div(["You have selected %s." % (args[0])]),
+                html.Div(["The session context message is '%s'" % (kwargs['session_state']['django_to_dash_context'])])]
 
     return children

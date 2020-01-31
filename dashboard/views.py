@@ -1,10 +1,14 @@
+import dash
+from django_plotly_dash import DjangoDash
+import dash_html_components as html
+import dash_core_components as dcc
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.utils import timezone
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from .models import Clientes, Gestor, Funcionario, Ativos, Passivos
+from dashboard.models import Clientes, Gestor, Funcionario
 
 
 # Login
@@ -68,49 +72,31 @@ class ClienteDelete(DeleteView):
         return context
 
 
-class AtivoCreate(CreateView):
-    model = Ativos
-    fields = ['id_ativo', 'tipo_ativo',
-              'descricao_ativo', 'valor_ativo', 'data_ativo']
-
-
-class PassivoCreate(CreateView):
-    model = Passivos
-    fields = ['id_passivo', 'tipo_passivo',
-              'descricao_passivo', 'valor_passivo', 'data_passivo']
-
-
 class GestorCreate(CreateView):
     model = Gestor
     fields = ['gestor_id', 'nome', 'email', 'celular', 'especialidade']
-
-class AtivosView(DetailView):
-        model = Ativos
-        template_name = 'dashboard.html'
-        query_pk_and_slug = 'id_ativo=1'
 
 
 # Gráficos
 
 
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
+# Create your views here.
 
-from django_plotly_dash import DjangoDash
 
-app = DjangoDash('SimpleExample')
+app = DjangoDash('SimpleExample')   # replaces dash.Dash
 
 app.layout = html.Div([
     dcc.RadioItems(
         id='dropdown-color',
-        options=[{'label': c, 'value': c.lower()} for c in ['Red', 'Green', 'Blue']],
+        options=[{'label': c, 'value': c.lower()}
+                 for c in ['Red', 'Green', 'Blue']],
         value='red'
     ),
     html.Div(id='output-color'),
     dcc.RadioItems(
         id='dropdown-size',
-        options=[{'label': i, 'value': j} for i, j in [('L', 'large'), ('M', 'medium'), ('S', 'small')]],
+        options=[{'label': i,
+                  'value': j} for i, j in [('L', 'large'), ('M', 'medium'), ('S', 'small')]],
         value='medium'
     ),
     html.Div(id='output-size')
@@ -132,3 +118,7 @@ def callback_color(dropdown_value):
 def callback_size(dropdown_color, dropdown_size):
     return "The chosen T-shirt is a %s %s one." % (dropdown_size,
                                                    dropdown_color)
+
+
+def graf(requests):
+    return render(requests, 'dashboard.html')

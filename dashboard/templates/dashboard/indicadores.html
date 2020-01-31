@@ -24,7 +24,7 @@
                             Painel de Gestão do {{ user.username }}
                         </h1>
                         <h2 class="subtitle">
-                            Hoje é {% now "jS F Y H:i" %}
+                            Hoje é {% now "j F Y H:i" %}
                         </h2>
                     </div>
                 </div>
@@ -105,80 +105,25 @@
                     </div>
                 </div>
                 <div class="column is-6">
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                Inventory Search
-                            </p>
-                            <a href="#" class="card-header-icon" aria-label="more options">
-                                <span class="icon">
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </span>
-                            </a>
-                        </header>
-                        <div class="card-content">
-                            <div class="content">
-                                <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-large" type="text" placeholder="">
-                                    <span class="icon is-medium is-left">
-                                        <i class="fa fa-search"></i>
-                                    </span>
-                                    <span class="icon is-medium is-right">
-                                        <i class="fa fa-check"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="notification is-primary">
+                        <button class="delete"></button> Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+                        fringilla. Nullam gravida purus diam, et dictum <a>felis
+                            venenatis</a> efficitur. Sit amet, consectetur adipiscing elit
                     </div>
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                User Search
-                            </p>
-                            <a href="#" class="card-header-icon" aria-label="more options">
-                                <span class="icon">
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </span>
-                            </a>
-                        </header>
-                        <div class="card-content">
-                            <div class="content">
-                                <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-large" type="text" placeholder="">
-                                    <span class="icon is-medium is-left">
-                                        <i class="fa fa-search"></i>
-                                    </span>
-                                    <span class="icon is-medium is-right">
-                                        <i class="fa fa-check"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="notification is-info">
+                        <button class="delete"></button> Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+                        fringilla. Nullam gravida purus diam, et dictum <a>felis
+                            venenatis</a> efficitur. Sit amet, consectetur adipiscing elit
+                    </div>
+
+                    <div class="notification is-warning">
+                        <button class="delete"></button> Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
+                        fringilla. Nullam gravida purus diam, et dictum <a>felis
+                            venenatis</a> efficitur. Sit amet, consectetur adipiscing elit
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<script>
-    var trace1 = {
-        x: [1, 2, 3, 4],
-        y: [10, 11, 12, 13],
-        mode: 'markers',
-        marker: {
-            size: [40, 60, 80, 100]
-        }
-    };
-
-    var data = [trace1];
-
-    var layout = {
-        title: 'Marker Size',
-        showlegend: false,
-        height: 600,
-        width: 600
-    };
-
-    Plotly.newPlot('grafico1', data, layout);
-</script>

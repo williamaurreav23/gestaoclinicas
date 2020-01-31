@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'login',
     'chatbot',
     'index',
+    'processos',
     'django_bootstrap_breadcrumbs',
     'dashboard.apps.DashboardConfig',
     'django_plotly_dash.apps.DjangoPlotlyDashConfig',
@@ -45,6 +46,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'projclinicas.urls'
@@ -117,11 +119,12 @@ USE_TZ = True
 CRISPY_TEMPLATE_PACK = 'bootstap4'
 
 ASGI_APPLICATION = 'projclinicas.routing.application'
+
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            'hosts': [('127.0.0.1', 6379), ],
+            'hosts': [('127.0.0.1', 8080), ],
         },
     },
 }
@@ -134,13 +137,11 @@ STATICFILES_FINDERS = [
 ]
 
 PLOTLY_COMPONENTS = [
-
     'dash_core_components',
     'dash_html_components',
     'dash_renderer',
     'dpd_components'
 ]
-
 
 CHATTERBOT = {
     'name': 'Bdatarobo',

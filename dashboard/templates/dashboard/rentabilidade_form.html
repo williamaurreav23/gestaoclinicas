@@ -1,0 +1,77 @@
+{% load static %} {% block content %} {% load l10n %} {% load plotly_dash %}
+
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> {% block title %}
+    <title>Business Data Consultoria LTDA - Negócios Inteligentes</title>{% endblock %}
+    <link rel="stylesheet" href="/static/styles/bulma/css/main.css">
+</head>
+
+<body>
+    <div class="hero-head">
+        {% include "menu_dash.html" %}
+    </div>
+    <div class="columns">
+        <div class="column is-3 ">
+            {% include 'nav.html' %}
+        </div>
+        <div class="column is-5">
+            <h1 class="title is-2">RENTABILIDADE</h1>
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="field">
+                    <label class="label" for="id_data_inicio">Data Inicial:</label>
+                    <div class="control control has-icons-left has-icons-right">
+                        <input class="input"  type="date" name="data_inicio" class="vDateField" size="10" id="id_data_inicio">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="id_data_fim">Data Inicial:</label>
+                    <div class="control control has-icons-left has-icons-right">
+                        <input class="input" type="date" name="data_fim" class="vDateField" size="10" id="id_data_fim">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="id_investimento">Investimento:</label>
+                    <div class="control control has-icons-left has-icons-right">
+                        <input class="input" type="number" name="investimento" step="0.01" required="" id="id_investimento">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-building"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="id_lucro_liquido">Lucro Liquido:</label>
+                    <div class="control control has-icons-left has-icons-right">
+                      <input class="input" type="number" name="lucro_liquido" step="0.01" required="" id="id_lucro_liquido">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="id_rentabilidade">Rentabilidade:</label>
+                    <div class="control control has-icons-left has-icons-right">
+                        <input class="input" type="number" name="rentabilidade" step="0.01" required="" id="id_rentabilidade">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <input class="button is-success" type="submit" value="Enviar">
+                        <input class="button is-success" type="hidden" name="next" value="{{ next }}">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+{% endblock %}

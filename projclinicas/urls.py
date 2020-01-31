@@ -18,12 +18,14 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from dashboard.api.viewsets import ClientesViewset, FuncionarioViewset, AtivosViewset, PassivosViewset
+from dashboard.api.viewsets import ClientesViewset, FuncionarioViewset
+from processos.api.viewsets import AtivosViewset, PassivosViewset
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 router = DefaultRouter()
-router.register(r'bdclientes', ClientesViewset, base_name='ClientesViewset')
+# router.register(r'bdclientes', ClientesViewset, base_name='ClientesViewset')
 router.register(r'funcionario', FuncionarioViewset,
                 base_name='FuncionarioViewset')
 router.register(r'ativos', AtivosViewset, base_name='AtivosViewset')
@@ -36,5 +38,5 @@ urlpatterns = [
     path('chatbot/', include('chatbot.urls')),
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
-    path('django_plotly_dash/', include('django_plotly_dash.urls')),
+    path('dashboard/', include('django_plotly_dash.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

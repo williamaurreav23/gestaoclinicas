@@ -1,0 +1,90 @@
+JANEIRO = 'JAN'
+FEVEREIRO = 'FEV'
+MARCO = 'MAR'
+ABRIL = 'ABR'
+MAIO = 'MAI'
+JUNHO = 'JUN'
+JULHO = 'JUL'
+AGOSTO = 'AGO'
+SETEMBRO = 'SET'
+OUTUBRO = 'OUT'
+NOVEMBRO = 'NOV'
+DEZEMBRO = 'DEZ'
+
+MES = [
+    (JANEIRO, 'JAN'),
+    (FEVEREIRO, 'FEV'),
+    (MARCO, 'MAR'),
+    (ABRIL, 'ABR'),
+    (MAIO, 'MAI'),
+    (JUNHO, 'JUN'),
+    (JULHO, 'JUL'),
+    (AGOSTO, 'AGO'),
+    (SETEMBRO, 'SET'),
+    (OUTUBRO, 'OUT'),
+    (NOVEMBRO, 'NOV'),
+    (DEZEMBRO, 'DEZ')
+]
+
+mes = models.CharField(
+    max_length=3,
+    choices=MES,
+    default=JANEIRO,
+)
+
+< div
+
+
+class ="field" >
+
+< label
+
+
+class ="label" for ="mes" > Mês:<
+
+    / label >
+< div
+
+
+class ="control" >
+
+< div
+
+
+class ="select" >
+
+< select
+name = "mes"
+required = ""
+id = "mes" >
+< option
+value = ""
+selected = "" > --------- < / option >
+< option
+value = "JAN" > Janeiro < / option >
+< option
+value = "FEV" > Fevereiro < / option >
+< option
+value = "MAR" > Março < / option >
+< option
+value = "ABR" > Abril < / option >
+< option
+value = "MAI" > Maio < / option >
+< option
+value = "JUN" > Junho < / option >
+< option
+value = "JUL" > Julho < / option >
+< option
+value = "AGO" > Agosto < / option >
+< option
+value = "SET" > Setembro < / option >
+< option
+value = "OUT" > Outubro < / option >
+< option
+value = "NOV" > Novembro < / option >
+< option
+value = "DEZ" > Dezembro < / option >
+< / select >
+< / div >
+< / div >
+< / div >

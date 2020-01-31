@@ -1,35 +1,83 @@
 <aside class="column">
-  <nav class=menu>
-    <p class=menu-label>General</p>
-    <ul class=menu-list>
-      <li><a class=is-active href="{% url 'dashboard' %}"><span class="icon is-small"><i class="fas fa-tachometer-alt"></i></span> Dashboard</a>
-      </li>
-    </ul>
-    <p class=menu-label>Administração</p>
-    <ul class=menu-list>
-      <li><a><i class="fa fa-user"></i> Pessoas</a>
-        <ul>
-          <li><a href="#">Funcionário</a></li>
-          <li><a href="{% url 'list' %}">Contatos</a></li>
-        </ul>
-      <li><a><i class="fa fa-cog"></i> Processos</a>
-        <ul>
-          <li><a href="#"><span class="icon is-small"><i class="fa fa-desktop"></i></span> Indicadores</a></li>
-          <li><a href="#"><span class="icon is-small"><i class="fa fa-table"></i></span> Passivos</a></li>
-          <li><a href="#"><span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations</a></li>
-        </ul>
-      <li><a><i class="fa fa-cog"></i> Papéis</a>
-        <ul>
-          <li><a href="#"><span class="icon is-small"><i class="fa fa-desktop"></i></span> Ativos</a></li>
-          <li><a href="#"><span class="icon is-small"><i class="fa fa-table"></i></span> Passivos</a></li>
-          <li><a href="#"><span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Presentations</a></li>
-        </ul>
-        <p class="menu-label">Live On</p>
+    <nav class="menu">
+        <p class="menu-label">General</p>
         <ul class="menu-list">
-          <li><a><span class="icon is-small"><i class="fa fa-bug"></i></span> Additional Pages</a></li>
-          <li><a><span class="icon is-small"><i class="fa fa-windows"></i></span> Extras</a></li>
-          <li><a><span class="icon is-small"><i class="fa fa-laptop"></i></span> Landing Page</a></li>
+            <li>
+                <a class="is-active" href="{% url 'dashboard' %}"><span class="icon is-small"><i
+              class="fas fa-tachometer-alt"></i></span> Dashboard</a>
+            </li>
         </ul>
-    </ul>
-  </nav>
+        <p class="menu-label">Administração</p>
+        <ul class="menu-list">
+            <li>
+                <i class="fa fa-user"></i> Conceitual
+                <ul>
+                    <li><a href="#">Canvas Business</a></li>
+                    <li><a href="#">Planejamento Estratégico</a></li>
+                    <li><a href="#">SWOT</a></li>
+                    <li><a href="{% url 'list' %}">Metas</a></li>
+                </ul>
+            </li>
+            <li>
+                <i class="fa fa-user"></i> Pessoas
+                <ul>
+                    <li><a href="#">Funcionário</a></li>
+                    <li><a href="{% url 'list' %}">Contatos</a></li>
+                </ul>
+            </li>
+            <li>
+                <i class="fa fa-cog"></i> Processos
+                <ul>
+                    <li>
+                        <a href="#"><span class="icon is-small"><i class="fa
+                                    fa-desktop"></i></span>
+              Indicadores</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="icon is-small"><i class="fa
+                                    fa-table"></i></span>
+              Passivos</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'rentabilidade' %}"><span class="icon
+                                is-small"><i class="fa fa-chart-line"></i></span>
+              Rentabilidade</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <i class="fa fa-cog"></i> Papéis
+                <ul>
+                    <li>
+                        <a href="#"><span class="icon is-small"><i class="fa fa-desktop"></i></span>
+              Ativos</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="icon is-small"><i class="fa fa-table"></i></span>
+              Passivos</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="icon is-small"><i class="fa fa-bars"></i></span>
+              Documentos</a>
+                    </li>
+                </ul>
+                <p class="menu-label">Live On</p>
+                <ul class="menu-list">
+                    <li>
+                        <a><span class="icon is-small"><i class="fa fa-bug"></i></span>
+              Additional Pages</a>
+                    </li>
+                    <li>
+                        <a><span class="icon is-small"><i class="fa fa-windows"></i></span>
+              Extras</a>
+                    </li>
+                    <li>
+                        <a><span class="icon is-small"><i class="fa fa-laptop"></i></span>
+              Landing Page</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 </aside>
