@@ -6225,7 +6225,7 @@ jQuery.extend({
 
   // Don't automatically add "px" to these possibly-unitless properties
   cssNumber: {
-    "columnCount": true,
+    "colCount": true,
     "fillOpacity": true,
     "fontWeight": true,
     "lineHeight": true,

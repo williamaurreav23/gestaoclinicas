@@ -52,7 +52,7 @@
     vertical-align: middle;
 }
 
-#changelist table thead th.action-checkbox-column {
+#changelist table thead th.action-checkbox-col {
     width: 1.5em;
     text-align: center;
 }
@@ -117,7 +117,7 @@
     margin-right: 4px;
 }
 
-/* FILTER COLUMN */
+/* FILTER col */
 
 #changelist-filter {
     position: absolute;

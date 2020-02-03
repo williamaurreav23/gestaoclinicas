@@ -127,7 +127,7 @@ class DashboardContatos(models.Model):
     sobrenome = models.CharField(max_length=50, blank=True, null=True)
     telefone = models.CharField(max_length=9, blank=True, null=True)
     celular = models.CharField(max_length=10, blank=True, null=True)
-    id_cliente = models.ForeignKey('DashboardEmpresas', models.DO_NOTHING, db_column='id_cliente', blank=True, null=True)
+    id_cliente = models.ForeignKey('DashboardEmpresas', models.DO_NOTHING, db_col='id_cliente', blank=True, null=True)
 
     class Meta:
         managed = False
@@ -136,8 +136,10 @@ class DashboardContatos(models.Model):
 
 class DashboardEmpresas(models.Model):
     id_cliente = models.SmallIntegerField(primary_key=True)
-    nome_fantasia = models.CharField(db_column='nome fantasia', max_length=50, blank=True, null=True)  # Field renamed to remove unsuitable characters.
-    nome_juridico = models.CharField(db_column='nome juridico', max_length=50, blank=True, null=True)  # Field renamed to remove unsuitable characters.
+    nome_fantasia = models.CharField(db_col='nome fantasia', max_length=50, blank=True,
+                                     null=True)  # Field renamed to remove unsuitable characters.
+    nome_juridico = models.CharField(db_col='nome juridico', max_length=50, blank=True,
+                                     null=True)  # Field renamed to remove unsuitable characters.
     cnpj = models.CharField(max_length=11)
 
     class Meta:

@@ -1,50 +1,56 @@
-{% extends "base.html" %} {% block content %} {% load static %}
+{% block content %} {% load static %}
 
-<section class="hero is-medium">
-    <div class="hero-body">
-        <div class="container">
-            <div class="container has-text-centered">
-                <div class="column is-4 is-offset-4">
-                    <div class="box">
-                        <figure class="avatar">
-                            <img src="/static/imgs/logo.svg">
-                        </figure>
-                        {% if form.errors %}
-                        <p>Seu nome de usuário e senha não coincidem. Por favor, tente novamente.</p>
-                        {% endif %} {% if next %} {% if user.is_authenticated %}
-                        <p>Sua conta não tem acesso a esta página. Para continuar, faça login com uma conta que tenha acesso.
-                        </p>
-                        {% else %}
-                        <p>Área restrita para clientes.</p>
-                        {% endif %} {% endif %}
+<!-- Bootstrap core CSS -->
+<link href="/static/styles/css/main.css" rel="stylesheet">
 
-                        <form method="post" action="{% url 'login' %}">
-                            {% csrf_token %}
-                            <table class="table-container">
-                                <tr>
-                                    <td>{{ form.username.label_tag }}</td>
-                                    <td>{{ form.username }}</td>
-                                </tr>
-                                <br>
-                                <tr>
-                                    <td>{{ form.password.label_tag }}</td>
-                                    <td>{{ form.password }}</td>
-                                </tr>
-                                <br>
-                            </table>
-                            <div class="field">
-                                <p class="is-centered">
-                                    <input class="button is-success" type="submit" value="login">
-                                    <input class="button is-success" type="hidden" name="next" value="{{ next }}">
-                                </p>
-                            </div>
-                            {# Assumes you setup the password_reset view in your URLconf #}
-                            <p><a href="{% url 'password_reset' %}">Esqueceu a senha?</a></p>
-                        </form>
-                    </div>
+<!-- Custom styles for this template -->
+<link href="/static/css/floating-labels.css" rel="stylesheet">
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+
+        </div>
+        <div class="col-sm">
+            {% if form.errors %}
+            <p>Seu nome de usuário e senha não coincidem. Por favor, tente novamente.</p>
+            {% endif %} {% if next %} {% if user.is_authenticated %}
+            <p>Sua conta não tem acesso a esta página. Para continuar, faça login com uma conta que tenha acesso.
+            </p>
+            {% else %}
+            <p>Área restrita para clientes.</p>
+            {% endif %} {% endif %}
+
+            <form action="{% url 'login' %}" class="form-signin" method="post">
+                {% csrf_token %}
+                <div class="text-center mb-4">
+                    <a class="navbar-brand" href="{% url 'index' %}"><img class="mb-4" src="/static/imgs/logo.svg"
+                            alt="" width="72" height="72"></a>
+                    <h1 class="h3 mb-3 font-weight-normal">Sistema de Gestão</h1>
                 </div>
-            </div>
+
+                <div class="form-label-group">
+                    {{ form.username }}
+                    <label>{{ form.username.label_tag }}</label>
+                </div>
+
+                <div class="form-label-group">
+                    {{ form.password }}
+                    <label>{{ form.password.label_tag }}</label>
+                </div>
+
+                <div class="checkbox mb-3">
+                    <label>
+                        <p><a href="{% url 'password_reset' %}">Esqueceu a senha?</a></p>
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary" type="submit">Login</button>
+                <p class="mt-5 mb-3 text-muted text-center">&copy; {% now " Y " %}</p>
+            </form>
+        </div>
+        <div class="col-sm">
+
         </div>
     </div>
-</section>
+</div>
 {% endblock%}

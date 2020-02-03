@@ -8,20 +8,20 @@
   </div>
 </header>
 
-<div class="section">
-  <div class="columns">
-    {% include 'nav.html' %}
-    <main class="column">
-      <div class="level">
-        <div class="level-left">
-          <div class="level-item">
-            <div class="title">Painel de Gestão do {{ user.username }}</div>
-          </div>
-        </div>
-        <div class="level-right">
-          <div class="level-item">
-            <button type="button" class="button is-small">
-              Hoje é {% now " D j F Y H:i" %}
+<div>
+    <div class="col">
+        {% include 'nav.html' %}
+        <main class="col">
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <div class="title">Painel de Gestão do {{ user.username }}</div>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <button class="button is-small" type="button">
+                            Hoje é {% now " D j F Y H:i" %}
             </button>
           </div>
         </div>

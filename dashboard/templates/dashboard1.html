@@ -1,0 +1,27 @@
+{% load static %} {% block content %} {% load l10n %} {% load plotly_dash %}
+
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    {% block title %}
+    <title>Business Data Consultoria LTDA - Negócios Inteligentes</title>{% endblock %}
+    <link href="/static/styles/bulma/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="hero-head">
+    {% include "menu_dash.html" %}
+    <nav class="level"></nav>
+    <div class="col">
+        {% include "dashboard/indicadores.html" %}
+    </div>
+</div>
+</body>
+
+</html>
+
+{% endblock %}

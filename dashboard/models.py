@@ -55,14 +55,3 @@ class Contatos(models.Model):
     sobrenome = models.CharField(max_length=50, blank=True, null=True)
     telefone = models.CharField(max_length=9, blank=True, null=True)
     celular = models.CharField(max_length=10, blank=True, null=True)
-
-
-class Empresas(models.Model):
-    id_cliente = models.AutoField(primary_key=True)
-    # Field renamed to remove unsuitable characters.
-    nome_fantasia = models.CharField(
-        db_column='nome fantasia', max_length=50, blank=True, null=True)
-    # Field renamed to remove unsuitable characters.
-    nome_juridico = models.CharField(
-        db_column='nome juridico', max_length=50, blank=True, null=True)
-    cnpj = models.CharField(max_length=11)

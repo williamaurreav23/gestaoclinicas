@@ -39,7 +39,7 @@ input[type="submit"], button {
 
     #header {
         display: flex;
-        flex-direction: column;
+        flex-direction: col;
         padding: 15px 30px;
         height: auto;
         line-height: 1;
@@ -282,7 +282,7 @@ input[type="submit"], button {
         width: auto;
         flex: 1 1;
         display: flex;
-        flex-direction: column;
+        flex-direction: col;
     }
 
     .selector select {
@@ -319,7 +319,7 @@ input[type="submit"], button {
     }
 
     .stacked {
-        flex-direction: column;
+        flex-direction: col;
         max-width: 480px;
     }
 
@@ -487,7 +487,7 @@ input[type="submit"], button {
 
     #changelist {
         display: flex;
-        flex-direction: column;
+        flex-direction: col;
     }
 
     #changelist #toolbar {
@@ -689,7 +689,7 @@ input[type="submit"], button {
     /* Selector */
 
     .selector {
-        flex-direction: column;
+        flex-direction: col;
     }
 
     .selector > * {
@@ -803,7 +803,7 @@ input[type="submit"], button {
         padding: 10px 10px 0;
         margin: 0 0 15px;
         display: flex;
-        flex-direction: column;
+        flex-direction: col;
     }
 
     .submit-row > * {

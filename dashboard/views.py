@@ -9,14 +9,15 @@ from django.utils import timezone
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from dashboard.models import Clientes, Gestor, Funcionario
+from django.views.generic.base import TemplateView
 
 
 # Login
 
 
 @login_required
-def dashboard(request):
-    return render(request, 'dashboard.html')
+class DashPage(TemplateView):
+    template_name = "dashboard.html"
 
 
 # Listar Dados

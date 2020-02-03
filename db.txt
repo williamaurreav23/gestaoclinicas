@@ -134,8 +134,8 @@ class DashboardDespesa(models.Model):
 
 class DashboardEmpresas(models.Model):
     id_cliente = models.AutoField(primary_key=True)
-    nome_fantasia = models.CharField(db_column='nome fantasia', max_length=50, blank=True, null=True)  # Field renamed to remove unsuitable characters.
-    nome_juridico = models.CharField(db_column='nome juridico', max_length=50, blank=True, null=True)  # Field renamed to remove unsuitable characters.
+    nome_fantasia = models.CharField(db_col='nome fantasia', max_length=50, blank=True, null=True)  # Field renamed to remove unsuitable characters.
+    nome_juridico = models.CharField(db_col='nome juridico', max_length=50, blank=True, null=True)  # Field renamed to remove unsuitable characters.
     cnpj = models.CharField(max_length=11)
 
     class Meta:

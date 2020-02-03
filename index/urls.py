@@ -1,20 +1,18 @@
 from django.urls import path
-from index import views
-from .views import Landing
+from index.views import Landing, IndexPageView
+from django.views.generic.base import TemplateView
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', IndexPageView.as_view(), name='index'),
     path('land_form.html', Landing.as_view(), name='land'),
-    path('gestao.html', views.gestao, name='gestao'),
-    path('top.html', views.top, name='top'),
-    path('planejamento.html', views.planejamento, name='planejamento'),
-    path('marketing.html', views.marketing, name='marketing'),
-    path('design.html', views.design, name='design'),
-    path('data.html', views.data, name='data'),
-    path('empresa.html', views.empresa, name='empresa'),
-    path('equipe.html', views.equipe, name='equipe'),
-    path('servicos.html', views.servicos, name='servicos'),
-    path('parceiros.html', views.parceiros, name='parceiros'),
-    path('clientes.html', views.clientes, name='clientes'),
-    path('blog.html', views.blog, name='blog'),
+    path('descricao.html', TemplateView.as_view(
+        template_name='descricao.html'), name='descricao'),
+    path('empresa.html', TemplateView.as_view(
+        template_name='empresa.html'), name='empresa'),
+    path('servicos.html', TemplateView.as_view(
+        template_name='servicos.html'), name='servicos'),
+    path('clientes.html', TemplateView.as_view(
+        template_name='clientes.html'), name='clientes'),
+    path('blog.html', TemplateView.as_view(
+        template_name='blog.html'), name='blog'),
 ]

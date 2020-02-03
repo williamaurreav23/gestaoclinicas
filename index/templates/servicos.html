@@ -1,153 +1,128 @@
 {% extends "base.html" %} {% load static %} {% block content %}
-<section class="hero is-medium">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-multiline is-centered">
-                <div class="column">
-                    <div class="column is-narrow">
-                        <div class="content">
-                            <h1 class="title is-2">
-                                Gestão Empresarial
-                            </h1>
-                            <h1 class="subtitle">Ser estratégico é se preparar para enfrentar e vencer desafios, enxergar ameaças e as oportunidades que ainda não existem. Ter uma visão a longo prazo da organização deve ser o melhor caminho para alcançar a excelência. </h1>
-                        </div>
-                        <br>
-                        <a href="{% url 'land' %} " class="button is-primary is-rounded ">Saiba mais</a>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="column is-narrow">
-                        <figure class="image is-2by2">
-                            <img src="/static/imgs/2614794.svg">
-                        </figure>
-                    </div>
-                </div>
+
+<section class="block-purple">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h1>Gestão Empresarial</h1>
+                <h3>Ser estratégico é se preparar para enfrentar e vencer desafios, enxergar ameaças e as oportunidades
+                    que ainda não existem. Ter uma visão a longo prazo da organização deve ser o melhor caminho para
+                    alcançar a excelência. </h3>
+                <br>
+                <a href="{% url 'land' %}">
+                    <button class="btn btn-info rounded" type="button"> Saiba mais</button>
+                </a>
+            </div>
+            <div class="col-md">
+                <figure class="figure">
+                    <img alt="" class="figure-img img-fluid rounded" src="/static/imgs/2614794.svg">
+                </figure>
             </div>
         </div>
     </div>
 </section>
-<section class="hero is-medium is-link is-bold">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-multiline is-centered">
-                <div class="column">
-                    <div class="column is-narrow">
-                        <figure class="image is-3by2">
-                            <img src="/static/imgs/19283.svg">
-                        </figure>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="column is-narrow">
-                        <h1 class="title is-2">
-                            Marketing Digital
-                        </h1>
-                        <h1 class="title is-3">Marketing digital são ações de comunicação que os negócios podem utilizar por meio da internet para divulgar e comercializar seus produtos e serviços, conquistando novos clientes e melhorando seu faturamento. </h1>
-                        <br>
-                        <a href="{% url 'land' %} " class="button is-rounded ">Saiba mais</a>
-                    </div>
-                </div>
+<section class="block-rose">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <figure class="figure">
+                    <img alt="" class="figure-img img-fluid rounded" src="/static/imgs/19283.svg">
+                </figure>
             </div>
-        </div>
-    </div>
-    </div>
-</section>
-<section class="hero is-medium is-bold">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-multiline is-centered">
-                <div class="column">
-                    <h1 class="title is-2">
-                        Top of Mind
-                    </h1>
-                    <h1 class="title is-3">Top of Mind é um termo em inglês utilizado na área de marketing empresarial como uma maneira de qualificar as marcas que são mais populares na mente (mind em inglês) dos consumidores.
-                    </h1>
-                    <br>
-                    <a href="{% url 'land' %} " class="button is-primary is-rounded ">Saiba mais</a>
-                </div>
-                <div class="column">
-                    <div class="column is-narrow">
-                        <div class="column is-narrow">
-                            <figure class="image is-3by2">
-                                <img src="/static/imgs/21403.svg">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md">
+                <h1>Marketing Digital</h1>
+                <h3>Marketing digital são ações de comunicação que os negócios podem utilizar por meio da internet para
+                    divulgar e comercializar seus produtos e serviços, conquistando novos clientes e melhorando seu
+                    faturamento.
+                </h3>
+                <br>
+                <a href="{% url 'land' %}">
+                    <button class="btn btn-info rounded" type="button"> Saiba mais</button>
+                </a>
             </div>
         </div>
     </div>
 </section>
-<section class="hero is-medium is-purple is-bold">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-multiline is-centered">
-                <div class="column">
-                    <div class="column is-narrow">
-                        <figure class="image is-3by2">
-                            <img src="/static/imgs/21404.svg">
-                        </figure>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="column is-narrow">
-                        <h1 class="title is-2">
-                            Planejamento Estratégico
-                        </h1>
-                        <h1 class="title is-3">O planejamento estratégico de uma empresa tem por finalidade a realização de metas, que podem ser definidas para conseguir o que se quer. </h1>
-                        <br>
-                        <a href="{% url 'land' %} " class="button is-rounded ">Saiba mais</a>
-                    </div>
-                </div>
+<section class="block-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h1>Top of Mind</h1>
+                <h3>Top of Mind é um termo em inglês utilizado na área de marketing empresarial como uma maneira de
+                    qualificar as marcas que são mais populares na mente (mind em inglês) dos consumidores.</h3>
+                <br>
+                <a href="{% url 'land' %}">
+                    <button class="btn btn-info rounded" type="button"> Saiba mais</button>
+                </a>
+            </div>
+            <div class="col-md">
+                <figure class="figure">
+                    <img alt="" class="figure-img img-fluid rounded" src="/static/imgs/21403.svg">
+                </figure>
             </div>
         </div>
     </div>
 </section>
-<section class="hero is-medium is-bold">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-multiline is-centered">
-                <div class="column">
-                    <div class="column is-narrow">
-                        <h1 class="title is-2">
-                            Design instrucional
-                        </h1>
-                        <h1 class="title is-3">O design instrucional é a criação de cursos, aulas individuais e a construção de materiais didáticos como impressos, vídeos, softwares ou, de modo mais genérico, qualquer objeto de aprendizagem. </h1>
-                        <br>
-                        <a href="{% url 'land' %} " class="button is-primary is-rounded ">Saiba mais</a>
-                    </div>
-                </div>
-                <div class="column">
-                    <figure class="image is-3by2">
-                        <img src="/static/imgs/59904.svg">
-                    </figure>
-                </div>
+<section class="block-orange">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <figure class="figure">
+                    <img alt="" class="figure-img img-fluid rounded" src="/static/imgs/21404.svg">
+                </figure>
+            </div>
+            <div class="col-md">
+                <h1>Planejamento Estratégico</h1>
+                <h3>O planejamento estratégico de uma empresa tem por finalidade a realização de metas, que podem ser
+                    definidas para conseguir o que se quer.</h3>
+                <br>
+                <a href="{% url 'land' %}">
+                    <button class="btn btn-info rounded" type="button"> Saiba mais</button>
+                </a>
             </div>
         </div>
     </div>
 </section>
-<section class="hero is-medium is-rose is-bold">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-multiline is-centered">
-                <div class="column">
-                    <div class="column is-narrow">
-                        <figure class="image is-5by2">
-                            <img src="/static/imgs/45240.svg "> </figure>
-                    </div>
-                </div>
-                <div class=" column ">
-                    <div class=" column is-narrow ">
-                        <h1 class=" title is-2 ">
-                            Data Science
-                        </h1>
-                        <h1 class=" title is-3 ">A ciência de dados pode transformar uma grande quantidade de dados brutos em insights de negócios, e com isso, auxiliar empresas em tomadas de decisões para atingir melhores resultados. </h1>
-                        <br>
-                        <a href=" {% url 'land' %} " class=" button is-rounded ">Saiba mais</a>
-                    </div>
-                </div>
+<section class="block-green">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h1>Design instrucional</h1>
+                <h3>O design instrucional é a criação de cursos, aulas individuais e a construção de materiais didáticos
+                    como impressos, vídeos, softwares ou, de modo mais genérico, qualquer objeto de aprendizagem.</h3>
+                <br>
+                <a href="{% url 'land' %}">
+                    <button class="btn btn-info rounded" type="button"> Saiba mais</button>
+                </a>
+            </div>
+            <div class="col-md">
+                <figure class="figure">
+                    <img alt="" class="figure-img img-fluid rounded" src="/static/imgs/2614794.svg">
+                </figure>
             </div>
         </div>
     </div>
 </section>
+<section class="block-yellow">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <figure class="figure">
+                    <img alt="" class="figure-img img-fluid rounded" src="/static/imgs/45240.svg">
+                </figure>
+            </div>
+            <div class="col-md">
+                <h1>Data Science</h1>
+                <h3>A ciência de dados pode transformar uma grande quantidade de dados brutos em insights de negócios, e
+                    com isso, auxiliar empresas em tomadas de decisões para atingir melhores resultados.</h3>
+                <br>
+                <a href="{% url 'land' %}">
+                    <button class="btn btn-info rounded" type="button"> Saiba mais</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 {% endblock %}

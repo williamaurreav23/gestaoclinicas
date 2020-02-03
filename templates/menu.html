@@ -1,57 +1,34 @@
 {% load static %} {% block sidebar %}
-<nav class="navbar is-fixed-top is-light">
-    <div class="container">
-        <div class="navbar-brand">
-            <figure class="image is-96x96">
-                <a href="{% url 'index' %}">
-                    <img src="{% static 'imgs/logo.svg' %}" alt="Data Business LTDA">
-                </a>
-            </figure>
+<nav class="navbar navbar-highlight-white sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container d-flex flex-col flex-md-row justify-content-between">
+        <button aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação" class="navbar-toggler"
+                data-target="#navbarTogglerDemo01" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="{% url 'index' %}">
+                <img class="d-inline-block align-center" height="100" src="/static/imgs/logo.svg" width="100"> Business
+                Data Consultoria
+            </a>
+            <div class="col-5"></div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'servicos' %}">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog' %}">Ajuda</a>
+                </li>
 
-            <div class="navbar-burger burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+                <li class="nav-item">
+                    <a class="navbar-item" href="/accounts/login">
+                        <button class="btn btn-outline-success my-2 my-sm-0"
+                                type="submit">Entrar
+                        </button>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="navbar-menu">
-            <div class="navbar-end">
-                <!-- <a class="navbar-item is-active has-text-link" href="{% url 'index' %}">
-                        Home
-                    </a> -->
-                <!-- <a class="navbar-item" href="{% url 'empresa' %}">A empresa</a>
-                    <a class="navbar-item" href="{% url 'equipe' %}">A equipe</a> -->
-                <a class="navbar-item" href="{% url 'servicos' %}">
-                    <h1 class="title is-4">Serviços</h1>
-                </a>
-                <a class="navbar-item" href="{% url 'blog' %}">
-                    <h1 class="title is-4">Ajuda</h1>
-                </a>
-                <a class="navbar-item" href="/accounts/login">
-                    <h1 class="title is-4">Entrar</h1>
-                </a>
-                <!-- <a class="navbar-item" href="{% url 'blog' %}">Blog</a> -->
-                <!-- <span class="navbar-item">
-                        <a class="navbar-item" href="/accounts/login"><button
-                                class="button is-success is-rounded">Login</button></a>
-                    </span> {% if user.is_authenticated %}
-                    <span class="navbar-item">
-                        <a class="navbar-item" href="/accounts/logout"><button
-                                class="button is-danger is-rounded">Sair</button></a>
-                    </span> {% endif %}
-                    <!-- <a class="navbar-item" href="{% url 'list' %}">Clienteslist</a> -->
-                <!-- <span class="navbar-item">
-                        <a href="https://www.instagram.com/businessdataconsultoria/">
-                        <img class="icon is-medium" src="{% static 'imgs/instagram.svg' %}"></a>
-                    </span>
-                    <span class="navbar-item">
-                       <img class="icon is-medium" src="{% static 'imgs/whatsapp.svg' %}">
-                    </span> -->
-            </div>
-        </div>
+
     </div>
 </nav>
-<div class="level"></div>
-
 {% endblock %}
-<br>

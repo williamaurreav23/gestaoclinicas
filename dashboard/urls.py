@@ -4,9 +4,10 @@ from .views import ClienteDetail, ClienteCreate, ListClientes, ClienteUpdate, Cl
 from .views import GestorCreate, FuncionarioCreate
 #TODO: corrigir esse erro do plotty
 from dashboard.dash_apps import DjangoDash
+from django.views.generic.base import TemplateView
 
 urlpatterns = [
-    path('', views.dashboard, name='dashboard'),
+    path('', TemplateView.as_view(template_name='dashboard.html'), name='dashboard'),
     path('listclientes', ListClientes.as_view(), name='list'),
     path('cliente/<int:pk>/', ClienteDetail.as_view(), name='detail'),
     path('cadastro/', ClienteCreate.as_view(), name='new'),

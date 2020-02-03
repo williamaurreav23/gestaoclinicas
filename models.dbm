@@ -15,20 +15,20 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="80" y="40"/>
-	<column name="id_cliente" not-null="true">
+	<col name="id_cliente" not-null="true">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="nome fantasia">
+	</col>
+	<col name="nome fantasia">
 		<type name="varchar" length="50"/>
-	</column>
-	<column name="nome juridico">
+	</col>
+	<col name="nome juridico">
 		<type name="varchar" length="50"/>
-	</column>
-	<column name="cnpj" not-null="true">
+	</col>
+	<col name="cnpj" not-null="true">
 		<type name="varchar" length="11"/>
-	</column>
+	</col>
 	<constraint name="clientes_pk" type="pk-constr" table="public.empresas">
-		<columns names="id_cliente" ref-type="src-columns"/>
+		<col names="id_cliente" ref-type="src-col"/>
 	</constraint>
 </table>
 
@@ -36,18 +36,18 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="620" y="80"/>
-	<column name="nome">
+	<col name="nome">
 		<type name="char" length="50"/>
-	</column>
-	<column name="sobrenome">
+	</col>
+	<col name="sobrenome">
 		<type name="char" length="50"/>
-	</column>
-	<column name="telefone">
+	</col>
+	<col name="telefone">
 		<type name="varchar" length="0"/>
-	</column>
-	<column name="celular">
+	</col>
+	<col name="celular">
 		<type name="varchar" length="10"/>
-	</column>
+	</col>
 </table>
 
 <relationship name="contatos_has_one_clientes" type="rel11"
@@ -63,44 +63,44 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="1280" y="420"/>
-	<column name="id_func" not-null="true">
+	<col name="id_func" not-null="true">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="nome">
+	</col>
+	<col name="nome">
 		<type name="varchar" length="100"/>
-	</column>
-	<column name="nacionalidade">
+	</col>
+	<col name="nacionalidade">
 		<type name="varchar" length="50"/>
-	</column>
-	<column name="naturalidade_cid">
+	</col>
+	<col name="naturalidade_cid">
 		<type name="varchar" length="20"/>
-	</column>
-	<column name="naturalidade_estado">
+	</col>
+	<col name="naturalidade_estado">
 		<type name="varchar" length="20"/>
-	</column>
-	<column name="data_nasc">
+	</col>
+	<col name="data_nasc">
 		<type name="date" length="0"/>
-	</column>
-	<column name="sexo">
+	</col>
+	<col name="sexo">
 		<type name="varchar" length="8"/>
-	</column>
-	<column name="estado_civil">
+	</col>
+	<col name="estado_civil">
 		<type name="varchar" length="5"/>
-	</column>
-	<column name="mae">
+	</col>
+	<col name="mae">
 		<type name="varchar" length="50"/>
-	</column>
-	<column name="pai">
+	</col>
+	<col name="pai">
 		<type name="varchar" length="50"/>
-	</column>
-	<column name="cor_raca">
+	</col>
+	<col name="cor_raca">
 		<type name="varchar" length="10"/>
-	</column>
-	<column name="dependentes">
+	</col>
+	<col name="dependentes">
 		<type name="integer" length="2"/>
-	</column>
+	</col>
 	<constraint name="funcionarios_pk" type="pk-constr" table="public.funcionarios">
-		<columns names="id_func" ref-type="src-columns"/>
+		<col names="id_func" ref-type="src-col"/>
 	</constraint>
 </table>
 
@@ -108,29 +108,29 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="600" y="320"/>
-	<column name="id_ativo">
+	<col name="id_ativo">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="nome">
+	</col>
+	<col name="nome">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="valor">
+	</col>
+	<col name="valor">
 		<type name="smallint" length="0"/>
-	</column>
+	</col>
 </table>
 
 <table name="passivos">
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="920" y="440"/>
-	<column name="id_passivo" not-null="true">
+	<col name="id_passivo" not-null="true">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="nome">
+	</col>
+	<col name="nome">
 		<type name="smallint" length="0"/>
-	</column>
+	</col>
 	<constraint name="passivos_pk" type="pk-constr" table="public.passivos">
-		<columns names="id_passivo" ref-type="src-columns"/>
+		<col names="id_passivo" ref-type="src-col"/>
 	</constraint>
 </table>
 
@@ -138,17 +138,17 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="80" y="220"/>
-	<column name="id" not-null="true">
+	<col name="id" not-null="true">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="lucro_liquido_anual">
+	</col>
+	<col name="lucro_liquido_anual">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="receita_total_anual">
+	</col>
+	<col name="receita_total_anual">
 		<type name="smallint" length="0"/>
-	</column>
+	</col>
 	<constraint name="lucratividade_pk" type="pk-constr" table="public.lucratividade">
-		<columns names="id" ref-type="src-columns"/>
+		<col names="id" ref-type="src-col"/>
 	</constraint>
 </table>
 
@@ -156,81 +156,81 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="1300" y="180"/>
-	<column name="id">
+	<col name="id">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="contratados">
+	</col>
+	<col name="contratados">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="desligamentos">
+	</col>
+	<col name="desligamentos">
 		<type name="smallint" length="0"/>
-	</column>
+	</col>
 </table>
 
 <table name="ticket_medio_vendas">
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="80" y="480"/>
-	<column name="id">
+	<col name="id">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="total_receita">
+	</col>
+	<col name="total_receita">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="total_vendas">
+	</col>
+	<col name="total_vendas">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="nr_compras">
+	</col>
+	<col name="nr_compras">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="periodo">
+	</col>
+	<col name="periodo">
 		<type name="date" length="0"/>
-	</column>
+	</col>
 </table>
 
 <table name="taxa_conversao">
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="520" y="480"/>
-	<column name="visitantes">
+	<col name="visitantes">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="id">
+	</col>
+	<col name="id">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="conversoes">
+	</col>
+	<col name="conversoes">
 		<type name="smallint" length="0"/>
-	</column>
+	</col>
 </table>
 
 <table name="roi">
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="380" y="560"/>
-	<column name="id">
+	<col name="id">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="receita">
+	</col>
+	<col name="receita">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="custo">
+	</col>
+	<col name="custo">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="item">
+	</col>
+	<col name="item">
 		<type name="smallint" length="0"/>
-	</column>
+	</col>
 </table>
 
 <table name="indicadores_negativos">
 	<schema name="public"/>
 	<role name="postgres"/>
 	<position x="800" y="240"/>
-	<column name="id">
+	<col name="id">
 		<type name="smallint" length="0"/>
-	</column>
-	<column name="questao">
+	</col>
+	<col name="questao">
 		<type name="smallint" length="0"/>
-	</column>
+	</col>
 </table>
 
 <relationship name="turnover_has_one_funcionarios" type="rel11"

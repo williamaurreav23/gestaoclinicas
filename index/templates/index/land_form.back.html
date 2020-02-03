@@ -1,0 +1,127 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<section class="hero is-medium">
+    <div class="hero-body">
+        <div class="container">
+            <div class="col is-multiline is-centered cards-conytainer">
+                <div class="col">
+                    <div class="col">
+                        <div class="col is-narrow">
+                            <h1>
+                                Você gostaria de transformar seu negócio com inteligência?
+                            </h1>
+                            <h1 class="subtitle">Ser estratégico é se preparar para enfrentar e vencer desafios,
+                                enxergar ameaças e as oportunidades que ainda não existem. Ter uma visão a longo prazo
+                                da organização deve ser o melhor caminho para alcançar a excelência. </h1>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col is-narrow">
+                            <figure class="image is-16by9">
+                                <img src="/static/imgs/target.svg">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col is-multiline is-centered cards-conytainer" id="sectioncontainer">
+                <div class="col">
+                    <div class="col">
+                        <div class="col is-narrow">
+                            <div class="content">
+                                <h1 class="title is-4">
+                                    <p>Nós queremos ajudar o seu negócio. O mundo está digital, tudo está acontecendo a
+                                        uma velocidade que não compreendemos ainda. Mas todo negócio continua sendo
+                                        igual como seria um negócio na antiguidade. Oferta e demanda.Vendas.</p>
+                                    <p>Porém antes de tornar seu negócio uma máquina de vendas, você precisa entender se
+                                        o mesmo é sustentável. Se seus colaboradores entendem o seu motivo e o da sua
+                                        empresa para estar no mercado.</p>
+                                    <p>É nesse momento que entramos na sua vida, ajudando você através das informações
+                                        que você já tem a encontrar uma estratégia vencedora, personalizada com suas
+                                        necessidades e consistente com que o mercado precisa.</p>
+                                    <p>É essa combinação de trabalho duro, foco e agilidade que compõe nossa
+                                        consultoria.
+                                    </p>
+                                    <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col is-narrow">
+                            <div class="title">
+                                Quero receber mais informações:
+                            </div>
+                            <form action="" enctype="multipart/form-data" method="post">
+                                {% csrf_token %}
+                                <div class="field">
+                                    <label class="label" for="id_nome_empresa">Nome empresa:</label>
+                                    <div class="control control has-icons-left has-icons-right">
+                                        <input class="input" id="id_nome_empresa" maxlength="50" name="nome_empresa"
+                                               placeholder="Nome da Empresa" type="text">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-building"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label" for="id_nome_contato">Nome do Contato:</label>
+                                    <div class="control control has-icons-left has-icons-right">
+                                        <input class="input" id="id_nome_contato" maxlength="50" name="nome_contato"
+                                               placeholder="Nome do Contato" type="text">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label" for="id_celular">Contato:</label>
+                                    <div class="control control has-icons-left has-icons-right">
+                                        <input class="input" id="id_celular" maxlength="11" name="celular" placeholder="Contato"
+                                               type="text">
+                                        <span class="icon is-small is-left">
+                                            <i class="fs fab fa-whatsapp fa-1x"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Email</label>
+                                    <div class="control has-icons-left
+                                        has-icons-right">
+                                        <input class="input" id="id_email" maxlength="254" name="email" placeholder="Email"
+                                               type="email">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label" for="id_interesse">Interesse:</label>
+                                    <div class="control">
+                                        <div class="select">
+                                            <select id="id_interesse" name="interesse" required="">
+                                                <option selected="" value="">---------</option>
+                                                <option value="CS">Consultoria</option>
+                                                <option value="TR">Treinamento</option>
+                                                <option value="MK">Marketing</option>
+                                                <option value="OU">Outros</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                        <input class="button is-success" type="submit" value="Enviar">
+                                        <input class="button is-success" name="next" type="hidden" value="{{ next }}">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

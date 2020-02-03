@@ -1,0 +1,112 @@
+@import "../css/node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+
+body {
+    font-family: 'Catamaran', sans-serif;
+}
+
+a {
+    color: var(--blue);
+}
+
+.block-1 {
+    background: #1b57b6;
+    background: linear-gradient(90deg, #84ceff 0%, #fff 100%);
+    padding: 2rem;
+}
+
+.block-2 {
+    display: block;
+    padding: 2rem;
+    background: url(/static/imgs/bloco2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #d19bf5;
+    background-size: cover;
+}
+
+.block-3 {
+    background: #78f867;
+    background: linear-gradient(90deg, #aff88e 0%, #fff 100%);
+    padding: 2rem;
+}
+
+.block-purple {
+    display: flex;
+    padding: 2rem;
+    background: linear-gradient(90deg, #fff 0%, #f7e0f2 100%);
+}
+
+.block-rose {
+    display: flex;
+    padding: 2rem;
+    background: linear-gradient(90deg, #f7e0f7 0%, #fff 100%);
+}
+
+.block-blue {
+    display: flex;
+    padding: 2rem;
+    background: linear-gradient(90deg, #e0e9f7 0%, #fff 100%);
+}
+
+.block-orange {
+    display: flex;
+    padding: 2rem;
+    background: linear-gradient(141deg, #ec740387 0%, #cf7d11 71%, #c99d0d 100%);
+}
+
+.block-green {
+    display: flex;
+    padding: 2rem;
+    background: linear-gradient(90deg, #fff 0%, #ecf7e0 100%);
+}
+
+.block-yellow {
+    display: flex;
+    padding: 2rem;
+    background: linear-gradient(141deg, #ecf00687 0%, #e5e758 71%, #d7f722 100%);
+}
+
+//animations
+#bola1 {
+    animation: bola 1s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes bola {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+#grafico {
+    animation: barra 15s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes barra {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.btn-outline-primary {
+    color: #127ad6;
+    border-color: #127ad6;
+    border-radius: 2em;
+}
+
+.hero-section {
+    background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%), url(../img/hero-bg.jpg);
+    position: relative;
+}
