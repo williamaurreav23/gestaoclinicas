@@ -30,8 +30,6 @@ INSTALLED_APPS = [
     'index',
     'processos',
     'django_bootstrap_breadcrumbs',
-    'dashboard.apps.DashboardConfig',
-    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
     'channels',
     'channels_redis'
 ]
@@ -117,31 +115,6 @@ USE_L10N = True
 USE_TZ = True
 
 CRISPY_TEMPLATE_PACK = 'bootstap4'
-
-ASGI_APPLICATION = 'projclinicas.routing.application'
-
-CHANNEL_LAYERS = {
-    'default': {
-        'BACKEND': 'channels_redis.core.RedisChannelLayer',
-        'CONFIG': {
-            'hosts': [('127.0.0.1', 8080), ],
-        },
-    },
-}
-
-STATICFILES_FINDERS = [
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'django_plotly_dash.finders.DashAssetFinder',
-    'django_plotly_dash.finders.DashComponentFinder'
-]
-
-PLOTLY_COMPONENTS = [
-    'dash_core_components',
-    'dash_html_components',
-    'dash_renderer',
-    'dpd_components'
-]
 
 CHATTERBOT = {
     'name': 'Bdatarobo',

@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class DashboardConfig(AppConfig):
+class DashConfig(AppConfig):
     name = 'dashboard'
