@@ -3,7 +3,7 @@ from . import views
 from .views import ClienteDetail, ClienteCreate, ListClientes, ClienteUpdate, ClienteDelete
 from .views import GestorCreate, FuncionarioCreate
 from django.views.generic.base import TemplateView
-from dashboard import simpleexample
+from dashboard import grafs
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name='dashboard.html'), name='dashboard'),

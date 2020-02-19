@@ -6,11 +6,6 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from dashboard.models import Clientes, Gestor, Funcionario
 from django.views.generic.base import TemplateView
 # Create your views here.
-from django.shortcuts import render
-from django.http.response import HttpResponse
-from django.views.decorators.csrf import csrf_exempt
-from dashboard.as_dash import dispatcher
-
 
 # Login
 @login_required
@@ -75,17 +70,4 @@ class GestorCreate(CreateView):
     model = Gestor
     fields = ['gestor_id', 'nome', 'email', 'celular', 'especialidade']
 
-
-# Gráficos
-##### dash #####
-
-
-def dash(request, **kwargs):
-    ''' '''
-    return HttpResponse(dispatcher(request))
-
-
-@csrf_exempt
-def dash_ajax(request):
-    ''' '''
-    return HttpResponse(dispatcher(request), content_type='application/json')
+# -*- coding: utf-8 -*-

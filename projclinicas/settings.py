@@ -29,7 +29,8 @@ INSTALLED_APPS = [
     'chatbot',
     'index',
     'processos',
-    'django_bootstrap_breadcrumbs',
+    'dashboard',
+    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
     'channels',
     'channels_redis'
 ]
@@ -43,8 +44,8 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
+    'django_plotly_dash.middleware.BaseMiddleware',
+    'django_plotly_dash.middleware.ExternalRedirectionMiddleware',
 ]
 
 ROOT_URLCONF = 'projclinicas.urls'
@@ -116,6 +117,31 @@ USE_TZ = True
 
 CRISPY_TEMPLATE_PACK = 'bootstap4'
 
+ASGI_APPLICATION = 'projclinicas.routing.application'
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            'hosts': [('127.0.0.1', 6379), ],
+        }
+    }
+}
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'django_plotly_dash.finders.DashAssetFinder',
+    'django_plotly_dash.finders.DashComponentFinder'
+]
+
+PLOTLY_COMPONENTS = [
+
+    'dash_core_components',
+    'dash_html_components',
+    'dash_renderer',
+    'dpd_components'
+]
+
 CHATTERBOT = {
     'name': 'Bdatarobo',
     'django_app_name': 'django_chatterbot'
@@ -133,3 +159,10 @@ STATICFILES_DIRS = [
 #
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# STATICFILES_LOCATION = 'static'
+# STATIC_URL = '/static/'
+# STATIC_ROOT = 'static'
+# # STATICFILES_DIRS = [
+# #     os.path.join(BASE_DIR, 'projclinicas/static')
+# # ]

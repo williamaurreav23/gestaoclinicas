@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="karina.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.219524"
+     inkscape:cx="279.75745"
+     inkscape:cy="695.6045"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="968"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="156.81344,219.45361"
+       orientation="0,1"
+       id="guide4618"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="176.62818,167.6796"
+       orientation="0,1"
+       id="guide4620"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#c71585;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.62547278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4564"
+       cx="-287.17404"
+       cy="-14.649078"
+       rx="97.90023"
+       ry="96.268562" />
+    <g
+       id="g4562"
+       transform="matrix(0.47275467,0,0,0.48191212,-280.30303,-12.901802)"
+       style="fill:#fffafa">
+      <flowRoot
+         transform="matrix(97.368959,0,0,81.167254,-11313.162,-17011.362)"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fffafa;fill-opacity:1;stroke:none"
+         id="flowRoot4518"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4520"
+           style="fill:#fffafa"><rect
+             y="173.94826"
+             x="114.28571"
+             height="640"
+             width="374.28571"
+             id="rect4522"
+             style="fill:#fffafa" /></flowRegion><flowPara
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.17366934px;font-family:'Noto Serif Display';-inkscape-font-specification:'Noto Serif Display, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#fffafa"
+           id="flowPara4524">K</flowPara></flowRoot>      <flowRoot
+         transform="matrix(97.368958,0,0,81.167253,-11170.658,-17011.357)"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fffafa;fill-opacity:1;stroke:none"
+         id="flowRoot4518-6"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4520-5"
+           style="fill:#fffafa"><rect
+             y="173.94826"
+             x="114.28571"
+             height="640"
+             width="374.28571"
+             id="rect4522-0"
+             style="fill:#fffafa" /></flowRegion><flowPara
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.17366934px;font-family:'Noto Serif Display';-inkscape-font-specification:'Noto Serif Display, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#fffafa"
+           id="flowPara4524-8">M</flowPara></flowRoot>    </g>
+    <path
+       style="fill:#b61585;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.11100626;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 294.90625 150.4668 A 246.87338 244.19164 0 0 0 71.064453 292.30859 C 79.781911 292.46226 87.370176 294.76302 93.822266 299.22266 C 100.50461 303.84144 103.8457 309.29931 103.8457 315.59766 L 103.8457 349.76758 C 103.8457 352.81178 105.13693 354.59623 107.71875 355.12109 C 110.14869 355.75093 112.04722 355.38222 113.41406 354.01758 L 167.17578 302.68555 C 172.79503 296.70212 180.69179 293.71094 190.86719 293.71094 L 191.55078 293.71094 C 202.78927 293.71094 210.99066 297.1221 216.1543 303.94531 C 221.31793 310.76852 221.01526 317.43507 215.24414 323.94336 L 182.43945 360.31641 C 172.71967 371.12857 172.71967 381.67755 182.43945 391.96484 L 245.99805 459.20117 C 252.07291 465.70946 252.37558 472.37406 246.9082 479.19727 C 241.44083 486.12545 233.16475 489.58984 222.07812 489.58984 L 221.16602 489.58984 C 211.90185 489.58984 204.15642 486.54543 197.92969 480.45703 L 135.9668 419.20508 C 132.17001 415.42607 127.00704 413.4326 120.47656 413.22266 C 114.09796 413.11768 108.70506 414.84891 104.30078 418.41797 L 103.8457 418.41797 L 103.8457 466.12891 C 103.8457 472.6372 100.50461 478.19957 93.822266 482.81836 C 87.139918 487.43715 79.243152 489.69482 70.130859 489.58984 L 69.902344 489.58984 C 69.160536 489.58984 68.429919 489.57098 67.705078 489.54297 A 246.87338 244.19164 0 0 0 294.90625 638.84961 A 246.87338 244.19164 0 0 0 525.17188 482.63867 C 524.93955 482.45768 524.69847 482.29378 524.4707 482.10352 C 519.79911 478.09835 517.46289 473.32296 517.46289 467.77734 L 520.69727 346.08203 L 481.70703 464.38867 C 479.43113 471.37203 474.76064 477.07233 467.69336 481.48828 C 460.62608 485.80153 453.08024 487.95703 445.05469 487.95703 L 444.33594 487.95703 C 436.07081 487.95703 428.58293 485.74993 421.875 481.33398 C 415.04729 476.81534 410.49661 471.16664 408.2207 464.38867 L 368.87109 346.08203 L 372.28516 467.77734 C 372.40494 473.32296 370.12862 478.09835 365.45703 482.10352 C 360.78544 486.00598 355.1565 487.95703 348.56836 487.95703 L 344.61523 487.95703 C 338.38644 487.95703 332.93526 485.90278 328.26367 481.79492 C 323.47229 477.68706 321.07617 473.01487 321.07617 467.77734 L 321.07617 332.67969 C 321.07617 322.20464 325.32929 313.2711 333.83398 305.87695 C 342.33868 298.5855 352.75986 294.93945 365.09766 294.93945 L 365.63672 294.93945 C 375.33926 294.93945 384.08315 297.40455 391.86914 302.33398 C 399.65513 307.26342 404.9266 313.78346 407.68164 321.89648 L 445.05469 433.27148 L 482.06641 322.20508 C 484.70166 314.09205 489.97313 307.52041 497.87891 302.48828 C 504.59374 298.12697 512.00215 295.66103 520.09961 295.07812 A 246.87338 244.19164 0 0 0 294.90625 150.4668 z "
+       transform="scale(0.26458333)"
+       id="ellipse4566" />
+    <ellipse
+       style="fill:#ffffe0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.05918598;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4626"
+       cx="77.76754"
+       cy="38.556099"
+       rx="37.392338"
+       ry="36.646622" />
+    <ellipse
+       ry="36.646622"
+       rx="37.392338"
+       cy="173.42418"
+       cx="77.76754"
+       id="ellipse4630"
+       style="fill:#ffffe0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.05918598;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>
