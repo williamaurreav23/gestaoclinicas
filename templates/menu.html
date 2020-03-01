@@ -1,34 +1,38 @@
 {% load static %} {% block sidebar %}
-<nav class="navbar navbar-highlight-white sticky-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-highlight-white navbar-expand-lg navbar-light bg-light">
     <div class="container d-flex flex-col flex-md-row justify-content-between">
-        <button aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação" class="navbar-toggler"
-                data-target="#navbarTogglerDemo01" data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
+        <button aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarTogglerDemo01" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon">
+            </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-brand" href="{% url 'index' %}">
-                <img class="d-inline-block align-center" height="100" src="/static/imgs/logo.svg" width="100"> Business
-                Data Consultoria
+                <img class="d-inline-block align-center" height="50" src="/static/imgs/logo.svg" width="50">
+                    Business Data Consultoria
+                </img>
             </a>
-            <div class="col-5"></div>
-            <ul class="nav">
+        </div>
+        <ul class="nav justify-content-end">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'servicos' %}">Serviços</a>
+                    <a class="nav-link" href="{% url 'servicos' %}">
+                        Serviços
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'blog' %}">Ajuda</a>
+                    <a class="nav-link" href="{% url 'blog' %}">
+                        Blog
+                    </a>
                 </li>
-
                 <li class="nav-item">
                     <a class="navbar-item" href="/accounts/login">
-                        <button class="btn btn-outline-success my-2 my-sm-0"
-                                type="submit">Entrar
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            Entrar
                         </button>
                     </a>
                 </li>
-            </ul>
-        </div>
-
+            </div>
+        </ul>
     </div>
 </nav>
 {% endblock %}
